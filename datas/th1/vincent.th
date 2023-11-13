@@ -1,0 +1,1475 @@
+encoding  utf-8
+survey vincent -title "Old Cavernicole"
+
+  centreline 
+    
+          extend right 1 3
+          
+          extend right 32 34
+       
+          extend right 49 50
+        
+          extend left 52 53
+          extend left 56 57
+          extend left 59 60
+          extend left 61 62
+        
+          extend right 65 66
+          extend right 66 67
+          extend right 67 68
+          extend right 68 69
+          extend right 69 70
+          extend right 71 72
+          extend right 72 73
+          extend right 74 75
+          extend right 75 76
+          extend right 76 77
+          extend right 77 78 
+          extend right 81 82
+          extend right 79 80
+          extend right 83 84
+          extend right 85 86
+          
+          extend right 134 135
+          extend right 136 137
+          
+          extend right 159 160
+          extend right 161 162
+         
+  endcentreline  
+
+  centreline
+  
+    cs UTM31
+    #fix 0 725986 5029628 0
+
+    date 1972.06.30
+    declination 0.00 degrees #DONNEE TOPO SICALET 10 OREINTE SUR NORD GEOGRAPHIQUE
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    0 - 0.50 360.0 0.0
+    0 - 0.50 180.0 0.0
+    0 - 3.00 0.0 90.0
+    0 - 0.00 0.0 -90.0
+    extend left
+    0 1 11.00 270.0 -89.5
+    extend right
+    1 - 0.70 135.0 0.0
+    extend left
+    1 - 0.70 315.0 0.0
+    extend vertical
+    1 - 10.00 0.0 90.0
+    1 - 0.00 0.0 -90.0
+    extend left
+    1 2 13.00 225.0 -82.9
+    extend right
+    1 - 1.50 27.0 0.0
+    extend left
+    1 - 1.50 207.0 0.0
+    extend vertical
+    1 - 5.00 0.0 90.0
+    1 - 0.00 0.0 -90.0
+    extend left
+    1 3 3.40 117.0 -28.1
+    3 - 0.70 319.5 0.0
+    extend right
+    3 - 0.70 139.5 0.0
+    extend vertical
+    3 - 7.00 0.0 90.0
+    3 - 0.00 0.0 -90.0
+    extend right
+    3 4 13.45 49.5 -42.0
+    extend vertical
+    4 - 0.50 9.0 0.0
+    4 - 0.50 189.1 0.0
+    4 - 2.00 0.0 90.0
+    4 - 0.00 0.0 -90.0
+    extend left
+    4 5 2.28 99.0 -28.9
+    extend vertical
+    5 - 0.60 360.0 0.0
+    5 - 0.60 180.0 0.0
+    5 - 10.00 0.0 90.0
+    5 - 0.00 0.0 -90.0
+    extend left
+    5 6 8.00 270.0 -90.0
+    extend vertical
+    6 - 0.60 9.0 0.0
+    6 - 0.60 188.9 0.0
+    6 - 8.00 0.0 90.0
+    6 - 0.00 0.0 -90.0
+    extend left
+    6 7 3.16 98.9 -18.5
+    extend right
+    7 - 0.70 126.0 0.0
+    extend left
+    7 - 0.70 306.0 0.0
+    extend vertical
+    7 - 8.00 0.0 90.0
+    7 - 0.00 0.0 -90.0
+    extend left
+    7 8 1.58 216.0 -18.4
+    extend vertical
+    8 - 0.50 360.0 0.0
+    8 - 0.50 180.0 0.0
+    8 - 12.00 0.0 90.0
+    8 - 0.00 0.0 -90.0
+    extend left
+    8 9 4.00 270.0 -90.0
+    extend right
+    9 - 0.60 126.0 0.0
+    extend left
+    9 - 0.60 306.0 0.0
+    extend vertical
+    9 - 2.00 0.0 90.0
+    9 - 0.00 0.0 -90.0
+    extend left
+    9 10 1.86 216.0 -36.3
+    extend vertical
+    10 - 0.50 360.0 0.0
+    10 - 0.50 180.0 0.0
+    10 - 8.00 0.0 90.0
+    10 - 0.00 0.0 -90.0
+    extend left
+    10 11 6.00 270.0 -90.0
+    extend right
+    11 - 0.50 45.1 0.0
+    extend left
+    11 - 0.50 225.1 0.0
+    extend vertical
+    11 - 5.00 0.0 90.0
+    11 - 0.00 0.0 -90.0
+    extend left
+    11 12 2.83 135.1 -45.0
+    extend vertical
+    12 - 0.60 360.0 0.0
+    12 - 0.60 180.0 0.0
+    12 - 15.00 0.0 90.0
+    12 - 0.00 0.0 -90.0
+    extend left
+    12 13 10.00 270.0 -90.0
+    extend right
+    13 - 0.60 44.9 0.0
+    extend left
+    13 - 0.60 224.9 0.0
+    extend vertical
+    13 - 8.00 0.0 90.0
+    13 - 0.00 0.0 -90.0
+    extend left
+    13 14 2.83 134.9 -45.0
+    extend right
+    14 - 0.50 90.0 0.0
+    extend left
+    14 - 0.50 270.0 0.0
+    extend vertical
+    14 - 4.00 0.0 90.0
+    14 - 0.00 0.0 -90.0
+    extend left
+    14 15 1.41 180.0 -45.1
+    extend vertical
+    15 - 0.50 360.0 0.0
+    15 - 0.50 180.0 0.0
+    15 - 15.00 0.0 90.0
+    15 - 0.00 0.0 -90.0
+    extend left
+    15 16 11.00 270.0 -90.0
+    extend right
+    16 - 0.80 90.0 0.0
+    extend left
+    16 - 0.80 270.0 0.0
+    extend vertical
+    16 - 7.00 0.0 90.0
+    16 - 0.00 0.0 -90.0
+    extend left
+    16 17 1.86 180.0 -36.3
+    17 - 1.00 324.0 0.0
+    extend right
+    17 - 1.00 144.0 0.0
+    extend vertical
+    17 - 2.00 0.0 90.0
+    17 - 0.00 0.0 -90.0
+    extend right
+    17 18 11.67 54.0 -43.3
+    extend left
+    18 - 0.80 288.0 0.0
+    extend right
+    18 - 0.80 108.0 0.0
+    extend vertical
+    18 - 1.50 0.0 90.0
+    18 - 0.00 0.0 -90.0
+    extend right
+    18 19 5.10 18.0 -11.3
+    extend left
+    19 - 0.20 315.0 0.0
+    extend right
+    19 - 0.20 135.0 0.0
+    extend vertical
+    19 - 0.40 0.0 90.0
+    19 - 0.00 0.0 -90.0
+    extend right
+    19 20 9.00 45.0 0.0
+    extend vertical
+    19 - 0.20 360.0 0.0
+    19 - 3.00 180.0 0.0
+    19 - 5.00 0.0 90.0
+    19 - 0.00 0.0 -90.0
+    extend left
+    19 21 4.80 270.0 -90.0
+    extend right
+    21 - 0.40 162.0 0.0
+    extend left
+    21 - 0.40 342.0 0.0
+    extend vertical
+    21 - 2.00 0.0 90.0
+    21 - 0.00 0.0 -90.0
+    extend left
+    21 22 2.50 252.0 0.0
+    extend vertical
+    22 - 0.20 189.0 0.0
+    22 - 0.20 9.0 0.0
+    22 - 2.00 0.0 90.0
+    22 - 0.00 0.0 -90.0
+    extend right
+    22 23 0.80 279.0 0.0
+    23 - 0.50 135.0 0.0
+    extend left
+    23 - 0.50 315.0 0.0
+    extend vertical
+    23 - 2.00 0.0 90.0
+    23 - 0.00 0.0 -90.0
+    extend left
+    23 24 12.00 225.0 -0.9
+    extend right
+    24 - 0.30 108.0 0.0
+    extend left
+    24 - 0.30 288.0 0.0
+    extend vertical
+    24 - 2.00 0.0 90.0
+    24 - 0.00 0.0 -90.0
+    extend left
+    24 25 6.00 198.0 0.0
+    extend right
+    25 - 1.80 126.0 0.0
+    extend left
+    25 - 1.80 306.0 0.0
+    extend vertical
+    25 - 1.60 0.0 90.0
+    25 - 0.00 0.0 -90.0
+    extend left
+    25 26 5.20 216.0 0.0
+    extend right
+    26 - 1.40 135.0 0.0
+    extend left
+    26 - 1.40 315.0 0.0
+    extend vertical
+    26 - 2.00 0.0 90.0
+    26 - 0.00 0.0 -90.0
+    extend left
+    26 27 7.76 225.0 -14.9
+    extend right
+    27 - 0.20 135.0 0.0
+    extend left
+    27 - 0.50 315.0 0.0
+    extend vertical
+    27 - 1.00 0.0 90.0
+    27 - 0.00 0.0 -90.0
+    extend left
+    27 28 6.00 225.0 0.0
+    extend right
+    27 - 1.50 40.5 0.0
+    extend left
+    27 - 1.50 220.5 0.0
+    extend vertical
+    27 - 1.60 0.0 90.0
+    27 - 0.00 0.0 -90.0
+    extend left
+    27 29 13.00 130.5 -4.4
+    extend vertical
+    29 - 1.50 360.0 0.0
+    29 - 1.50 180.0 0.0
+    29 - 12.60 0.0 90.0
+    29 - 0.00 0.0 -90.0
+    extend left
+    29 30 11.00 270.0 -90.0
+    extend right
+    30 - 1.50 40.4 0.0
+    extend left
+    30 - 1.50 220.4 0.0
+    extend vertical
+    30 - 11.40 0.0 90.0
+    30 - 1.40 0.0 -90.0
+    extend left
+    30 31 2.00 130.4 44.4
+    31 - 0.50 319.5 0.0
+    extend right
+    31 - 0.50 139.5 0.0
+    extend vertical
+    31 - 2.00 0.0 90.0
+    31 - 0.00 0.0 -90.0
+    extend right
+    31 32 9.00 49.5 0.0
+    extend left
+    32 - 0.20 319.5 0.0
+    extend right
+    32 - 0.20 139.5 0.0
+    extend vertical
+    32 - 1.00 0.0 90.0
+    32 - 0.00 0.0 -90.0
+    extend right
+    32 33 5.00 49.5 0.0
+    32 - 1.30 31.5 0.0
+    extend left
+    32 - 1.30 211.5 0.0
+    extend vertical
+    32 - 8.00 0.0 90.0
+    32 - 0.00 0.0 -90.0
+    extend left
+    32 34 20.80 121.5 -59.9
+    extend right
+    31 - 0.30 153.0 0.0
+    extend left
+    31 - 0.30 333.0 0.0
+    extend vertical
+    31 - 1.00 0.0 90.0
+    31 - 0.00 0.0 -90.0
+    extend left
+    31 35 9.00 243.0 0.0
+    extend right
+    35 - 0.40 139.5 0.0
+    extend left
+    35 - 0.40 319.5 0.0
+    extend vertical
+    35 - 1.50 0.0 90.0
+    35 - 0.00 0.0 -90.0
+    extend left
+    35 36 4.50 229.5 0.0
+    extend right
+    36 - 0.30 157.5 0.0
+    extend left
+    36 - 0.30 337.5 0.0
+    extend vertical
+    36 - 1.00 0.0 90.0
+    36 - 0.00 0.0 -90.0
+    extend left
+    36 37 4.00 247.5 0.0
+    37 - 0.30 207.0 0.0
+    extend right
+    37 - 0.30 27.0 0.0
+    extend vertical
+    37 - 1.00 0.0 90.0
+    37 - 0.00 0.0 -90.0
+    extend right
+    37 38 1.00 297.0 0.0
+    38 - 0.20 157.5 0.0
+    extend left
+    38 - 0.20 337.5 0.0
+    extend vertical
+    38 - 1.00 0.0 90.0
+    38 - 0.00 0.0 -90.0
+    extend left
+    38 39 4.00 247.5 0.0
+    extend right
+    39 - 0.20 166.5 0.0
+    extend left
+    39 - 0.20 346.5 0.0
+    extend vertical
+    39 - 1.00 0.0 90.0
+    39 - 0.00 0.0 -90.0
+    extend left
+    39 40 5.00 256.5 0.0
+    40 - 0.30 216.0 0.0
+    extend right
+    40 - 0.30 36.0 0.0
+    extend vertical
+    40 - 1.00 0.0 90.0
+    40 - 0.00 0.0 -90.0
+    extend right
+    40 41 1.50 306.0 0.0
+    extend vertical
+    41 - 0.30 175.5 0.0
+    41 - 0.30 355.5 0.0
+    41 - 1.00 0.0 90.0
+    41 - 0.00 0.0 -90.0
+    extend left
+    41 42 6.00 265.5 0.0
+    extend vertical
+    42 - 1.70 360.0 0.0
+    42 - 7.00 0.0 90.0
+    42 - 0.00 0.0 -90.0
+    extend left
+    42 43 6.00 270.0 -90.0
+    43 - 0.90 215.9 0.0
+    extend right
+    43 - 0.90 35.9 0.0
+    extend vertical
+    43 - 7.00 0.0 90.0
+    43 - 0.00 0.0 -90.0
+    extend right
+    43 44 2.00 305.9 0.0
+    44 - 1.00 162.0 0.0
+    extend left
+    44 - 3.00 342.0 0.0
+    extend vertical
+    44 - 15.00 0.0 90.0
+    44 - 0.00 0.0 -90.0
+    extend left
+    44 45 12.00 252.0 9.6
+    extend vertical
+    43 - 0.20 360.0 0.0
+    43 - 1.50 180.0 0.0
+    43 - 10.00 0.0 90.0
+    43 - 0.00 0.0 -90.0
+    extend left
+    43 46 6.00 270.0 -90.0
+    extend right
+    46 - 1.00 40.5 0.0
+    extend left
+    46 - 1.00 220.5 0.0
+    extend vertical
+    46 - 5.00 0.0 90.0
+    46 - 0.00 0.0 -90.0
+    extend left
+    46 47 3.61 130.5 -33.6
+    extend vertical
+    47 - 1.00 360.0 0.0
+    47 - 1.00 180.0 0.0
+    47 - 12.00 0.0 90.0
+    47 - 0.00 0.0 -90.0
+    extend left
+    47 48 7.00 270.0 -90.0
+    extend right
+    48 - 0.40 153.0 0.0
+    extend left
+    48 - 0.40 333.0 0.0
+    extend vertical
+    48 - 1.50 0.0 90.0
+    48 - 0.00 0.0 -90.0
+    extend left
+    48 49 8.00 243.0 -29.2
+    extend right
+    49 - 0.30 13.5 0.0
+    extend left
+    49 - 0.30 193.5 0.0
+    extend vertical
+    49 - 2.00 0.0 90.0
+    49 - 0.00 0.0 -90.0
+    extend left
+    49 50 9.00 103.5 0.0
+    extend vertical
+    49 - 0.40 189.0 0.0
+    49 - 0.40 9.0 0.0
+    49 - 2.00 0.0 90.0
+    49 - 0.00 0.0 -90.0
+    extend right
+    49 51 3.00 279.0 0.0
+    extend vertical
+    51 - 0.40 175.5 0.0
+    51 - 0.40 355.5 0.0
+    51 - 4.00 0.0 90.0
+    51 - 0.00 0.0 -90.0
+    extend left
+    51 52 16.00 265.5 3.6
+    52 - 0.40 207.0 0.0
+    extend right
+    52 - 0.40 27.0 0.0
+    extend vertical
+    52 - 2.00 0.0 90.0
+    52 - 0.00 0.0 -90.0
+    extend right
+    52 53 2.00 297.0 0.0
+    extend vertical
+    53 - 0.40 180.0 0.0
+    53 - 0.40 360.0 0.0
+    53 - 10.00 0.0 90.0
+    53 - 0.00 0.0 -90.0
+    extend left
+    53 54 11.20 270.0 26.5
+    extend vertical
+    54 - 0.40 175.5 0.0
+    54 - 0.40 355.5 0.0
+    54 - 3.00 0.0 90.0
+    54 - 0.00 0.0 -90.0
+    extend left
+    54 55 9.00 265.5 26.4
+    extend vertical
+    55 - 0.20 180.0 0.0
+    55 - 0.20 360.0 0.0
+    55 - 7.00 0.0 90.0
+    55 - 0.00 0.0 -90.0
+    extend left
+    55 56 13.40 270.0 26.6
+    extend vertical
+    56 - 0.40 189.0 0.0
+    56 - 0.40 9.0 0.0
+    56 - 3.00 0.0 90.0
+    56 - 0.00 0.0 -90.0
+    extend right
+    56 57 9.00 279.0 0.0
+    extend left
+    57 - 0.40 193.5 0.0
+    extend right
+    57 - 0.40 13.5 0.0
+    extend vertical
+    57 - 7.00 0.0 90.0
+    57 - 0.00 0.0 -90.0
+    extend right
+    57 58 6.00 283.5 0.0
+    extend vertical
+    58 - 0.40 360.0 0.0
+    58 - 0.40 180.0 0.0
+    58 - 2.00 0.0 90.0
+    58 - 0.00 0.0 -90.0
+    extend left
+    58 59 5.00 270.0 90.0
+    extend vertical
+    59 - 0.70 184.5 0.0
+    59 - 0.70 4.5 0.0
+    59 - 2.00 0.0 90.0
+    59 - 0.00 0.0 -90.0
+    extend right
+    59 60 5.00 274.5 0.0
+    extend vertical
+    60 - 0.70 360.0 0.0
+    60 - 0.70 180.0 0.0
+    60 - 6.00 0.0 90.0
+    60 - 0.00 0.0 -90.0
+    extend left
+    60 61 4.00 270.0 -90.0
+    extend vertical
+    61 - 0.80 184.5 0.0
+    61 - 0.80 4.5 0.0
+    61 - 2.00 0.0 90.0
+    61 - 0.00 0.0 -90.0
+    extend right
+    61 62 2.00 274.5 0.0
+    extend vertical
+    62 - 1.00 360.0 0.0
+    62 - 0.80 180.0 0.0
+    62 - 15.00 0.0 90.0
+    62 - 0.00 0.0 -90.0
+    extend left
+    62 63 13.00 270.0 -90.0
+    extend vertical
+    63 - 1.50 171.0 0.0
+    63 - 1.50 351.0 0.0
+    63 - 22.00 0.0 90.0
+    63 - 0.00 0.0 -90.0
+    extend left
+    63 64 5.00 261.0 0.0
+    extend vertical
+    49 - 2.00 360.0 0.0
+    49 - 14.00 0.0 90.0
+    49 - 0.00 0.0 -90.0
+    extend left
+    49 65 12.00 270.0 -90.0
+    extend right
+    65 - 0.30 144.0 0.0
+    extend left
+    65 - 0.30 324.0 0.0
+    extend vertical
+    65 - 1.00 0.0 90.0
+    65 - 0.00 0.0 -90.0
+    extend left
+    65 66 3.00 234.0 -19.5
+    extend right
+    66 - 0.30 72.0 0.0
+    extend left
+    66 - 0.30 252.0 0.0
+    extend vertical
+    66 - 1.00 0.0 90.0
+    66 - 0.00 0.0 -90.0
+    extend left
+    66 67 2.00 162.0 0.0
+    extend vertical
+    67 - 0.80 360.0 0.0
+    67 - 0.80 180.0 0.0
+    67 - 8.00 0.0 90.0
+    67 - 0.00 0.0 -90.0
+    extend left
+    67 68 7.00 270.0 -90.0
+    extend right
+    68 - 0.30 27.0 0.0
+    extend left
+    68 - 0.30 207.0 0.0
+    extend vertical
+    68 - 3.00 0.0 90.0
+    68 - 0.00 0.0 -90.0
+    extend left
+    68 69 7.00 117.0 -2.5
+    extend right
+    69 - 0.50 31.5 0.0
+    extend left
+    69 - 0.50 211.5 0.0
+    extend vertical
+    69 - 3.00 0.0 90.0
+    69 - 0.00 0.0 -90.0
+    extend left
+    69 70 9.00 121.5 -2.5
+    70 - 0.50 261.0 0.0
+    extend right
+    70 - 0.50 81.0 0.0
+    extend vertical
+    70 - 3.00 0.0 90.0
+    70 - 0.00 0.0 -90.0
+    extend right
+    70 71 2.50 351.0 0.0
+    extend vertical
+    71 - 0.25 360.0 0.0
+    71 - 0.25 180.0 0.0
+    71 - 3.00 0.0 90.0
+    71 - 0.00 0.0 -90.0
+    extend left
+    71 72 9.00 90.0 -2.5
+    extend right
+    72 - 0.30 35.9 0.0
+    extend left
+    72 - 0.30 215.9 0.0
+    extend vertical
+    72 - 2.00 0.0 90.0
+    72 - 0.00 0.0 -90.0
+    extend left
+    72 73 2.00 125.9 0.0
+    extend vertical
+    73 - 0.60 360.0 0.0
+    73 - 0.60 180.0 0.0
+    73 - 5.00 0.0 90.0
+    73 - 0.00 0.0 -90.0
+    extend left
+    73 74 3.00 270.0 -90.0
+    extend right
+    74 - 0.25 45.0 0.0
+    extend left
+    74 - 0.25 225.0 0.0
+    extend vertical
+    74 - 7.00 0.0 90.0
+    74 - 0.00 0.0 -90.0
+    extend left
+    74 75 3.00 135.0 0.0
+    extend vertical
+    75 - 0.25 4.5 0.0
+    75 - 0.25 184.5 0.0
+    75 - 4.00 0.0 90.0
+    75 - 0.00 0.0 -90.0
+    extend left
+    75 76 7.00 94.5 -2.5
+    extend right
+    76 - 0.25 45.0 0.0
+    extend left
+    76 - 0.25 225.0 0.0
+    extend vertical
+    76 - 3.50 0.0 90.0
+    76 - 0.00 0.0 -90.0
+    extend left
+    76 77 2.00 135.0 0.0
+    extend right
+    77 - 0.50 18.0 0.0
+    extend left
+    77 - 0.50 198.0 0.0
+    extend vertical
+    77 - 3.50 0.0 90.0
+    77 - 0.00 0.0 -90.0
+    extend left
+    77 78 2.00 108.0 0.0
+    78 - 0.25 315.0 0.0
+    extend right
+    78 - 0.25 135.0 0.0
+    extend vertical
+    78 - 4.00 0.0 90.0
+    78 - 0.00 0.0 -90.0
+    extend right
+    78 79 10.24 45.0 -12.4
+    extend left
+    79 - 0.25 265.6 0.0
+    extend right
+    79 - 0.25 85.6 0.0
+    extend vertical
+    79 - 4.00 0.0 90.0
+    79 - 0.00 0.0 -90.0
+    extend right
+    79 79x 1.30 355.6 0.0
+    extend left
+    79x - 0.25 292.5 0.0
+    extend right
+    79x - 0.25 112.5 0.0
+    extend vertical
+    79x - 4.00 0.0 90.0
+    79x - 0.00 0.0 -90.0
+    extend right
+    79x 79xx 1.20 22.5 9.5
+    79 - 0.25 17.9 0.0
+    extend left
+    79 - 0.25 197.9 0.0
+    extend vertical
+    79 - 4.00 0.0 90.0
+    79 - 0.00 0.0 -90.0
+    extend left
+    79 80 1.00 107.9 0.0
+    80 - 0.25 328.6 0.0
+    extend right
+    80 - 0.25 148.6 0.0
+    extend vertical
+    80 - 4.00 0.0 90.0
+    80 - 0.00 0.0 -90.0
+    extend right
+    80 81 1.00 58.6 -5.8
+    81 - 0.25 36.0 0.0
+    extend left
+    81 - 0.25 216.0 0.0
+    extend vertical
+    81 - 4.00 0.0 90.0
+    81 - 0.00 0.0 -90.0
+    extend left
+    81 82 2.00 126.0 -5.8
+    82 - 0.25 342.0 0.0
+    extend right
+    82 - 0.25 162.0 0.0
+    extend vertical
+    82 - 4.00 0.0 90.0
+    82 - 0.00 0.0 -90.0
+    extend right
+    82 83 1.40 72.0 0.0
+    83 - 0.25 99.1 0.0
+    extend left
+    83 - 0.25 279.1 0.0
+    extend vertical
+    83 - 4.00 0.0 90.0
+    83 - 0.00 0.0 -90.0
+    extend left
+    83 84 1.20 189.1 0.0
+    84 - 0.25 342.0 0.0
+    extend right
+    84 - 0.25 162.1 0.0
+    extend vertical
+    84 - 4.00 0.0 90.0
+    84 - 0.00 0.0 -90.0
+    extend right
+    84 85 2.50 72.1 -4.6
+    85 - 0.25 63.0 0.0
+    extend left
+    85 - 0.25 243.0 0.0
+    extend vertical
+    85 - 4.00 0.0 90.0
+    85 - 0.00 0.0 -90.0
+    extend left
+    85 86 0.80 153.0 0.0
+    86 - 0.25 324.0 0.0
+    extend right
+    86 - 0.25 144.0 0.0
+    extend vertical
+    86 - 4.00 0.0 90.0
+    86 - 0.00 0.0 -90.0
+    extend right
+    86 87 3.50 54.0 -4.9
+    extend vertical
+    87 - 0.60 360.0 0.0
+    87 - 0.60 180.0 0.0
+    87 - 27.00 0.0 90.0
+    87 - 0.00 0.0 -90.0
+    extend left
+    87 88 23.00 270.0 -90.0
+    extend vertical
+    88 - 0.60 9.0 0.0
+    88 - 0.60 189.0 0.0
+    88 - 26.00 0.0 90.0
+    88 - 0.00 0.0 -90.0
+    extend left
+    88 89 4.00 99.0 0.0
+    extend right
+    89 - 0.50 54.1 0.0
+    extend left
+    89 - 0.50 234.1 0.0
+    extend vertical
+    89 - 25.00 0.0 90.0
+    89 - 0.00 0.0 -90.0
+    extend left
+    89 90 1.30 144.1 0.0
+    extend vertical
+    90 - 0.40 360.0 0.0
+    90 - 0.40 180.0 0.0
+    90 - 15.00 0.0 90.0
+    90 - 0.00 0.0 -90.0
+    extend left
+    90 91 4.00 90.0 0.0
+    extend vertical
+    91 - 1.50 360.0 0.0
+    91 - 1.50 180.0 0.0
+    91 - 38.00 0.0 90.0
+    91 - 0.00 0.0 -90.0
+    extend left
+    91 92 23.00 270.0 -90.0
+    extend vertical
+    92 - 0.70 360.0 0.0
+    92 - 0.80 180.0 0.0
+    92 - 15.00 0.0 90.0
+    92 - 0.00 0.0 -90.0
+    extend left
+    92 92x 5.00 90.0 0.0
+    extend right
+    92 - 0.80 157.5 0.0
+    extend left
+    92 - 0.80 337.5 0.0
+    extend vertical
+    92 - 12.00 0.0 90.0
+    92 - 0.00 0.0 -90.0
+    extend left
+    92 93 4.00 247.5 0.0
+    extend right
+    93 - 0.60 72.0 0.0
+    extend left
+    93 - 0.60 252.0 0.0
+    extend vertical
+    93 - 10.00 0.0 90.0
+    93 - 0.00 0.0 -90.0
+    extend left
+    93 94 4.00 162.0 0.0
+    extend vertical
+    94 - 1.00 360.0 0.0
+    94 - 1.00 180.0 0.0
+    94 - 64.00 0.0 90.0
+    94 - 0.00 0.0 -90.0
+    extend left
+    94 95 54.00 270.0 -90.0
+    extend vertical
+    95 - 2.00 9.0 0.0
+    95 - 2.00 188.9 0.0
+    95 - 40.00 0.0 90.0
+    95 - 0.00 0.0 -90.0
+    extend left
+    95 96 2.00 98.9 0.0
+    96 - 0.25 342.0 0.0
+    extend right
+    96 - 0.25 162.0 0.0
+    extend vertical
+    96 - 8.00 0.0 90.0
+    96 - 0.00 0.0 -90.0
+    extend right
+    96 97 8.00 72.0 0.0
+    extend vertical
+    97 - 0.40 360.0 0.0
+    97 - 0.40 180.0 0.0
+    97 - 14.00 0.0 90.0
+    97 - 0.00 0.0 -90.0
+    extend left
+    97 98 6.00 270.0 -90.0
+    98 - 1.50 342.0 0.0
+    extend right
+    98 - 0.20 162.0 0.0
+    extend vertical
+    98 - 8.00 0.0 90.0
+    98 - 0.00 0.0 -90.0
+    extend right
+    98 99 10.44 72.0 -16.7
+    extend vertical
+    99 - 1.50 360.0 0.0
+    99 - 0.20 180.0 0.0
+    99 - 1.50 0.0 90.0
+    99 - 0.00 0.0 -90.0
+    extend left
+    99 100 3.00 270.0 90.0
+    100 - 0.20 342.0 0.0
+    extend right
+    100 - 0.20 162.0 0.0
+    extend vertical
+    100 - 1.00 0.0 90.0
+    100 - 0.00 0.0 -90.0
+    extend right
+    100 101 20.00 72.0 0.0
+    extend vertical
+    99 - 1.00 360.0 0.0
+    99 - 1.00 180.0 0.0
+    99 - 20.00 0.0 90.0
+    99 - 0.00 0.0 -90.0
+    extend left
+    99 102 12.00 270.0 -90.0
+    102 - 2.00 252.0 0.0
+    extend right
+    102 - 2.00 72.0 0.0
+    extend vertical
+    102 - 17.00 0.0 90.0
+    102 - 0.00 0.0 -90.0
+    extend right
+    102 103 3.00 342.0 0.0
+    extend left
+    103 - 0.25 283.5 0.0
+    extend right
+    103 - 0.25 103.5 0.0
+    extend vertical
+    103 - 6.00 0.0 90.0
+    103 - 0.00 0.0 -90.0
+    extend right
+    103 104 6.00 13.5 0.0
+    extend left
+    104 - 0.40 265.5 0.0
+    extend right
+    104 - 0.40 85.5 0.0
+    extend vertical
+    104 - 3.00 0.0 90.0
+    104 - 0.00 0.0 -90.0
+    extend right
+    104 105 4.00 355.5 0.0
+    extend vertical
+    105 - 0.40 360.0 0.0
+    105 - 0.40 180.0 0.0
+    105 - 7.00 0.0 90.0
+    105 - 0.00 0.0 -90.0
+    extend left
+    105 106 4.00 270.0 -90.0
+    106 - 0.25 252.0 0.0
+    extend right
+    106 - 0.25 72.0 0.0
+    extend vertical
+    106 - 4.00 0.0 90.0
+    106 - 0.00 0.0 -90.0
+    extend right
+    106 107 2.00 342.0 0.0
+    extend vertical
+    107 - 0.25 189.0 0.0
+    107 - 0.25 9.0 0.0
+    107 - 0.00 0.0 90.0
+    107 - 0.00 0.0 -90.0
+    extend right
+    107 108 8.00 279.0 0.0
+    extend left
+    108 - 0.25 261.0 0.0
+    extend right
+    108 - 0.25 81.0 0.0
+    extend vertical
+    108 - 0.00 0.0 90.0
+    108 - 0.00 0.0 -90.0
+    extend right
+    108 109 9.00 351.0 -3.8
+    extend left
+    109 - 0.25 288.0 0.0
+    extend right
+    109 - 0.25 108.0 0.0
+    extend vertical
+    109 - 0.00 0.0 90.0
+    109 - 0.00 0.0 -90.0
+    extend right
+    109 110 4.00 18.0 0.0
+    extend left
+    110 - 0.25 265.5 0.0
+    extend right
+    110 - 0.25 85.5 0.0
+    extend vertical
+    110 - 0.00 0.0 90.0
+    110 - 0.00 0.0 -90.0
+    extend right
+    110 111 2.00 355.5 0.0
+    extend left
+    111 - 0.25 342.0 0.0
+    extend right
+    111 - 0.25 162.0 0.0
+    extend vertical
+    111 - 0.00 0.0 90.0
+    111 - 0.00 0.0 -90.0
+    extend right
+    111 112 2.00 72.0 0.0
+    extend left
+    112 - 0.25 288.0 0.0
+    extend right
+    112 - 0.25 108.0 0.0
+    extend vertical
+    112 - 0.00 0.0 90.0
+    112 - 0.00 0.0 -90.0
+    extend right
+    112 113 3.50 18.0 0.0
+    extend left
+    113 - 0.30 310.5 0.0
+    extend right
+    113 - 0.30 130.5 0.0
+    extend vertical
+    113 - 1.20 0.0 90.0
+    113 - 0.00 0.0 -90.0
+    extend right
+    113 114 4.00 40.5 0.0
+    114 - 0.30 63.1 0.0
+    extend left
+    114 - 0.30 243.1 0.0
+    extend vertical
+    114 - 1.50 0.0 90.0
+    114 - 0.00 0.0 -90.0
+    extend left
+    114 115 1.50 153.1 0.0
+    115 - 1.20 310.5 0.0
+    extend right
+    115 - 1.20 130.5 0.0
+    extend vertical
+    115 - 4.00 0.0 90.0
+    115 - 0.00 0.0 -90.0
+    extend right
+    115 116 5.00 40.5 -36.9
+    extend left
+    116 - 1.20 324.0 0.0
+    extend right
+    116 - 1.20 144.0 0.0
+    extend vertical
+    116 - 0.80 0.0 90.0
+    116 - 0.00 0.0 -90.0
+    extend right
+    116 116x 2.00 54.0 -5.7
+    extend left
+    116x - 1.20 324.0 0.0
+    extend right
+    116x - 1.20 144.0 0.0
+    extend vertical
+    116x - 0.60 0.0 90.0
+    116x - 0.00 0.0 -90.0
+    extend right
+    116x 117 8.00 54.0 -5.7
+    extend left
+    117 - 0.25 328.5 0.0
+    extend right
+    117 - 0.25 148.5 0.0
+    extend vertical
+    117 - 1.50 0.0 90.0
+    117 - 0.00 0.0 -90.0
+    extend right
+    117 118 7.00 58.5 -5.7
+    extend left
+    118 - 0.25 310.5 0.0
+    extend right
+    118 - 0.25 130.5 0.0
+    extend vertical
+    118 - 1.50 0.0 90.0
+    118 - 0.00 0.0 -90.0
+    extend right
+    118 119 2.00 40.5 -5.8
+    extend left
+    119 - 0.25 324.0 0.0
+    extend right
+    119 - 0.25 144.0 0.0
+    extend vertical
+    119 - 1.50 0.0 90.0
+    119 - 0.00 0.0 -90.0
+    extend right
+    119 120 4.00 54.0 -5.7
+    extend left
+    120 - 0.25 297.1 0.0
+    extend right
+    120 - 0.25 117.1 0.0
+    extend vertical
+    120 - 1.50 0.0 90.0
+    120 - 0.00 0.0 -90.0
+    extend right
+    120 121 2.00 27.1 -5.8
+    extend left
+    121 - 0.30 252.0 0.0
+    extend right
+    121 - 0.30 72.0 0.0
+    extend vertical
+    121 - 1.50 0.0 90.0
+    121 - 0.00 0.0 -90.0
+    extend right
+    121 122 3.00 342.0 -5.7
+    extend left
+    122 - 0.60 288.0 0.0
+    extend right
+    122 - 0.60 108.0 0.0
+    extend vertical
+    122 - 2.00 0.0 90.0
+    122 - 0.00 0.0 -90.0
+    extend right
+    122 123 3.00 18.0 -5.8
+    extend vertical
+    123 - 0.60 360.0 0.0
+    123 - 0.60 180.0 0.0
+    123 - 5.00 0.0 90.0
+    123 - 0.00 0.0 -90.0
+    extend left
+    123 124 3.00 270.0 -90.0
+    124 - 0.60 279.0 0.0
+    extend right
+    124 - 0.60 99.0 0.0
+    extend vertical
+    124 - 2.00 0.0 90.0
+    124 - 0.00 0.0 -90.0
+    extend right
+    124 125 1.50 9.0 0.0
+    extend left
+    125 - 0.25 198.0 0.0
+    extend right
+    125 - 0.25 18.0 0.0
+    extend vertical
+    125 - 2.00 0.0 90.0
+    125 - 0.00 0.0 -90.0
+    extend right
+    125 126 13.00 288.0 0.0
+    extend vertical
+    126 - 0.80 360.0 0.0
+    126 - 0.80 180.0 0.0
+    126 - 28.00 0.0 90.0
+    126 - 0.00 0.0 -90.0
+    extend left
+    126 127 26.00 270.0 -90.0
+    extend vertical
+    127 - 2.00 180.0 0.0
+    127 - 2.00 360.0 0.0
+    127 - 28.00 0.0 90.0
+    127 - 0.00 0.0 -90.0
+    extend left
+    127 128 2.00 270.0 0.0
+    128 - 0.50 261.0 0.0
+    extend right
+    128 - 0.50 81.0 0.0
+    extend vertical
+    128 - 3.00 0.0 90.0
+    128 - 0.00 0.0 -90.0
+    extend right
+    128 129 3.00 351.0 0.0
+    129 - 1.00 18.0 0.0
+    extend vertical
+    129 - 2.00 0.0 90.0
+    129 - 0.00 0.0 -90.0
+    extend right
+    129 130 7.00 288.0 0.0
+    extend left
+    130 - 0.20 243.0 0.0
+    extend right
+    130 - 0.20 63.0 0.0
+    extend vertical
+    130 - 1.80 0.0 90.0
+    130 - 0.00 0.0 -90.0
+    extend right
+    130 131 4.00 333.0 0.0
+    extend left
+    131 - 0.20 337.5 0.0
+    extend right
+    131 - 0.20 157.5 0.0
+    extend vertical
+    131 - 1.80 0.0 90.0
+    131 - 0.00 0.0 -90.0
+    extend right
+    131 132 15.00 67.5 0.0
+    extend left
+    132 - 0.25 337.5 0.0
+    extend right
+    132 - 0.25 157.5 0.0
+    extend vertical
+    132 - 1.80 0.0 90.0
+    132 - 0.00 0.0 -90.0
+    extend right
+    132 133 4.00 67.5 0.0
+    extend vertical
+    133 - 0.30 360.0 0.0
+    133 - 0.30 180.0 0.0
+    133 - 7.80 0.0 90.0
+    133 - 0.00 0.0 -90.0
+    extend left
+    133 134 6.00 270.0 -90.0
+    extend right
+    134 - 0.30 116.9 0.0
+    extend left
+    134 - 0.30 296.9 0.0
+    extend vertical
+    134 - 5.00 0.0 90.0
+    134 - 0.00 0.0 -90.0
+    extend left
+    134 135 1.30 206.9 0.0
+    extend vertical
+    135 - 0.25 351.0 0.0
+    135 - 0.25 171.0 0.0
+    135 - 3.00 0.0 90.0
+    135 - 0.00 0.0 -90.0
+    extend right
+    135 136 7.00 81.0 -8.2
+    136 - 0.25 18.0 0.0
+    extend left
+    136 - 0.25 198.0 0.0
+    extend vertical
+    136 - 1.50 0.0 90.0
+    136 - 0.00 0.0 -90.0
+    extend left
+    136 137 4.00 108.0 0.0
+    extend vertical
+    137 - 0.25 360.0 0.0
+    137 - 0.25 180.0 0.0
+    137 - 14.50 0.0 90.0
+    137 - 0.00 0.0 -90.0
+    extend left
+    137 138 13.00 270.0 -90.0
+    extend right
+    138 - 0.25 117.0 0.0
+    extend left
+    138 - 0.25 297.0 0.0
+    extend vertical
+    138 - 10.00 0.0 90.0
+    138 - 0.00 0.0 -90.0
+    extend left
+    138 139 1.50 207.0 0.0
+    139 - 0.25 207.0 0.0
+    extend right
+    139 - 0.25 27.0 0.0
+    extend vertical
+    139 - 2.00 0.0 90.0
+    139 - 0.00 0.0 -90.0
+    extend right
+    139 140 3.50 297.0 0.0
+    extend left
+    140 - 0.20 297.0 0.0
+    extend right
+    140 - 0.20 117.0 0.0
+    extend vertical
+    140 - 0.40 0.0 90.0
+    140 - 0.00 0.0 -90.0
+    extend right
+    140 141 2.00 27.0 0.0
+    132 - 0.40 72.0 0.0
+    extend left
+    132 - 0.40 252.0 0.0
+    extend vertical
+    132 - 3.00 0.0 90.0
+    132 - 2.00 0.0 -90.0
+    extend left
+    132 142 4.60 162.0 -12.6
+    extend right
+    142 - 0.40 27.0 0.0
+    extend left
+    142 - 0.40 207.0 0.0
+    extend vertical
+    142 - 3.00 0.0 90.0
+    142 - 0.00 0.0 -90.0
+    extend left
+    142 143 4.50 117.0 0.0
+    extend right
+    143 - 1.50 99.0 0.0
+    extend left
+    143 - 0.50 279.0 0.0
+    extend vertical
+    143 - 3.00 0.0 90.0
+    143 - 0.00 0.0 -90.0
+    extend left
+    143 144 4.24 189.0 -45.0
+    extend right
+    144 - 0.40 36.0 0.0
+    extend left
+    144 - 0.40 216.0 0.0
+    extend vertical
+    144 - 3.00 0.0 90.0
+    144 - 0.00 0.0 -90.0
+    extend left
+    144 145 3.50 126.0 0.0
+    extend right
+    145 - 0.30 99.0 0.0
+    extend left
+    145 - 0.30 279.0 0.0
+    extend vertical
+    145 - 3.00 0.0 90.0
+    145 - 0.00 0.0 -90.0
+    extend left
+    145 146 1.50 189.0 0.0
+    extend right
+    146 - 0.20 45.0 0.0
+    extend left
+    146 - 0.20 225.0 0.0
+    extend vertical
+    146 - 3.00 0.0 90.0
+    146 - 0.00 0.0 -90.0
+    extend left
+    146 147 1.00 135.0 0.0
+    extend vertical
+    147 - 0.30 360.0 0.0
+    147 - 0.30 180.0 0.0
+    147 - 3.00 0.0 90.0
+    147 - 0.00 0.0 -90.0
+    extend left
+    147 148 5.00 90.0 0.0
+    extend vertical
+    148 - 0.50 360.0 0.0
+    148 - 0.50 180.0 0.0
+    148 - 10.00 0.0 90.0
+    148 - 0.00 0.0 -90.0
+    extend left
+    148 149 7.00 270.0 -90.0
+    extend vertical
+    149 - 0.20 351.0 0.0
+    149 - 0.20 171.0 0.0
+    149 - 6.00 0.0 90.0
+    149 - 0.00 0.0 -90.0
+    extend right
+    149 149x 2.60 81.0 0.0
+    149 - 0.30 157.6 0.0
+    extend left
+    149 - 0.30 337.6 0.0
+    extend vertical
+    149 - 1.70 0.0 90.0
+    149 - 0.00 0.0 -90.0
+    extend left
+    149 150 1.00 247.6 0.0
+    extend right
+    150 - 0.30 157.5 0.0
+    extend left
+    150 - 0.30 337.5 0.0
+    extend vertical
+    150 - 1.50 0.0 90.0
+    150 - 0.00 0.0 -90.0
+    extend left
+    150 151 19.00 247.5 0.0
+    extend vertical
+    151 - 0.30 360.0 0.0
+    151 - 0.30 180.0 0.0
+    151 - 11.50 0.0 90.0
+    151 - 0.00 0.0 -90.0
+    extend left
+    151 152 10.00 270.0 -90.0
+    extend right
+    152 - 0.70 156.7 0.0
+    extend left
+    152 - 1.80 336.7 0.0
+    extend vertical
+    152 - 10.00 0.0 90.0
+    152 - 0.00 0.0 -90.0
+    extend left
+    152 153 1.50 246.7 0.0
+    extend vertical
+    153 - 1.80 360.0 0.0
+    153 - 0.70 180.0 0.0
+    153 - 10.00 0.0 90.0
+    153 - 0.00 0.0 -90.0
+    extend left
+    153 153x 0.01 270.0 90.0
+    extend vertical
+    153x - 0.30 355.5 0.0
+    153x - 0.30 175.6 0.0
+    153x - 1.50 0.0 90.0
+    153x - 0.00 0.0 -90.0
+    extend right
+    153x 153xx 2.00 85.6 0.0
+    extend vertical
+    153xx - 0.30 355.5 0.0
+    153xx - 0.30 175.5 0.0
+    153xx - 1.50 0.0 90.0
+    153xx - 0.00 0.0 -90.0
+    extend right
+    153xx 154 6.50 85.5 0.0
+    extend vertical
+    154 - 0.30 360.0 0.0
+    154 - 0.30 180.0 0.0
+    154 - 1.70 0.0 90.0
+    154 - 0.00 0.0 -90.0
+    extend left
+    154 155 4.00 270.0 -90.0
+    155 - 0.30 324.0 0.0
+    extend right
+    155 - 0.30 144.0 0.0
+    extend vertical
+    155 - 1.70 0.0 90.0
+    155 - 0.00 0.0 -90.0
+    extend right
+    155 156 8.25 54.0 -14.0
+    extend vertical
+    156 - 1.20 355.5 0.0
+    156 - 1.80 0.0 90.0
+    156 - 0.00 0.0 -90.0
+    extend right
+    156 157 4.50 85.5 0.0
+    extend left
+    157 - 0.90 243.0 0.0
+    extend right
+    157 - 0.90 63.0 0.0
+    extend vertical
+    157 - 2.00 0.0 90.0
+    157 - 0.00 0.0 -90.0
+    extend right
+    157 158 10.31 333.0 -22.8
+    extend left
+    158 - 0.25 207.0 0.0
+    extend right
+    158 - 0.25 27.0 0.0
+    extend vertical
+    158 - 2.00 0.0 90.0
+    158 - 0.00 0.0 -90.0
+    extend right
+    158 159 5.39 297.0 -21.8
+    159 - 0.20 162.0 0.0
+    extend left
+    159 - 0.20 342.0 0.0
+    extend vertical
+    159 - 2.10 0.0 90.0
+    159 - 0.00 0.0 -90.0
+    extend left
+    159 160 2.12 252.0 -19.2
+    extend vertical
+    160 - 0.50 189.0 0.0
+    160 - 0.50 9.0 0.0
+    160 - 2.20 0.0 90.0
+    160 - 0.00 0.0 -90.0
+    extend right
+    160 161 3.16 279.0 -18.5
+    extend vertical
+    161 - 0.60 171.0 0.0
+    161 - 0.60 351.0 0.0
+    161 - 3.00 0.0 90.0
+    161 - 0.00 0.0 -90.0
+    extend left
+    161 162 6.00 261.0 0.0
+    extend vertical
+    162 - 0.70 184.5 0.0
+    162 - 0.70 4.5 0.0
+    162 - 3.50 0.0 90.0
+    162 - 0.00 0.0 -90.0
+    extend right
+    162 163 5.56 274.5 -46.0
+    extend left
+    163 - 0.70 225.0 0.0
+    extend right
+    163 - 0.70 45.0 0.0
+    extend vertical
+    163 - 3.00 0.0 90.0
+    163 - 0.00 0.0 -90.0
+    extend right
+    163 164 3.61 315.0 -33.6
+    extend vertical
+    164 - 0.70 360.0 0.0
+    164 - 0.70 180.0 0.0
+    164 - 6.00 0.0 90.0
+    164 - 0.00 0.0 -90.0
+    extend left
+    164 165 3.00 270.0 -90.0
+    165 - 1.00 197.9 0.0
+    extend right
+    165 - 1.00 17.9 0.0
+    extend vertical
+    165 - 6.00 0.0 90.0
+    165 - 0.00 0.0 -90.0
+    extend right
+    165 166 1.00 287.9 0.0
+    extend left
+    166 - 0.60 315.0 0.0
+    extend right
+    166 - 0.60 135.0 0.0
+    extend vertical
+    166 - 1.50 0.0 90.0
+    166 - 0.00 0.0 -90.0
+    extend right
+    166 167 3.61 45.0 -33.6
+    extend left
+    167 - 1.80 225.0 0.0
+    extend right
+    167 - 1.80 45.0 0.0
+    extend vertical
+    167 - 4.00 0.0 90.0
+    167 - 0.00 0.0 -90.0
+    extend right
+    167 168 4.83 315.0 -34.0
+    168 - 2.00 144.0 0.0
+    extend left
+    168 - 2.00 324.0 0.0
+    extend vertical
+    168 - 4.00 0.0 90.0
+    168 - 0.00 0.0 -90.0
+    extend left
+    168 169 11.57 234.0 -18.1
+    168 - 1.50 306.0 0.0
+    extend right
+    168 - 1.50 126.0 0.0
+    extend vertical
+    168 - 3.00 0.0 90.0
+    168 - 0.00 0.0 -90.0
+    extend right
+    168 170 7.00 36.0 0.0
+  endcentreline
+
+endsurvey
+

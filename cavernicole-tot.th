@@ -1,0 +1,85 @@
+encoding  utf-8
+
+survey Master -title "Gouffre du Cavernicole"
+
+
+  ########## Inclusion des .th ##########
+  input datas/th1/vincent.th
+
+  input datas/th1/amont-pull-over.th
+  input datas/th1/0-100.th
+  input datas/th1/j-innapercue.th
+  input datas/th1/aval-pull-over.th
+  input datas/th1/100-130.th
+  #input datas/th1/
+  #input datas/th1/
+
+
+    
+
+  ########## Raccordement .th ##########
+centerline  
+  equate 0@vincent cavernicole@0-100
+
+  equate 0@amont-pull-over 82@0-100
+  equate 76@0-100 76A@j-innapercue
+  equate 65@amont-pull-over 76Q@j-innapercue
+  equate 19@amont-pull-over 0@aval-pull-over
+  equate 82@0-100 0@100-130
+  equate 53@aval-pull-over 9@100-130
+
+endcenterline
+
+
+
+
+
+##############################################
+#################### PLAN ####################
+  
+  ########## Inclusion des .th2 ##########
+
+   input datas/th2/amont-pull-over_p.th2
+   input datas/th2/0-100_p.th2
+  #input datas/th2/
+  #input datas/th2/
+  #input datas/th2/
+  #input datas/th2/
+  #input datas/th2/
+  #input datas/th2/
+
+   
+
+  ########## Raccordement des .th2 ##########
+
+   
+
+
+
+
+
+
+###############################################
+#################### COUPE ####################
+  
+  ########## Inclusion des .th2 ##########
+
+   input datas/th2/amont-pull-over_c.th2
+   input datas/th2/0-100_c.th2
+   #input datas/th2/
+   #input datas/th2/
+   #input datas/th2/
+   #input datas/th2/
+   #input datas/th2/
+   #input datas/th2/
+   
+
+  ########## Raccordement des .th2 ##########
+
+   join sc5_0-100 sc0_amont-pull-over
+  #  join sc_1:0 entree_l1:end
+  #  join sc_2:end entree_2:0
+
+
+endsurvey
+

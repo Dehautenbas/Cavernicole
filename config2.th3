@@ -1,0 +1,100 @@
+encoding  utf-8
+
+
+
+
+################################# Layout général #############################
+layout layout_general
+    copy langue-fr          ### Change the language
+    copy drawingconfig      ### Set colors/size of symbols, define new symbols
+    #copy headerl           ### Header plan Xavier
+    copy header-modif1      ### Header plan modif for A4
+    #copy separeted-header  ### Header separeted 
+    #copy header_coupe      ### Header for the extended view, with horizontal scale bar
+
+    doc-title "Gouffre du Cavernicole"
+    doc-author "Martin Kern, Théophile Cailhol"
+
+    transparency on         ### vue en transparence des galeries qui se superposent...
+    opacity 80              ### ... avec une opacité de 80%
+    rotate 0                ### rotation du nord géographique (en degré)
+    colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
+    color map-bg 96                         ### couleur du fond (80% blanc / 20% gris => 80)
+
+    #min-symbol-scale <scale>    ### define minimal <scale>, from which points and lines are displayed on the map. 
+                                 ### Ex: for min-symbol-scale M, no points or lines scaled S and XS will be shown on the map. <scale> has the same format, as scale option for points and lines.
+
+debug station-names
+
+endlayout
+
+###################### plan #############################
+layout plan
+  copy layout_general
+
+  scale 1  100
+  #base-scale 1 50
+
+  map-header 110 0 nw              ### positionnement du cartouche 
+  scale-bar 25 m
+  copy scalebar_horiz
+  #copy scalebar_vert
+  legend on      ###présence de la légende des symboles ? => on/off
+  legend-columns 3
+  #colour-legend off
+
+ map-comment "<br>\
+Localisation : Forêt de l'Aulp du Seuil, Plateau des Petites Roches, Isère (38) <br>\
+Coordonnées :  725986 5029628 alt : 1528m (UTM 31T)<br>\
+<br>\
+Synthèse et dessin : Martin Kern, Théophile Caihol <br>\ 
+"
+
+	statistics copyright all
+
+#   code tex-map
+#       \legendwidth=12cm
+#       \legendtextsize={\size[8]}
+#       \legendtextheadersize={\size[18]} %%% Taille du titre
+#       \legendtextsectionsize={\size[12]} %%% Taille du titre
+#       #\legendtextcolor={\color[0 0 110]}      %# RGB values 0--100
+#    endcode
+ 
+
+### To scale NorthArrow, find in Master : "% scale your north arrow here"
+endlayout
+
+
+
+
+
+
+
+
+
+
+######
+######
+# Lire https://therion.speleo.sk/wiki/tex to change some characteristics 
+######
+######
+
+
+################################# AUTRES #############################
+
+    layout xvi-export
+    scale 1 50
+    grid-size 1 1 1 m
+    endlayout
+
+
+    layout stations-hide
+        symbol-hide group centerline
+    endlayout
+
+
+    layout centerline
+        symbol-hide group all
+        symbol-show group centerline
+    endlayout
+
