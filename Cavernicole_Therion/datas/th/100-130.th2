@@ -1,0 +1,88 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 1702.804 1329.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {393.70000000000005 1 1.0} {1181.101 0} ../xvi/100-130.xvi 0 {}
+
+
+
+scrap sp_cav_100-130_1 -projection plan -station-names "" "@100-130" -scale [-128.0 -128.0 1702.804 -128.0 0.0 0.0 46.5024216 0.0 m]
+
+point 1119.69 828.7410000000001 station -name 16
+
+point 1143.31 699.211 station -name 15
+
+point 1044.49 740.551 station -name 14
+
+point 985.83 749.6110000000001 station -name 13
+
+point 798.03 812.6010000000001 station -name 12
+
+point 675.59 853.1510000000001 station -name 11
+
+point 581.8900000000001 886.221 station -name 10
+
+point 533.47 935.041 station -name 9
+
+point 477.56000000000006 955.9010000000001 station -name 8
+
+point 430.71000000000004 1034.251 station -name 7
+
+point 396.85 1147.241 station -name 6
+
+point 463.7800000000001 1119.2910000000002 station -name 5
+
+point 524.8000000000001 1154.721 station -name 4
+
+point 510.24000000000007 1162.601 station -name 3
+
+point 455.51 1178.351 station -name 2
+
+point 393.70000000000005 1181.101 station -name 0
+
+point 438.98 1197.641 station -name 1
+
+endscrap
+
+
+
+scrap sp_cav_100-130_2 -projection plan -station-names "" "@100-130" -scale [-128.0 -128.0 1702.804 -128.0 0.0 0.0 46.5024216 0.0 m]
+
+point 272.44000000000005 693.311 station -name 35
+
+point 278.35 711.421 station -name 34
+
+point 529.1400000000001 674.0110000000001 station -name 33
+
+point 750.79 622.8310000000001 station -name 32
+
+point 865.75 609.8410000000001 station -name 31
+
+point 1088.58 600.3910000000001 station -name 30
+
+point 968.51 663.3810000000001 station -name 29
+
+point 905.12 692.1210000000001 station -name 28
+
+point 1019.2900000000001 711.0210000000001 station -name 27
+
+point 1067.32 680.311 station -name 26
+
+point 1233.0700000000002 664.171 station -name 25
+
+point 1233.0 620.0 station -name 24
+
+point 1344.1 651.181 station -name 23
+
+point 1449.21 596.461 station -name 22
+
+point 1519.29 651.571 station -name 21
+
+point 1457.48 635.831 station -name 20
+
+point 1351.58 746.461 station -name 19
+
+point 1178.74 733.461 station -name 18
+
+endscrap
+
+
