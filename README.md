@@ -13,5 +13,5 @@
 
 # Scraps
 Le nom du scrap porte le même nom que la séance topo
-"meandre-pull-over_p_s1" pour le scrap en plan numéro 1
+"meandre-pull-over_sp1" pour le scrap en plan numéro 1
  

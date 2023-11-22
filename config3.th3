@@ -368,6 +368,7 @@ layout drawingconfig
     enddef;
 
     # Pour modifier la taille des blocs dans l'aire blocks
+        # Voir https://therion.speleo.sk/wiki/mmj:4
     def a_blocks (expr p) =
       T:=identity;
       pickup PenC;
@@ -375,8 +376,8 @@ layout drawingconfig
       picture tmp_pic;
       uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart     llcorner q)/100);
       tmp_pic := image(
-      for i = xpart llcorner q step 1.0uu until xpart urcorner q:
-        for j = ypart llcorner q step 1.0uu until ypart urcorner q:
+      for i = xpart llcorner q step 0.75uu until xpart urcorner q:
+        for j = ypart llcorner q step 0.75uu until ypart urcorner q:
           qq := punked (((-.3uu,-.3uu)--(.3uu,-.3uu)--(.3uu,.3uu)--(-.3uu,.3uu)--cycle)
           randomized (uu/2))
             rotated uniformdeviate(360)

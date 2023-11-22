@@ -32,7 +32,7 @@ endlayout
 layout plan
   copy layout_general
 
-  scale 1  100
+  scale 1  200
   #base-scale 1 50
 
   map-header 110 0 nw              ### positionnement du cartouche 

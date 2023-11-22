@@ -11,5 +11,5 @@ source amont-marneux.th
 
 #3) EXPORT   ## IL FAUT CREER LE DOSSIER AVANT DANS LE FINDER
 ###----EXEMPLE:----export map -o XVI/discret--term2017_P.xvi -layout-sketches on
-export map -proj plan -o amont-marneux_p.xvi -layout-sketches on
+export map -proj plan -o amont-marneux200_p.xvi -layout-sketches on
 #export map -proj extended -o C.xvi -layout-sketches on

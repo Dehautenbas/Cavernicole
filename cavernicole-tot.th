@@ -82,6 +82,12 @@ join sp_cav_entree_3 sp_cav_pullover_2
 join l4_cav_entree:end l5_cav_pullover:end
 join l6_cav_entree:end l7_cav_pullover:end
 
+# join alain-robert_sp1_l1d:0 #mettre ici l'aval 100-130
+# join alain-robert_sp1_l1g:end #mettre ici l'aval 100-130
+# join alain-robert_sp1_l3d:end #mettre ici la suite de la topo sous -130
+# join alain-robert_sp1_l3g:0 #mettre ici la suite de la topo sous -130
+
+
 
 
 
