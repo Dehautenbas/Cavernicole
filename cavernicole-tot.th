@@ -4,7 +4,8 @@ survey Master -title "Gouffre du Cavernicole"
 
 
   ########## Inclusion des .th ##########
-  input datas/th1/vincent.th
+  #input datas/th1/vincent.th
+  input datas/th1/vincent-for-equate.th
 
   input datas/th1/amont-pull-over.th
   input datas/th1/0-100.th
@@ -24,7 +25,8 @@ survey Master -title "Gouffre du Cavernicole"
 
   ########## Raccordement .th ##########
 centerline  
-  equate 0@vincent cavernicole@0-100
+  #equate 0@vincent cavernicole@0-100     # stat 0 topo vincent = O nouvelle topo
+  equate 71@vincent-for-equate 16@100-130      # equate ancienne topo avec terminus nouvelle topo
 
   equate 0@amont-pull-over 82@0-100
   equate 76@0-100 76A@j-innapercue
