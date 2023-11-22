@@ -1,0 +1,8 @@
+encoding  utf-8
+
+survey salle-mimine-sup_tot -title salle-mimine-sup_tot
+   input salle-mimine-sup.th
+   input salle-mimine-sup_p.th2
+	input salle-mimine-sup_mp.th
+	
+endsurvey

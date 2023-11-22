@@ -1,12 +1,12 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -129.0 -129.0 1230.36 1409.75
+##XTHERION## xth_me_area_adjust -129.0 -129.0 1230.36 1471.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {629.921 1 1.0} {1259.8429999999998 0} exports/entree_plan.xvi 0 {}
 ##XTHERION## xth_me_image_insert {629.921 1 1.0} {1259.8429999999998 0} Exports/entree_plan.xvi 0 {}
 
 
 
-scrap sp1_0-100 -projection plan -station-names "" "@0-100" -scale [-128.0 -128.0 1230.36 -128.0 0.0 0.0 34.502343999999994 0.0 m]
+scrap sp_cav_entree_1 -projection plan -station-names "" "@0-100" -scale [-128.0 -128.0 1230.36 -128.0 0.0 0.0 34.502343999999994 0.0 m]
 
 line pit -reverse on
   877.0 958.5
@@ -20,9 +20,16 @@ line pit -reverse on
   smooth off
 endline
 
+line arrow
+  802.0 1090.5
+  801.5 1095.75 801.5 1106.25 816.25 1099.5
+endline
+
+point 799.25 1086.25 label -text [Bois de Cerf ] -scale l
+
 line pit -reverse on
-  823.75 1123.75
-  823.75 1123.75 838.5 1125.0 835.75 1111.0
+  821.25 1121.5
+  821.25 1121.5 838.5 1125.0 835.75 1111.0
   smooth off
 endline
 
@@ -64,6 +71,7 @@ line label -id l182-729-1093 -close off -visibility off
   723.5 1080.5 726.0 1073.25 728.5 1075.5
   731.0 1077.75 736.25 1082.25 737.25 1084.75
   738.25 1087.25 730.25 1093.75 729.0 1093.25
+  smooth off
 endline
 
 line floor-meander
@@ -75,16 +83,18 @@ line floor-meander
   smooth off
 endline
 
-point 870.25 942.5 label -text P11
+point 862.75 930.5 label -text P11 -scale l
 
 line border -reverse on
   911.5 967.0
   911.5 967.0 930.25 955.5 937.5 954.75
+  smooth off
 endline
 
 line border
   900.5 955.0
   900.5 955.0 920.75 946.75 931.25 944.0
+  smooth off
 endline
 
 point 1002.75 1014.75 blocks
@@ -92,15 +102,16 @@ point 1002.75 1014.75 blocks
 line border -reverse on
   900.5 955.0
   900.5 955.0 873.69 980.39 911.5 967.0
+  smooth off
 endline
 
-point 867.25 1058.25 label -text P10
+point 885.75 1055.75 label -text P10 -scale l
 
-point 845.25 1107.5 label -text P6
+point 864.75 1105.0 label -text P6 -scale l
 
-point 880.5 1138.25 label -text R4
+point 890.5 1150.25 label -text R4 -scale l
 
-point 814.0 1204.5 label -text P8
+point 814.0 1204.5 label -text P8 -scale l
 
 area water
   l182-729-1093
@@ -129,11 +140,11 @@ line wall -reverse on
   smooth off
 endline
 
-point 908.25 821.5 air-draught
+point 912.75 811.0 air-draught
 
-point 971.5 1006.25 air-draught -orientation 220.0
+point 967.5 1010.75 air-draught -orientation 220.0
 
-point 920.0 843.75 dig
+point 935.5 845.25 dig -scale m
 
 line wall
   603.5 1262.25
@@ -151,14 +162,14 @@ line wall
   765.75 1148.5 720.0 1090.75 718.5 1086.25
   717.29 1082.62 724.75 1066.25 734.25 1077.5
   743.75 1088.75 764.75 1133.5 776.75 1136.0
-  788.75 1138.5 820.18 1154.59 826.25 1152.5
-  834.25 1149.75 853.25 1144.0 848.75 1138.75
-  844.25 1133.5 831.25 1125.0 827.0 1124.0
-  822.75 1123.0 798.96 1118.5 796.5 1118.25
-  784.0 1117.0 806.25 1108.95 812.0 1108.25
-  820.25 1107.25 818.25 1103.75 822.5 1099.25
-  826.41 1095.11 833.75 1077.75 833.0 1074.75
-  832.25 1071.75 826.5 1050.75 827.25 1045.5
+  788.75 1138.5 819.18 1153.09 825.25 1151.0
+  833.25 1148.25 853.25 1144.0 848.75 1138.75
+  844.25 1133.5 833.25 1123.75 829.0 1122.75
+  824.75 1121.75 825.25 1122.25 821.25 1121.5
+  810.44 1119.47 809.32 1112.33 814.25 1109.25
+  820.25 1105.5 818.25 1103.75 822.5 1099.25
+  826.41 1095.11 838.0 1083.04 838.0 1074.0
+  838.0 1065.0 826.5 1050.75 827.25 1045.5
   828.0 1040.25 853.58 1004.54 853.541 1001.893
   853.5 999.25 869.25 962.25 877.0 958.5
   884.75 954.75 930.75 943.75 934.0 940.0
@@ -170,6 +181,7 @@ endline
 line wall -visibility off
   906.25 840.25
   906.25 840.25 909.25 829.75 912.25 838.5
+  smooth off
 endline
 
 line wall
@@ -264,9 +276,17 @@ line rock-border -close on
   595.0 1200.25
 endline
 
-point 988.75 936.5 altitude -align left
+point 988.75 936.5 altitude -align left -scale xl
 
-point 645.0 1269.0 altitude -align left
+line label -text Cavernicole -scale xl
+  625.0 1337.5
+  625.0 1337.5 763.0 1343.0 766.0 1342.5
+  smooth off
+endline
+
+point 625.5 1316.0 entrance -orientation 190.0 -scale xl
+
+point 604.5 1282.5 altitude -align left -scale xl
 
 line pit -close on
   623.0 1249.5
@@ -331,7 +351,7 @@ endscrap
 
 
 
-scrap sp2_0-100 -projection plan -station-names "" "@0-100" -scale [-128.0 -128.0 1230.36 -128.0 0.0 0.0 34.502343999999994 0.0 m]
+scrap sp_cav_entree_2 -projection plan -station-names "" "@0-100" -scale [-128.0 -128.0 1230.36 -128.0 0.0 0.0 34.502343999999994 0.0 m]
 
 point 843.941 627.563 station -name 59
 
@@ -385,7 +405,7 @@ point 1000.471 1072.283 station -name 35
 
 point 1063.461 1117.953 station -name 34
 
-point 556.0 747.0 altitude -align left
+point 512.5 735.5 altitude -align left -scale xl
 
 point 729.25 605.0 gypsum
 
@@ -469,36 +489,43 @@ point 743.5 601.0 stalactites
 line contour
   707.0 793.25
   707.0 793.25 709.0 798.25 715.75 794.25
+  smooth off
 endline
 
 line contour
   702.5 798.75
   702.5 798.75 709.5 803.75 717.5 797.5
+  smooth off
 endline
 
 line contour
   699.5 802.75
   699.5 802.75 707.5 810.0 717.75 801.75
+  smooth off
 endline
 
 line contour
   698.75 807.5
   698.75 807.5 711.25 814.5 718.75 806.5
+  smooth off
 endline
 
 line contour
   700.5 813.0
   700.5 813.0 710.0 820.5 719.25 811.25
+  smooth off
 endline
 
 line contour
   702.0 818.5
   702.0 818.5 719.0 823.5 726.25 814.5
+  smooth off
 endline
 
 line contour
   704.0 823.75
   704.0 823.75 723.75 828.5 729.5 817.25
+  smooth off
 endline
 
 line rock-edge
@@ -532,6 +559,7 @@ endline
 line gradient
   718.5 829.25
   718.5 829.25 709.3 820.41 712.75 787.75
+  smooth off
 endline
 
 line wall
@@ -557,9 +585,9 @@ line wall
   773.75 630.0 761.12 633.95 755.25 630.25
   737.0 618.75 715.5 596.0 715.5 596.0
   smooth off
-  715.5 596.0 706.5 553.25 727.25 560.5
-  748.0 567.75 775.75 586.5 778.0 589.75
-  780.25 593.0 795.0 608.5 798.75 611.5
+  715.5 596.0 704.75 558.0 725.5 565.25
+  746.25 572.5 772.75 592.5 775.0 595.75
+  777.25 599.0 795.0 608.5 798.75 611.5
   802.5 614.5 816.5 647.0 825.5 637.25
   834.5 627.5 836.5 622.5 836.5 622.5
   smooth off
@@ -709,9 +737,9 @@ line wall -id l100-888-1014
   smooth off
 endline
 
-point 665.25 785.5 label -text R2
+point 651.25 804.0 label -text R2 -scale xl
 
-point 1022.75 1060.5 label -text P7
+point 1046.75 1049.5 label -text P7 -scale xl
 
 line wall
   1014.0 1026.0
@@ -727,7 +755,7 @@ endscrap
 
 
 
-scrap sp3_0-100 -projection plan -station-names "" "@0-100" -scale [-128.0 -128.0 1230.36 -128.0 0.0 0.0 34.502343999999994 0.0 m]
+scrap sp_cav_entree_3 -projection plan -station-names "" "@0-100" -scale [-128.0 -128.0 1230.36 -128.0 0.0 0.0 34.502343999999994 0.0 m]
 
 point 330.86100000000005 428.193 station -name 73
 
@@ -778,29 +806,36 @@ line pit -reverse on
   smooth off
 endline
 
-point 859.0 567.0 altitude -align left
+point 834.5 558.5 altitude -align left -scale xl
 
-point 151.0 431.0 altitude -align left
+line label -text [Jonction le 22/10/23 avec la branche amont de l'actif] -scale xl
+  20.25 441.75
+  132.25 441.5
+endline
 
-point 308.0 457.75 label -text P6
+point 136.5 362.5 altitude -align left -scale xl
 
-point 951.75 601.25 label -text [Départ étroit sans CA non topo]
+point 308.0 457.75 label -text P6 -scale l
+
+point 1040.25 625.75 label -text [Départ étroit sans CA non topo]-scale xl
 
 line wall
   882.75 604.5
   882.75 604.5 890.04 609.19 909.25 611.75
+  smooth off
 endline
 
-point 818.5 571.25 air-draught -orientation 80.0
+point 595.5 433.75 air-draught -orientation 80.0 -scale xl
 
 line wall -reverse on
   885.5 622.5
   885.5 622.5 884.0 611.75 901.5 618.25
+  smooth off
 endline
 
-point 889.25 633.75 label -text P10
+point 914.25 648.75 label -text P10 -scale xl
 
-point 188.75 429.75 label -text R6
+point 174.75 436.75 label -text [P6 Remontant]
 
 line water-flow
   176.5 406.25
@@ -810,6 +845,7 @@ endline
 line wall
   873.75 653.5
   873.75 653.5 884.75 632.75 885.5 622.5
+  smooth off
 endline
 
 line wall -reverse on
@@ -835,15 +871,27 @@ endline
 line wall -visibility off
   332.5 427.25
   332.5 427.25 331.0 422.25 328.5 419.75
+  smooth off
 endline
 
-line wall -reverse on
+line wall -id l6_cav_entree -reverse on
   328.5 419.75
   326.0 417.25 322.5 412.5 320.0 412.5
   317.5 412.5 230.0 392.0 226.25 392.25
-  222.5 392.5 149.0 382.5 144.75 386.75
-  140.5 391.0 133.0 404.75 137.0 413.25
-  141.0 421.75 220.75 423.5 231.75 425.0
+  222.5 392.5 150.75 382.25 145.75 384.75
+  140.39 387.43 112.75 386.75 77.75 385.0
+  smooth off
+endline
+
+line wall -id l4_cav_entree
+  98.5 395.25
+  98.5 395.25 95.25 390.5 76.5 394.5
+  smooth off
+endline
+
+line wall -reverse on
+  98.5 395.25
+  125.5 420.25 220.75 423.5 231.75 425.0
   242.75 426.5 305.25 439.75 315.25 439.5
   325.25 439.25 415.0 446.75 425.5 448.0
   436.0 449.25 500.75 455.25 500.75 455.25
@@ -851,9 +899,9 @@ line wall -reverse on
   500.75 455.25 535.0 449.0 546.5 454.75
   558.0 460.5 636.25 482.25 642.25 486.0
   648.25 489.75 687.5 524.75 689.25 525.25
-  691.0 525.75 715.21 544.51 722.0 568.75
-  723.75 575.0 746.0 577.75 760.5 582.0
-  775.0 586.25 786.17 597.09 790.711 597.793
+  691.0 525.75 707.27 547.71 728.0 562.0
+  735.25 567.0 748.0 573.75 761.25 581.5
+  774.3 589.13 786.17 597.09 790.711 597.793
   795.25 598.5 802.0 592.75 806.0 589.5
   810.0 586.25 807.5 583.25 813.75 584.5
   820.0 585.75 838.25 598.75 839.25 605.0
@@ -873,7 +921,7 @@ endscrap
 
 
 
-scrap sp4_0-100 -projection plan -station-names "" "@0-100" -scale [-128.0 -128.0 1230.36 -128.0 0.0 0.0 34.502343999999994 0.0 m]
+scrap sp_cav_entree_4 -projection plan -station-names "" "@0-100" -scale [-128.0 -128.0 1230.36 -128.0 0.0 0.0 34.502343999999994 0.0 m]
 
 line pit -reverse on
   393.0 355.5
@@ -909,7 +957,7 @@ line wall
   smooth off
 endline
 
-point 382.0 283.0 altitude -align left
+point 382.0 283.0 altitude -align left -scale xl
 
 point 351.65100000000007 419.21299999999997 station -name 77
 
@@ -941,7 +989,7 @@ line gradient -id l132-423-332 -close on -visibility off
   smooth off
 endline
 
-point 453.25 322.75 label -text R2
+point 471.25 314.75 label -text R2 -scale l
 
 line pit -reverse on
   413.75 329.25
@@ -949,9 +997,9 @@ line pit -reverse on
   smooth off
 endline
 
-point 440.25 358.5 label -text P7
+point 459.75 359.5 label -text P7 -scale l
 
-point 391.0 420.75 label -text P6
+point 409.0 413.75 label -text P6 -scale l
 
 point 383.94100000000003 398.423 station -name 78
 
@@ -965,7 +1013,7 @@ line water-flow
   smooth off
 endline
 
-line wall
+line wall -id l5_cav_entree
   337.0 279.0
   337.0 279.0 316.75 285.5 325.25 286.5
   333.75 287.5 389.0 297.75 389.0 297.75
@@ -976,11 +1024,11 @@ line wall
   smooth off
 endline
 
-line wall
+line wall -id l3_cav_entree
   295.75 274.75
   302.0 278.0
   302.0 278.0 308.5 280.25 315.0 276.5
-  321.5 272.75 335.0 272.5 335.0 272.5
+  321.5 272.75 321.75 272.5 321.75 272.5
   smooth off
 endline
 

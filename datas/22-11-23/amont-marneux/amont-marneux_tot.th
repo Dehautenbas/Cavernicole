@@ -1,0 +1,8 @@
+encoding  utf-8
+
+survey amont-marneux_tot -title amont-marneux_tot
+   input amont-marneux.th
+   input amont-marneux_p.th2
+	input amont-marneux_mp.th
+	
+endsurvey

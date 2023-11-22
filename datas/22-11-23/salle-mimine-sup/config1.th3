@@ -1,11 +1,11 @@
 encoding  utf-8
 
 # 1-SOURCES 
-source cavernicole-tot.th
+source salle-mimine-sup_tot.th
 
 # Add config file
-input config2.th3
-input config3.th3
+input ../../../config2.th3
+input ../../../config3.th3
 
 #DEM
 #source ../GIS/DEM.th
@@ -16,9 +16,8 @@ input config3.th3
 ##########################Selection de la map à exporter #############################
 ######################################################################################
 
-#select plan@cavernicole-map       #uncomment ONLY one
-#select coupe@cavernicole-map      #uncomment ONLY one
-select mp_cav_global@cavernicole_global
+
+#select salle-mimine-sup_mp
 
 
 
@@ -32,13 +31,13 @@ select mp_cav_global@cavernicole_global
 export map \
      -projection plan \
      -layout plan   \
-     -output exports/cavernicole_plan.pdf \
+     -output exports/salle-mimine-sup_plan.pdf \
      -layout stations-hide   ###Si activé, cache le fil de fer
 
 #export map \
      -projection extended \
      -layout plan   \
-     -output exports/cavernicole_global_coupe.pdf \
+     -output exports/salle-mimine-sup_global_coupe.pdf \
      -layout stations-hide   ###Si activé, cache le fil de fer
 
 
@@ -47,13 +46,13 @@ export map \
 export map \
      -projection plan \
      -layout plan   \
-     -output exports/cavernicole_plan-travail.pdf \
+     -output exports/salle-mimine-sup_plan-travail.pdf \
      #-layout stations-hide   ###Si activé, cache le fil de fer
 
 #export map \
      -projection extended \
      -layout plan   \
-     -output Exports/cavernicole_coupe-travail.pdf \
+     -output Exports/salle-mimine-sup_coupe-travail.pdf \
      #-layout stations-hide   ###Si activé, cache le fil de fer
 
 
@@ -65,24 +64,24 @@ export map \
 #export map \
      -projection plan \
      -layout plan   \
-     -output Exports/cavernicole_plan.svg \
+     -output Exports/salle-mimine-sup_plan.svg \
      -layout symbol-hide   ###Si activé, cache le fil de fer
 
 #export map \
      -projection extended \
      -layout plan   \
-     -output Exports/cavernicole_coupe.svg \
+     -output Exports/salle-mimine-sup_coupe.svg \
      -layout symbol-hide  ###Si activé, cache le fil de fer
 
 #export model \
-     -output Exports/cavernicole_coupe.dxf \
+     -output Exports/salle-mimine-sup_coupe.dxf \
      
 ############# DEBUG ############
 #export map \
      -projection plan \
      -layout plan   \
      -layout-debug all \
-     -output Exports/cavernicoleDEBUG_plan.pdf
+     -output Exports/salle-mimine-supDEBUG_plan.pdf
 
 
 
@@ -90,7 +89,7 @@ export map \
 #export map \
      -projection plan \
      -layout walls   \
-     -output Exports/cavernicole_walls.pdf \
+     -output Exports/salle-mimine-sup_walls.pdf \
      -layout symbol-hide \  ###Si activé, cache le fil de fer
      #-layout hide_point \
      #-layout-debug station-names \
@@ -102,7 +101,7 @@ export map \
 #export atlas \
      -projection plan \
      -layout plan   \
-     -output Exports/cavernicole_Atlas.pdf 
+     -output Exports/salle-mimine-sup_Atlas.pdf 
 
 
 
@@ -117,25 +116,25 @@ export model \
 ############ KML ###########
 #export map \
      -projection plan \
-     -output exports/cavernicole-map.kml  ###-> Pour murs
+     -output exports/salle-mimine-sup-map.kml  ###-> Pour murs
 
 #export model \
-     -output Exports/cavernicole-Model.kml  ###-> pour fil de fer sans station avec splays shots
+     -output Exports/salle-mimine-sup-Model.kml  ###-> pour fil de fer sans station avec splays shots
 
 
 
 ############ QGIS ############
 #export model \
-     -output Exports/cavernicole_Model.shp
+     -output Exports/salle-mimine-sup_Model.shp
 
 
 
 ############ LISTES ############
 #export survey-list \
-     -o Exports/cavernicole_stats.html
+     -o Exports/salle-mimine-sup_stats.html
 
 #export continuation-list \
-     -o Exports/cavernicole_continuations.html
+     -o Exports/salle-mimine-sup_continuations.html
 
 
 
@@ -153,7 +152,7 @@ export model \
 #export map \
      -proj [elevation 0] \
      -layout xvi-export \
-     -o Exports/cavernicole_proj.xvi
+     -o Exports/salle-mimine-sup_proj.xvi
       
 
 
@@ -162,10 +161,10 @@ export model \
      -format xvi \
      -layout xvi-export \
      -layout-sketches on \
-     -o Exports/cavernicole_coupetravail-morphing.xvi
+     -o Exports/salle-mimine-sup_coupetravail-morphing.xvi
       
 #export map \
      -format xvi \
      -projection [elevation 0] \
      -layout xvi-export \
-     -o Exports/cavernicolecoupetravailVueNord.xvi
+     -o Exports/salle-mimine-supcoupetravailVueNord.xvi

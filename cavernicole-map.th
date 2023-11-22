@@ -1,6 +1,95 @@
 encoding  utf-8
 
 
+
+#100-130
+   map mp_cav_100-130_1
+  sp_cav_100-130_1
+  endmap
+  
+  map mp_cav_100-130_2
+  sp_cav_100-130_2 
+  endmap
+  
+  map mp_cav_100-130
+  mp_cav_100-130_1
+  break
+  mp_cav_100-130_2 [-10 -10] below
+  endmap
+  
+ 
+ #entree
+   map mp_cav_entree
+   sp_cav_entree_1
+   sp_cav_entree_2
+   sp_cav_entree_3
+   sp_cav_entree_4
+   endmap
+    
+ # cav 
+ map mp_cav_fond
+ Cavernicol_SP18
+ Cavernicol_SP19
+ Cavernicol_SP20
+ Cavernicol_SP21
+ Cavernicol_SP22
+ Cavernicol_SP23
+ #Cavernicol_SP24
+ Cavernicol_SP25
+ Cavernicol_SP26
+ Cavernicol_SP27
+ Cavernicol_SP28
+ Cavernicol_SP28bis
+ Cavernicol_SP29
+ Cavernicol_SP30
+ Cavernicol_SP31
+ Cavernicol_SP32
+ Cavernicol_SP33
+ Cavernicol_SP34
+ Cavernicol_SP35
+ Cavernicol_SP36
+ Cavernicol_SP37
+ Cavernicol_SP38
+ endmap
+ 
+ #amont pullover
+   map m1_cav_pullover
+  sp_cav_pullover_0
+  sp_cav_pullover_1
+  sp_cav_pullover_3
+  endmap
+  
+  map m2_cav_pullover
+  sp_cav_pullover_2
+  sp_cav_pullover_7
+  sp_cav_pullover_8
+  endmap
+  
+  map m3_cav_pullover
+  sp_cav_pullover_5
+  endmap
+  
+  map mp123_cav_pullover
+  m1_cav_pullover 
+  break 
+   m2_cav_pullover [0 55] below
+   break 
+  m3_cav_pullover [0 20] below
+  endmap
+ 
+ #global 
+ map mp_cav_global
+ mp123_cav_pullover
+ mp_cav_entree
+ mp_cav_fond
+ mp_cav_100-130
+ endmap
+
+
+
+
+
+
 ######################## définition des scraps à faire apparaitre sur le PLAN  ################################
 
    map plan -proj plan

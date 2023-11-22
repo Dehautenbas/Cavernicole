@@ -249,14 +249,5 @@ survey Cavernicole_p50_depart -title "Cavernicole p50 depart"
     37 38 3.92 158.1 -0.1
   endcenterline
 
-  # input "Cavernicole_p50_depart-1p.th2"
-  # input "Cavernicole_p50_depart-1s.th2"
-
-  # map m1p -projection plan
-  #   Cavernicole_p50_depart-1p
-  # endmap
-  # map m1s -projection extended
-  #   Cavernicole_p50_depart-1s
-  # endmap
-
+  
 endsurvey

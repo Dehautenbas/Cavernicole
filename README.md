@@ -7,7 +7,8 @@
     -> Les espaces d'un nom composé sont remplacés par un - 
     -> Les espaces pour séparerles différentes parties d'un nom de fichier sont remplacés par un _
 - Les noms composés sont raccourcis au minimum
-        Exemple : Le fichier plan du méandre du pull over jaune s'appellera " meandre-pull-over_plan "
+        Exemple : Le fichier plan du méandre du pull over jaune s'appellera " meandre-pull-over_p "
+                  De même, la coupe s'apellera " meandre-pull-over_p "
 
 
 # Scraps

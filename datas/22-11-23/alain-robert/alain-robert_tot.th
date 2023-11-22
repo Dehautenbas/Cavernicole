@@ -1,0 +1,8 @@
+encoding  utf-8
+
+survey alain-robert_tot -title alain-robert_tot
+   input alain-robert.th
+   input alain-robert_p.th2
+	input alain-robert_mp.th
+	
+endsurvey

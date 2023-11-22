@@ -11,8 +11,13 @@ survey Master -title "Gouffre du Cavernicole"
   input datas/th1/j-innapercue.th
   input datas/th1/aval-pull-over.th
   input datas/th1/100-130.th
+  input datas/22-11-23/alain-robert/alain-robert.th
+  input datas/22-11-23/salle-mimine-sup/salle-mimine-sup.th
+  input datas/22-11-23/amont-marneux/amont-marneux.th
   #input datas/th1/
   #input datas/th1/
+  #input datas/th1/
+
 
 
     
@@ -26,7 +31,12 @@ centerline
   equate 65@amont-pull-over 76Q@j-innapercue
   equate 19@amont-pull-over 0@aval-pull-over
   equate 82@0-100 0@100-130
-  equate 53@aval-pull-over 9@100-130
+  equate 53@aval-pull-over 9@100-130      #PTR Jonction actif en bas du P7
+  equate 0@alain-robert 16@100-130      #PTR actif bas escalade 100-130
+  equate PTR5@alain-robert PTR5@amont-marneux
+  equate PTR7@alain-robert PTR7@salle-mimine-sup
+  equate PTR7@alain-robert PTR7@salle-mimine-sup
+  #equate 97@alain-robert 97@amont-marneux
 
 endcenterline
 
@@ -39,8 +49,16 @@ endcenterline
   
   ########## Inclusion des .th2 ##########
 
-   input datas/th2/amont-pull-over_p.th2
-   input datas/th2/0-100_p.th2
+  input datas/th2/amont-pull-over_p.th2
+  input datas/th2/0-100_p.th2
+  input datas/th2/pulloverjaune_p.th2
+  input datas/th2/100-130_p.th2
+  input datas/22-11-23/alain-robert/alain-robert_p.th2
+  input datas/22-11-23/salle-mimine-sup/salle-mimine-sup_p.th2
+  input datas/22-11-23/amont-marneux/amont-marneux_p.th2
+
+  #input datas/th2/aval-pull-over.th2
+  #input datas/th2/j-innapercue.th2
   #input datas/th2/
   #input datas/th2/
   #input datas/th2/
@@ -52,7 +70,15 @@ endcenterline
 
   ########## Raccordement des .th2 ##########
 
-   
+join l10_cav_100-130:end l3_cav_entree:end
+join l11_cav_100-130:0 l5_cav_entree:0
+join sp_cav_entree_4 sp_cav_pullover_0
+#??? join sp_cav_100-130_1 Cavernicol_SP18
+join l1_cav_entree:end l0_cav_pullover:end
+join l2_cav_entree:0 l00_cav_pullover:end
+join sp_cav_entree_3 sp_cav_pullover_2
+join l4_cav_entree:end l5_cav_pullover:end
+join l6_cav_entree:end l7_cav_pullover:end
 
 
 
