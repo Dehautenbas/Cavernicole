@@ -93,7 +93,7 @@ survey salle-mimine-sup -title "salle-mimine-sup"
     62 . 1.66 33.4 13.3
     62 . 1.59 323.8 19.0
     62 . 2.07 289.6 15.6
-    62 . 29.88 102.0 89.2
+    62 62h 29.88 102.0 89.2
 
 endcenterline
 endsurvey

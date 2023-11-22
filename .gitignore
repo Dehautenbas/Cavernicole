@@ -6,7 +6,7 @@
 #**.pdf
 **.kml
 **.kmz
-**.lox
+#**.lox
 **.log
 **.xml
 **.html
