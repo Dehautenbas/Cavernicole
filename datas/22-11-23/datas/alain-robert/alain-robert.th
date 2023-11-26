@@ -354,7 +354,7 @@ survey alain-robert -title "alain-robert"
     48 . 0.48 162.2 80.3
     48 . 0.27 221.5 -83.0
     extend right
-    48 49 3.24 46.8 -26.6
+    48 49 3.24 46.8 -26.6 #49 = cairn
     # extend auto
     49 . 2.13 53.7 42.1
     49 . 3.67 31.2 -3.3

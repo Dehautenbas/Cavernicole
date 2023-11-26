@@ -1,11 +1,11 @@
 encoding  utf-8
 
 # 1-SOURCES 
-source salle-mimine-sup_tot.th
+source reseau-alain-robert_tot.th
 
 # Add config file
-input ../../../config2.th3
-input ../../../config3.th3
+input ../../config2.th3
+input ../../config3.th3
 
 #DEM
 #source ../GIS/DEM.th
@@ -17,7 +17,7 @@ input ../../../config3.th3
 ######################################################################################
 
 
-#select salle-mimine-sup_mp
+select reseau-alain-robert_mp
 
 
 
@@ -31,13 +31,13 @@ input ../../../config3.th3
 export map \
      -projection plan \
      -layout plan   \
-     -output exports/salle-mimine-sup_plan.pdf \
+     -output exports/reseau-alain-robert_plan.pdf \
      -layout stations-hide   ###Si activé, cache le fil de fer
 
 #export map \
      -projection extended \
      -layout plan   \
-     -output exports/salle-mimine-sup_global_coupe.pdf \
+     -output exports/reseau-alain-robert_coupe.pdf \
      -layout stations-hide   ###Si activé, cache le fil de fer
 
 
@@ -46,13 +46,13 @@ export map \
 export map \
      -projection plan \
      -layout plan   \
-     -output exports/salle-mimine-sup_plan-travail.pdf \
+     -output exports/reseau-alain-robert_plan-travail.pdf \
      #-layout stations-hide   ###Si activé, cache le fil de fer
 
 #export map \
      -projection extended \
      -layout plan   \
-     -output Exports/salle-mimine-sup_coupe-travail.pdf \
+     -output Exports/reseau-alain-robert_coupe-travail.pdf \
      #-layout stations-hide   ###Si activé, cache le fil de fer
 
 
@@ -64,24 +64,24 @@ export map \
 #export map \
      -projection plan \
      -layout plan   \
-     -output Exports/salle-mimine-sup_plan.svg \
+     -output Exports/reseau-alain-robert_plan.svg \
      -layout symbol-hide   ###Si activé, cache le fil de fer
 
 #export map \
      -projection extended \
      -layout plan   \
-     -output Exports/salle-mimine-sup_coupe.svg \
+     -output Exports/reseau-alain-robert_coupe.svg \
      -layout symbol-hide  ###Si activé, cache le fil de fer
 
 #export model \
-     -output Exports/salle-mimine-sup_coupe.dxf \
+     -output Exports/reseau-alain-robert_coupe.dxf \
      
 ############# DEBUG ############
 #export map \
      -projection plan \
      -layout plan   \
      -layout-debug all \
-     -output Exports/salle-mimine-supDEBUG_plan.pdf
+     -output Exports/reseau-alain-robertDEBUG_plan.pdf
 
 
 
@@ -89,7 +89,7 @@ export map \
 #export map \
      -projection plan \
      -layout walls   \
-     -output Exports/salle-mimine-sup_walls.pdf \
+     -output Exports/reseau-alain-robert_walls.pdf \
      -layout symbol-hide \  ###Si activé, cache le fil de fer
      #-layout hide_point \
      #-layout-debug station-names \
@@ -101,7 +101,7 @@ export map \
 #export atlas \
      -projection plan \
      -layout plan   \
-     -output Exports/salle-mimine-sup_Atlas.pdf 
+     -output Exports/reseau-alain-robert_Atlas.pdf 
 
 
 
@@ -116,25 +116,25 @@ export model \
 ############ KML ###########
 #export map \
      -projection plan \
-     -output exports/salle-mimine-sup-map.kml  ###-> Pour murs
+     -output exports/reseau-alain-robert-map.kml  ###-> Pour murs
 
 #export model \
-     -output Exports/salle-mimine-sup-Model.kml  ###-> pour fil de fer sans station avec splays shots
+     -output Exports/reseau-alain-robert-Model.kml  ###-> pour fil de fer sans station avec splays shots
 
 
 
 ############ QGIS ############
 #export model \
-     -output Exports/salle-mimine-sup_Model.shp
+     -output Exports/reseau-alain-robert_Model.shp
 
 
 
 ############ LISTES ############
 #export survey-list \
-     -o Exports/salle-mimine-sup_stats.html
+     -o Exports/reseau-alain-robert_stats.html
 
 #export continuation-list \
-     -o Exports/salle-mimine-sup_continuations.html
+     -o Exports/reseau-alain-robert_continuations.html
 
 
 
@@ -142,7 +142,7 @@ export model \
 #export map \
      -proj plan \
      -layout xvi-export \
-     -o datas/xvi/salle-mimine-sup_p.xvi \
+     -o datas/xvi/reseau-alain-robert_p.xvi \
 
 #export map \
      -proj extended \
@@ -152,7 +152,7 @@ export model \
 #export map \
      -proj [elevation 0] \
      -layout xvi-export \
-     -o Exports/salle-mimine-sup_proj.xvi
+     -o Exports/reseau-alain-robert_proj.xvi
       
 
 
@@ -161,10 +161,10 @@ export model \
      -format xvi \
      -layout xvi-export \
      -layout-sketches on \
-     -o Exports/salle-mimine-sup_coupetravail-morphing.xvi
+     -o Exports/reseau-alain-robert_coupetravail-morphing.xvi
       
 #export map \
      -format xvi \
      -projection [elevation 0] \
      -layout xvi-export \
-     -o Exports/salle-mimine-supcoupetravailVueNord.xvi
+     -o Exports/reseau-alain-robertcoupetravailVueNord.xvi
