@@ -1,38 +1,40 @@
-encoding  utf-8
+survey cavernicole-tot -title "Gouffre du Cavernicole"
 
-survey Master -title "Gouffre du Cavernicole"
-
+  ### Import maps
+	input cavernicole-map.th
 
   ########## Inclusion des .th ##########
-  #input datas/th1/vincent.th
-  input datas/th1/vincent-for-equate.th
+  #input datas/vincent/vincent.th
+  input datas/vincent/vincent-for-equate.th
 
-  input datas/th1/amont-pull-over.th
-  input datas/th1/0-100.th
-  input datas/th1/j-innapercue.th
-  input datas/th1/aval-pull-over.th
-  input datas/th1/100-130.th
-  input datas/22-11-23/alain-robert/alain-robert.th
-  input datas/22-11-23/salle-mimine-sup/salle-mimine-sup.th
-  input datas/22-11-23/amont-marneux/amont-marneux.th
-  #input datas/th1/
-  #input datas/th1/
-  #input datas/th1/
+  input datas/pull-over/pull-over.th
+  input datas/0-100/0-100.th
+  input datas/j-innapercue/j-innapercue.th
+  input datas/pull-over-aval/aval-pull-over.th
+  input datas/100-130/100-130.th
+  input datas/alain-robert/datas/alain-robert/alain-robert.th
+  input datas/alain-robert/datas/salle-mimine-sup/salle-mimine-sup.th
+  input datas/alain-robert/datas/amont-marneux/amont-marneux.th
+  #input datas/
+  #input datas/
+  #input datas/
 
 
 
     
 
   ########## Raccordement .th ##########
+
 centerline  
   #equate 0@vincent cavernicole@0-100     # stat 0 topo vincent = O nouvelle topo
   equate 71@vincent-for-equate 16@100-130      # equate ancienne topo avec terminus nouvelle topo
 
-  equate 0@amont-pull-over 82@0-100
+  equate 0@pull-over 82@0-100
   equate 76@0-100 76A@j-innapercue
-  equate 65@amont-pull-over 76Q@j-innapercue
-  equate 19@amont-pull-over 0@aval-pull-over
+  equate 65@pull-over 76Q@j-innapercue
+  equate 19@pull-over 0@aval-pull-over
   equate 82@0-100 0@100-130
+  equate 34@100-130 82@0-100
   equate 53@aval-pull-over 9@100-130      #PTR Jonction actif en bas du P7
   equate 0@alain-robert 16@100-130      #PTR actif bas escalade 100-130
   equate PTR5@alain-robert PTR5@amont-marneux
@@ -46,41 +48,29 @@ endcenterline
 
 
 
-##############################################
-#################### PLAN ####################
-  
+###########################################################
+####################       PLAN        ####################
+
   ########## Inclusion des .th2 ##########
 
-  input datas/th2/amont-pull-over_p.th2
-  input datas/th2/0-100_p.th2
-  input datas/th2/pulloverjaune_p.th2
-  input datas/th2/100-130_p.th2
-  input datas/22-11-23/alain-robert/alain-robert_p.th2
-  input datas/22-11-23/salle-mimine-sup/salle-mimine-sup_p.th2
-  input datas/22-11-23/amont-marneux/amont-marneux_p.th2
+  input datas/0-100/0-100_p.th2
+  input datas/pull-over/pull-over_p.th2
+  input datas/100-130/100-130_p.th2
+  input datas/alain-robert/datas/alain-robert/alain-robert_p.th2
+  input datas/alain-robert/datas/salle-mimine-sup/salle-mimine-sup_p.th2
+  input datas/alain-robert/datas/amont-marneux/amont-marneux_p.th2
 
-  #input datas/th2/aval-pull-over.th2
-  #input datas/th2/j-innapercue.th2
-  #input datas/th2/
-  #input datas/th2/
-  #input datas/th2/
-  #input datas/th2/
-  #input datas/th2/
-  #input datas/th2/
+  #input datas/pull-over-aval/pull-over-aval.th2
+  #input datas/j-innapercue/j-innapercue.th2
 
-   
 
   ########## Raccordement des .th2 ##########
-
-join l10_cav_100-130:end l3_cav_entree:end
-join l11_cav_100-130:0 l5_cav_entree:0
-join sp_cav_entree_4 sp_cav_pullover_0
-#??? join sp_cav_100-130_1 Cavernicol_SP18
-join l1_cav_entree:end l0_cav_pullover:end
-join l2_cav_entree:0 l00_cav_pullover:end
-join sp_cav_entree_3 sp_cav_pullover_2
-join l4_cav_entree:end l5_cav_pullover:end
-join l6_cav_entree:end l7_cav_pullover:end
+join pullover_l1h:0 0-100_sp5_l1h:0
+join pullover_l1b:0 0-100_sp5_l1b:end
+join lb_cav_pullover:end lb_cav_entree:0
+join lh_cav_pullover:end lh_cav_entree:end
+join l2h_cav_entree:0 l1h_cav_100-130:0
+join l2b_cav_entree:end l1h_cav_100-130:end
 
 # join alain-robert_sp1_l1d:0 #mettre ici l'aval 100-130
 # join alain-robert_sp1_l1g:end #mettre ici l'aval 100-130
@@ -90,16 +80,13 @@ join l6_cav_entree:end l7_cav_pullover:end
 
 
 
-
-
-
 ###############################################
 #################### COUPE ####################
   
   ########## Inclusion des .th2 ##########
 
-   input datas/th2/amont-pull-over_c.th2
-   input datas/th2/0-100_c.th2
+   input datas/pull-over/pull-over_c.th2
+   input datas/0-100/0-100_c.th2
    #input datas/th2/
    #input datas/th2/
    #input datas/th2/
@@ -110,10 +97,9 @@ join l6_cav_entree:end l7_cav_pullover:end
 
   ########## Raccordement des .th2 ##########
 
-   join sc5_0-100 sc0_amont-pull-over
+   #join sc5_0-100 sc0_amont-pull-over
   #  join sc_1:0 entree_l1:end
   #  join sc_2:end entree_2:0
 
 
 endsurvey
-

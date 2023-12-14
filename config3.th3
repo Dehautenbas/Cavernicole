@@ -169,19 +169,6 @@ text fr "line border" ""
 
 
 
-
-### Layouts Languages/langues
-# Différents layouts pour définir les langues (en, fr)
-#     Dans votre thconfig, appelez le layout langue-XX où XX est en ou fr 
-#     Vous devez ajouter l'un de ces layouts si vous voulez utiliser les layouts headerl ou header_coupe
-#     qui redéfinissent la présentation et les informations du cartouche (header).
-#     Si vous voulez ajouter un de ces champs club, syntesys, web page, expedition, guide, 
-#        rajouter la ligne suivante dans le bloc code tex-map/endcode  de votre layout dans votre thconfig
-#        (voir les exemples)
-#       \newtoks\YYYY \YYYY={Valeur de votre varialbe}
-#        où YYYY = club, synth, wpage, expe or guide
-#
-
 layout langue-fr
   # Définit la langue française
   language fr
@@ -203,8 +190,6 @@ layout langue-fr
     \newtoks\thcoords \thcoords{Coordonnées GPS (WGS84) }
     %\newtoks\cavelength \cavelength={Développement }
     
-    
-
     # Initiate variables
     \newtoks\club \club={}
     \newtoks\synth \synth={}
@@ -215,60 +200,17 @@ layout langue-fr
     \newtoks\ECoordinates \ECoordinates={}
     
   endcode
-endlayout
-
-
-layout langue-en
-  # Set the language english
-  language en
-  
-  code tex-map
-    % Definition of variables for the tuned headers :
-    \newtoks\thversiontitleB \thversiontitleB={Therion }
-    
-    \newtoks\thversiontitleA \thversiontitleA={Compiled}
-    \newtoks\datetitle \datetitle={on }
-    \newtoks\thproj \thproj={Projection}
-    \newtoks\thclub \thclub={Club(s)}
-    \newtoks\thsynth \thsynth={Synthesys}
-    \newtoks\thwpage \thwpage={Web page}
-    \newtoks\thexpe \thexpe={Expedition}
-    \newtoks\depthrangetitle \depthrangetitle={Depth range from }
-    \newtoks\thguide \thguide={Guide(s)}
-    \newtoks\ththanksto \ththanksto{Acknowledgments }
-    \newtoks\thcoords \thcoords{GPS coordinates (WGS84) }
-
-    # Initiate variables
-    \newtoks\club \club={}
-    \newtoks\synth \synth={}
-    \newtoks\wpage \wpage={}
-    \newtoks\expe \expe={}
-    \newtoks\guide \guide={}
-    \newtoks\thanksto \thanksto={}
-    \newtoks\ECoordinates \ECoordinates={}
-    
-  endcode  
-  
-endlayout
+endlayout  
 
 
 
 
 
 layout drawingconfig
-#Layout pour dessiner les plans et les coupes développées.
-  
-
-  #Auteur du pdf
-  #doc-author "Martin Kern"
 
   # Choix des symbols: UIS, ASF (Australie) CCNP (Etats Unis),SKB (tchecoslovakia)
-  #symbol-set UIS        
-
-
-  ### Choix des types de symbols
-    symbol-assign point station:temporary SKBB
-    symbol-assign point pillar AUT
+  symbol-assign point station:temporary SKBB
+  symbol-assign point pillar AUT
   symbol-assign point anchor MY
 
         
@@ -276,7 +218,7 @@ layout drawingconfig
   symbol-color point water-flow [17 46 100]
   symbol-color point water-flow:intermittent [17 46 100]
   symbol-color point water-flow:paleo [17 46 100]
-  #symbol-color point water-drip [17 46 100]
+  symbol-color point water-drip [17 46 100]
   symbol-color point water [17 46 100]
   symbol-color line water-flow [17 46 100]
   symbol-color line water-flow:conjectural [17 46 100]
@@ -288,11 +230,10 @@ layout drawingconfig
   symbol-color point ice-stalactite [0 0 100]
   symbol-color area ice [0 0 100]
   symbol-color point snow [0 0 100]
-  symbol-color area snow [0 0 100]
   symbol-color point spring [17 46 100]
   symbol-color point root [52 33 6]
   symbol-color point vegetable-debris [13 47 6]
- # symbol-color point seed-germination [13 47 6]
+  symbol-color point seed-germination [13 47 6]
   symbol-color point altitude [100 50 0]
   symbol-color point station [54 7 60]
   symbol-color line flowstone [100 60 20]
@@ -302,34 +243,33 @@ layout drawingconfig
   symbol-color area moonmilk [100 60 20]  # Change the color ?
   symbol-color point moonmilk [100 60 20]  # Change the color ?
   symbol-color line wall:moonmilk [100 60 20]  # Change the color ?
- # symbol-color point curtains [100 60 20]
+  symbol-color point curtains [100 60 20]
   symbol-color point curtain [100 60 20]
-  #symbol-color point disc-pillar [100 60 20]
-  #symbol-color point disc-stalactite [100 60 20]
-  #symbol-color point disc-stalagmite [100 60 20]
-  #symbol-color point disc-pillars [100 60 20]
-  #symbol-color point disc-stalactites [100 60 20]
-  #symbol-color point disc-stalagmites [100 60 20]
+  symbol-color point disc-pillar [100 60 20]
+  symbol-color point disc-stalactite [100 60 20]
+  symbol-color point disc-stalagmite [100 60 20]
+  symbol-color point disc-pillars [100 60 20]
+  symbol-color point disc-stalactites [100 60 20]
+  symbol-color point disc-stalagmites [100 60 20]
   symbol-color point disk [100 60 20]
   symbol-color point wall-calcite [100 60 20]
   symbol-color point pillar [100 60 20]
-  #symbol-color point pillar-with-curtains [100 60 20]
-  #symbol-color point pillars-with-curtains [100 60 20]
-  symbol-color point stalactite [100 60 20]
+  symbol-color point pillar-with-curtains [100 60 20]
+  symbol-color point pillars-with-curtains [100 60 20]
+  #symbol-color point stalactite [100 60 20]
   symbol-color point stalagmite [100 60 20]
-  #symbol-color point stalactite-stalagmite [100 60 20]
-  #symbol-color point stalactites-stalagmites [100 60 20]
+  symbol-color point stalactite-stalagmite [100 60 20]
+  symbol-color point stalactites-stalagmites [100 60 20]
   symbol-color point flowstone-choke [100 60 20]
-  #symbol-color line rimstone-dam [100 60 20]
-  #symbol-color line rimstone-pool [100 60 20]
+  symbol-color line rimstone-dam [100 60 20]
+  symbol-color line rimstone-pool [100 60 20]
   symbol-color point rimstone-dam [100 60 20]
-  #symbol-color area stalactite [100 60 20]
-  #symbol-color area stalactite-stalagmite [100 60 20]
+  symbol-color area stalactite [100 60 20]
+  symbol-color area stalactite-stalagmite [100 60 20]
   #symbol-color area stalagmite [100 60 20]
   #symbol-color area pillar [100 60 20]
   #symbol-color area pillar-with-curtains [100 60 20]
   #symbol-color area mudcrack [52 33 6]  # Color to verify ; Maybe to darken
-  symbol-color area clay [52 33 6]  # Color to verify
   symbol-color line wall:clay [52 33 6]  # Color to verify
   #symbol-color point volcano [52 33 6]  # Color to verify
   #symbol-color point mud [52 33 6]  # Color to verify
@@ -347,6 +287,11 @@ layout drawingconfig
 
 
   ####### Metapost-changes ############
+  #
+  # Lire https://therion.speleo.sk/wiki/tex to change some characteristics 
+  ######
+
+
   code metapost
 
     # Changer la ligne pointillée du symbole line wall:presumed
@@ -434,6 +379,8 @@ layout drawingconfig
       clip tmp_pic to p;
       draw tmp_pic;
     enddef;
+
+
 
     # To change slopes aspects
     # Pour modifier la ligne aspects
@@ -553,82 +500,57 @@ layout drawingconfig
         %for i=0 upto li: draw point i of P; endfor;
     enddef; 
 
-    # To change color of Mud area
-    # Pour modifier la couleur de l'aire Boue
-    def a_u_boue (expr p) =
-      T:=identity;
-      #thfill p withcolor (0.22, 0.22, 0.95);
-      #126, 51, 0
-      thfill p withcolor (0.49, 0.20, 0.00);
-    enddef;
-
-    # To change color of Sump
-    # Pour modifier la couleur de l'aire siphon
-    def a_sump (expr p) =
-      T:=identity;
-      #thfill p withcolor (0.22, 0.22, 0.95);
-      thfill p withcolor (0.06, 0.20, 0.65);
-    enddef;
-
-    # To change color of guano
-    # Pour modifier la couleur de l'aire guano
-    def a_u_guano (expr p) =
-      T:=identity;
-      thfill p withcolor (0.53, 0.26, 0.11);
-    enddef;
     
-    # To change color of a tree-trunk
-    #     I advise to use a line "border" to delimit the area
-    #    If used with tree-leaves, add the option -place top
-    # Pour modifier la couleur de l'aire tronc
-    #    Je suggère d'utiliser une ligne "border/bord" pour délimiter l'aire
-    #    Si utilisé conjointement avec l'aire feuilles d'arbres, utiliser l'option -place top
-    def a_u_tronc (expr p) =
-      T:=identity;
-      thfill p withcolor (0.62, 0.24, 0.05);
-    enddef;
 
-    # To change color of a tree-leaves
-    # Pour modifier la couleur de l'aire feuilles d'arbre/feuillage
-    def a_u_feuilles (expr p) =
-      T:=identity;
-      thfill p withcolor (0.0, 1.0, 0.0);
-    enddef;
 
-    # To change color of Water area
-    # Pour modifier la couleur de l'aire eau
-    def a_water (expr p) =
-      T:=identity;
-      #thfill p withcolor (0.60, 0.8, 1);
-      thfill p withcolor (0.17, 0.46, 1);
-    enddef;
-
-   #Change la couleur des aires
-   def a_snow (expr p) =
-    T:=identity;
-    thfill p withcolor (1.0, 1.0, 1.0);
-  enddef;
-  def a_water (expr p) =
-    T:=identity;
-    thfill p withcolor (0.0, 0.5, 1.0);
-  enddef;
-  def a_ice (expr p) =
-    T:=identity;
-    thfill p withcolor (0.7, 0.7, 0.9);
-  enddef;
-  def a_bedrock (expr p) =
-    T:=identity;
-  #  thfill p withcolor (0.3, 0.3, 0.3);
+#Change la couleur des aires
+def a_snow (expr p) =
+  T:=identity;
+  thfill p withcolor (1.0, 1.0, 1.0);
+enddef;
+def a_water (expr p) =
+  T:=identity;
+  thfill p withcolor (0.17, 0.46, 1);
+enddef;
+def a_ice (expr p) =
+  T:=identity;
+  thfill p withcolor (0.7, 0.7, 0.9);
+enddef;
+def a_bedrock (expr p) =
+  T:=identity;
+  #thfill p withcolor (0.3, 0.3, 0.3);
   thfill p withcolor (0.90, 0.90, 0.90);
-  enddef;
-  def a_pebbles (expr p) =
-    T:=identity;
-    thfill p withcolor (0.6, 0.3, 0.0);
-  enddef;
-  def a_clay (expr p) =
-     T:=identity;
-     thfill p withcolor (0.6, 0.4, 0.0);
-  enddef;
+enddef;
+def a_pebbles (expr p) =
+  T:=identity;
+  thfill p withcolor (0.6, 0.3, 0.0);
+enddef;
+### Pour supprimer le symbol de l'argile et le remplacer par un remplissage de couleur
+# def a_clay (expr p) =
+#     T:=identity;
+#     thfill p withcolor (0.6, 0.4, 0.0);
+# enddef;
+def a_sump (expr p) =
+  T:=identity;
+  thfill p withcolor (0.06, 0.20, 0.65);
+enddef;
+def a_u_feuilles (expr p) =
+  T:=identity;
+  thfill p withcolor (0.0, 1.0, 0.0);
+enddef;
+def a_u_tronc (expr p) =
+  T:=identity;
+  thfill p withcolor (0.62, 0.24, 0.05);
+enddef;
+def a_u_guano (expr p) =
+  T:=identity;
+  thfill p withcolor (0.53, 0.26, 0.11);
+enddef;
+def a_sump (expr p) =
+  T:=identity;
+  #thfill p withcolor (0.22, 0.22, 0.95);
+  thfill p withcolor (0.06, 0.20, 0.65);
+enddef;
 
     # Northarrow more funnier !
     # Pour définir une nouvelle flèche du nord
@@ -649,41 +571,12 @@ layout drawingconfig
       endgroup;
     enddef;
 
-#    # Change Scale bar type
-#     # Pour modifier la barre d'échelle
-#    def s_scalebar (expr l, units, txt) =
-#      begingroup
-#        interim warningcheck:=0;
-#        tmpl:=l / Scale * cm * units / 2;
-#        tmpx:=l / Scale * cm * units / 5;
-#        tmph:=5bp; % bar height
-#      endgroup;
-#      pickup PenC;
-#      draw (-tmpl,0)--(tmpl,0)--(tmpl,-tmph)--(-tmpl,-tmph)--cycle;
-#      p:=(0,0)--(tmpx,0)--(tmpx,-tmph)--(0,-tmph)--cycle;
-#      for i:=-2.5 step 2 until 2:
-#        fill p shifted (i * tmpx,0);
-#      endfor;
-#      begingroup
-#        interim labeloffset:=3.5bp;
-#        for i:=0 step (l/5) until (l-1):
-#          tmpx:=tmpl * (i * 2 / l - 1);
-#          label.bot(thTEX(decimal (i)),(tmpx,-tmph));
-#        endfor;
-#        label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph));
-#        % To write the scale "1:scale" uncomment it the next line:
-#        % Pour écrire l'échelle "1:scale" au dessus de la barre décommenter la ligne suivante :
-#        %label.top(thTEX("Echelle 1 : " & decimal (Scale*100)),(0,0));
-#      endgroup;
-#    enddef;
 
     
 
 
 
-    # Change the altitude definition
-    #     This label requires to specify the position of text relative to point with
-    #     help of -align in the options box.
+    
     # Changer la définition du point altitude
     #     Ce label nécessite la position spécifique de l'étiquette de texte de façon relative
     #      au point avec l'aide de l'option -align.
@@ -738,10 +631,6 @@ layout drawingconfig
         fi;
       enddef;
 
-    # For point height with P or C prefixe
-    #     use “point 0 0 height -value [+10 m]”
-    #     or “point 0 0 height -value [-85 m]”
-    #     in your data to get E10 or P85
     # Pour obtenir un point de hauteur de passage avec P ou C comme préfixe
     #     utiliser “point 0 0 height -value [+10 m]”
     #     ou “point 0 0 height -value [-85 m]”
@@ -749,66 +638,10 @@ layout drawingconfig
     verbatimtex \def\thheightpos{E}\def\thheightneg{P} etex
 
 
-    # # Change the altitude definition for the wall-line label (add units)
-    # #    To modify the color, you need to modify the triplets after the 3 withcolor command.
-    # #    BE CAREFUL ! Sometimes, it generates mpost errors when using point wall:altitude.
-    # #    If you get this kind of error, comment the whole p_wallaltitude definition.
-    # # Changer la définition de l'altitude pour le label de la ligne mur (ajout de l'unité)
-    # #    Pour modifier la couleur, modifier le triplet (RGB) après les 3 commandes withcolor.
-    # #    ATTENTION ! Parfois, cette redéfinition génère des erreurs métapost.
-    # #    Si c'est le cas, commenter toute la redéfinition du point p_wallaltitude.
     
-    # def p_wallaltitude (expr pprev,pos,pnext,txt) =
-    #   rot:=angle(unitvector(pnext-pos)+unitvector(pos-pprev)) - 90;
-    #   pickup PenD;
-    #   pair zz;
-    #   %zz:=(pos + 3*unitvector(dir rot));
-    #   zz:=(pos + (u/4)*unitvector(dir rot));
-    #   %draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in black
-    #   draw (pos)--zz withcolor (0.78, 0.08, 0.52); % tic in color
-    #   % add the unit (here, meters as m)
-    #   txtm:=image(
-    #       %draw txt; % altitude in black
-    #       draw txt withcolor (0.78, 0.08, 0.52); % altitude in color
-    #       %interim labeloffset:=0;
-    #       %label.urt(btex \thaltitude { m} etex, lrcorner txt); % unit in black
-    #       label.urt(btex \thaltitude { m} etex, lrcorner txt) withcolor (0.78, 0.08, 0.52); % unit in color
-    #     );
-    #   begingroup 
-    #     %    interim labeloffset:=2pt;
-    #     interim labeloffset:=(u/12);
-    #     if horiz_labels:
-    #       rot:=rot mod 360;
-    #       if rot<=22.5: lab:=thelabel.rt(txtm, zz);
-    #       elseif rot<=67.5: lab:=thelabel.urt(txtm, zz);
-    #       elseif rot<=112.5: lab:=thelabel.top(txtm, zz);
-    #       elseif rot<=157.5: lab:=thelabel.ulft(txtm, zz);
-    #       elseif rot<=202.5: lab:=thelabel.lft(txtm, zz);
-    #       elseif rot<=247.5: lab:=thelabel.llft(txtm, zz);
-    #       elseif rot<=292.5: lab:=thelabel.bot(txtm, zz);
-    #       elseif rot<=337.5: lab:=thelabel.lrt(txtm, zz);
-    #       else: lab:=thelabel.rt(txtm, zz);
-    #       fi;
-    #     else:
-    #       if (abs rot>90) and (abs rot <=270):
-    #         rot:=rot-180;
-    #         lab:=thelabel.lft(txtm, pos);
-    #       else:
-    #         lab:=thelabel.rt(txtm, pos);
-    #         fi;
-    #     fi;
-    #     process_label(pos, if horiz_labels: 0 else: rot fi);    
-    #   endgroup;
-    # enddef;
-    
-    
-    
-  # Definition of new lines symbols
-  # Définition de nouveau symboles de lignes
 
 
-    # Line symbol for strata for cross sections (u:strata). It works exactly as line section
-    #     symbol but you should use -clip off option:
+
     # Symbole de ligne pour dessiner des strates (u:strata). 
     #     Cela fonctionne exactement comme les autres sections de ligne
     #     mais vous devrez rajouter l'option -clip off:
@@ -845,7 +678,6 @@ layout drawingconfig
     enddef;
 
 
-    # Line symbol for Coupoles (u:coupole). It works exactly as line section
     # Symbole de ligne pour dessiner des coupoles de plafond. 
     #     Fonctionne comme les autres lignes
     def l_u_coupole (expr P) = 
@@ -867,8 +699,7 @@ layout drawingconfig
     enddef;
 
 
-    # Line symbol for fault. 
-    #     It works exactly as line section symbol but you should use -clip off option:
+
     # Symbole de ligne pour dessiner des failles (u:fault). 
     #     Cela fonctionne exactement comme les autres sections de ligne
     #     mais vous devrez rajouter l'option -clip off:
@@ -895,9 +726,7 @@ layout drawingconfig
       endfor;
     enddef;
 
-
-    # Line symbol for the surface. 
-    #     It works exactly as line section symbol but you should use -clip off option:
+    
     # Symbole de ligne pour dessiner la surface (u:surf). 
     #     Cela fonctionne exactement comme les autres sections de ligne
     #     mais vous devrez rajouter l'option -clip off:
@@ -908,8 +737,6 @@ layout drawingconfig
       draw Q dashed evenly withcolor (0.5, 0, 0);  
     enddef;
 
-
-    # To add a doline line (u:doline); Do not forget the option -clip off !
     # Symbole de ligne pour dessiner une ligne doline (u:doline). 
     #     Cela fonctionne exactement comme les autres sections de ligne
     #     mais vous devrez rajouter l'option -clip off:
@@ -935,8 +762,6 @@ layout drawingconfig
       endfor;
     enddef;
 
-
-    # Defines the gradient as geologic dip
     # Définit le gradient comme pendage géologique
     def p_gradient_XA (expr P,R,S,A) =
       U:=(.15u, .4u);
@@ -948,8 +773,6 @@ layout drawingconfig
     initsymbol ("p_gradient_XA");
     symbol-assign point gradient XA
 
-
-    # Section to define the bat symbol (point, line, area)
     # Section pour définir le symbole Chauve souris utilisé en point, ligne ou aire
     path bat_path_x;
     bat_path_x := (160.43589,619.76148)
@@ -1036,7 +859,6 @@ layout drawingconfig
     enddef;
 
 
-    # Definition of a stalagmite boss symbol
     # Définition du point stalagmite boss
     def p_u_boss (expr pos,theta,sc,al)=
       T:=identity aligned al rotated theta scaled sc shifted pos;
@@ -1058,7 +880,6 @@ layout drawingconfig
     enddef;
 
 
-    # Definition of a shell limestone symbol
     # Définition du point coquille fossile
     def p_u_shell (expr pos,theta,sc,al)=
       T:=identity shifted pos;
@@ -1078,7 +899,6 @@ layout drawingconfig
     initsymbol ("p_u_shell");
 
     
-    # Define Danger symbol
     # Définition du point Danger
     def p_u_danger (expr P,R,S,A)=
       T:=identity aligned A rotated R scaled S shifted P;
@@ -1091,7 +911,6 @@ layout drawingconfig
     #let p_entrance = p_entrance_MY;
     
 
-    # Define dive line (u:ariane) in thin red
     # Définition de la ligne file d'Ariane en rouge fin
     def l_u_ariane (expr Path) =
       T:=identity;
@@ -1100,7 +919,6 @@ layout drawingconfig
     enddef;
 
           
-    # Definition of plankwalk
     # Définition d'une ligne de main courante
     def l_u_plankwalk  (expr P) = T:=identity;
       # by Dave Clucas
@@ -1121,7 +939,6 @@ layout drawingconfig
     enddef;
 
     
-    # Definition of a line rail
     # Définition d'une ligne rail
     def l_u_rail (expr P) = 
       # by Andrew Aktinson
@@ -1150,7 +967,6 @@ layout drawingconfig
     enddef;
 
 
-    # Change fig Flowstone, increase the number of arcs
     # Modifier le symbole flowstone en augmentant le nombr d'arc
     def l_flowstone (expr p) =
       #draw p withpen PenC withcolor (0.0, 0.5, 1.0);
@@ -1172,7 +988,6 @@ layout drawingconfig
     enddef;
 
 
-    # Point that represents a bird nest 
     # Point pour représenter un nid d'oiseau    
     def p_u_nid (expr pos,theta,sc,al)=
       U:=(.4u,.2u);
@@ -1268,7 +1083,7 @@ layout drawingconfig
     enddef;
 
 
-    ##### Pour afficher les encrages #####
+    ##### Pour afficher les ancrages #####
     ##### https://therion.speleo.sk/wiki/metapost#p-hangers_that_face_the_right_way_and_other_anchor_designs
 
         % store the original clean_legend_box

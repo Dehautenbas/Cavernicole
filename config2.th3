@@ -70,23 +70,7 @@ endlayout
 
 
 
-
-
-
-######
-######
-# Lire https://therion.speleo.sk/wiki/tex to change some characteristics 
-######
-######
-
-
 ################################# AUTRES #############################
-
-    layout xvi-export
-    scale 1 50
-    grid-size 1 1 1 m
-    endlayout
-
 
     layout stations-hide
         symbol-hide group centerline

@@ -1,171 +1,150 @@
 encoding  utf-8
 
+######################## définition des scraps à faire apparaitre sur le PLAN  ################################
+
+
+### PLAN 
+map cavernicole_plan -proj plan
+   m4_cav_pullover [0 -12 m] above
+   break
+   mp123_cav_pullover
+   break
+   0-100_mp
+   break
+   100-130_mp
+   break
+   #vincent_mp
+
+endmap
+###
+
+
+
+#0-100
+map 0-100_mp
+0-100_sp1
+break
+0-100_sp2
+break
+0-100_sp3
+break
+0-100_sp5
+break
+0-100_sp4
+break
+sp_cav_pullover_1
+endmap
 
 
 #100-130
-   map mp_cav_100-130_1
-  sp_cav_100-130_1
-  endmap
-  
-  map mp_cav_100-130_2
-  sp_cav_100-130_2 
-  endmap
-  
-  map mp_cav_100-130
-  mp_cav_100-130_1
-  break
-  mp_cav_100-130_2 [-10 -10] below
-  endmap
-  
- 
- #entree
-   map mp_cav_entree
-   sp_cav_entree_1
-   sp_cav_entree_2
-   sp_cav_entree_3
-   sp_cav_entree_4
-   endmap
-    
- # cav 
- map mp_cav_fond
- Cavernicol_SP18
- Cavernicol_SP19
- Cavernicol_SP20
- Cavernicol_SP21
- Cavernicol_SP22
- Cavernicol_SP23
- #Cavernicol_SP24
- Cavernicol_SP25
- Cavernicol_SP26
- Cavernicol_SP27
- Cavernicol_SP28
- Cavernicol_SP28bis
- Cavernicol_SP29
- Cavernicol_SP30
- Cavernicol_SP31
- Cavernicol_SP32
- Cavernicol_SP33
- Cavernicol_SP34
- Cavernicol_SP35
- Cavernicol_SP36
- Cavernicol_SP37
- Cavernicol_SP38
- endmap
- 
- #amont pullover
-   map m1_cav_pullover
+map 100-130_mp
+   100-130_sp1
+   100-130_sp2
+endmap
+   
+
+  map m1_cav_pullover
   sp_cav_pullover_0
-  sp_cav_pullover_1
+  break
   sp_cav_pullover_3
   endmap
   
+  map m4_cav_pullover
+  sp_cav_pullover_9
+  endmap
+
   map m2_cav_pullover
   sp_cav_pullover_2
-  sp_cav_pullover_7
-  sp_cav_pullover_8
+  break
+  sp_cav_pullover_7 #sup
+  break
+  sp_cav_pullover_8  #sup suite
   endmap
-  
+
   map m3_cav_pullover
   sp_cav_pullover_5
   endmap
   
   map mp123_cav_pullover
+  m2_cav_pullover
+  break
   m1_cav_pullover 
   break 
-   m2_cav_pullover [0 55] below
-   break 
-  m3_cav_pullover [0 20] below
-  endmap
+  m3_cav_pullover [0 -40 m] above
+  break 
+  endmap  
+
+
+
  
- #global 
- map mp_cav_global
- mp123_cav_pullover
- mp_cav_entree
- mp_cav_fond
- mp_cav_100-130
- endmap
+
+    
+## vincent 
+#  map vincent_mp
+#  Cavernicol_SP18
+#  Cavernicol_SP19
+#  Cavernicol_SP20
+#  Cavernicol_SP21
+#  Cavernicol_SP22
+#  Cavernicol_SP23
+#  #Cavernicol_SP24
+#  Cavernicol_SP25
+#  Cavernicol_SP26
+#  Cavernicol_SP27
+#  Cavernicol_SP28
+#  Cavernicol_SP28bis
+#  Cavernicol_SP29
+#  Cavernicol_SP30
+#  Cavernicol_SP31
+#  Cavernicol_SP32
+#  Cavernicol_SP33
+#  Cavernicol_SP34
+#  Cavernicol_SP35
+#  Cavernicol_SP36
+#  Cavernicol_SP37
+#  Cavernicol_SP38
+#  endmap
+ 
+ 
+ 
 
 
 
 
 
 
-######################## définition des scraps à faire apparaitre sur le PLAN  ################################
 
-   map plan -proj plan
-    sp1_0-100
-    break
-    sp2_0-100
-    break
-    sp3_0-100
-    break
-    sp4_0-100
-    break
-    sp5_amont-pull-over
-    break
-    sp3_amont-pull-over
-    break
-    sp2_amont-pull-over
-    break
-    sp1_amont-pull-over
-    break
-    sp0_amont-pull-over
-    break
-   endmap
 
 
 ######################## définition des scraps à faire apparaitre sur la COUPE  ################################
 
-   map coupe -proj extended
-    sc1_0-100
-    break
-    sc2_0-100
-    break
-    sc3_0-100
-    break
-    sc4_0-100
-    break
-    sc5_0-100
-    break
-    sc6_amont-pull-over
-    break
-    sc5_amont-pull-over
-    break
-    sc4_amont-pull-over
-    break
-    sc3_amont-pull-over
-    break
-    sc2_amont-pull-over
-    break
-    sc1_amont-pull-over
-    break
-    sc0_amont-pull-over
-    break
+   # map cavernicole_coupe -proj extended
+   #  sc1_0-100
+   #  break
+   #  sc2_0-100
+   #  break
+   #  sc3_0-100
+   #  break
+   #  sc4_0-100
+   #  break
+   #  sc5_0-100
+   #  break
+   #  sc6_amont-pull-over
+   #  break
+   #  sc5_amont-pull-over
+   #  break
+   #  sc4_amont-pull-over
+   #  break
+   #  sc3_amont-pull-over
+   #  break
+   #  sc2_amont-pull-over
+   #  break
+   #  sc1_amont-pull-over
+   #  break
+   #  sc0_amont-pull-over
+   #  break
    
-   endmap
-   
-  # map m1
-  #sp_cav_pullover_0
-  #sp_cav_pullover_1
-  #sp_cav_pullover_3
-  #endmap
-  
- # map m2
-  #sp_cav_pullover_2
-  #sp_cav_pullover_7
-  #sp_cav_pullover_8
-  #endmap
-  
-  # map m3
-  #sp_cav_pullover_5
-  #endmap
-  
-  # map m123
-  #m1
-  #break [40 0] below
-  #m2 
-  #break [40 0] below
-  #m3
-  #endmap
+   # endmap
+
 
 

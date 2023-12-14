@@ -1,0 +1,63 @@
+%!PS
+%%BoundingBox: -1 -1 39 24 
+%%HiResBoundingBox: -0.42 -0.42 38.09999 23.70609 
+%%Creator: MetaPost 2.02
+%%CreationDate: 2023.12.12:1531
+%%Pages: 1
+%*Font: cmss10 7.97014 9.96265 30:eea00400a000158c
+%%BeginProlog
+%%EndProlog
+%%Page: 1 1
+gsave newpath 0 0 moveto
+37.68 0 lineto
+37.68 23.28609 lineto
+0 23.28609 lineto
+ closepath clip
+ 0 0 0.10417 0.04 setcmykcolor
+newpath 0 0 moveto
+37.68 0 lineto
+37.68 23.28609 lineto
+0 23.28609 lineto
+ closepath fill
+ 0 0.5 1 0 setcmykcolor 0 0.42001 dtransform truncate idtransform setlinewidth pop
+ [] 0 setdash 1 setlinecap 1 setlinejoin 10 setmiterlimit
+newpath 7.70407 11.64305 moveto
+14.90414 11.64305 lineto stroke
+ 0.42001 0 dtransform exch truncate exch idtransform pop setlinewidth
+newpath 11.30411 8.04301 moveto
+11.30411 15.24309 lineto stroke
+ 0 0 0.10417 0.04 setcmykcolor
+newpath 12.50409 11.64305 moveto
+12.50409 11.96132 12.37764 12.26651 12.1526 12.49155 curveto
+11.92757 12.71658 11.62238 12.84303 11.30411 12.84303 curveto
+10.98584 12.84303 10.68065 12.71658 10.45561 12.49155 curveto
+10.23058 12.26651 10.10413 11.96132 10.10413 11.64305 curveto
+10.10413 11.32478 10.23058 11.01959 10.45561 10.79456 curveto
+10.68065 10.56952 10.98584 10.44307 11.30411 10.44307 curveto
+11.62238 10.44307 11.92757 10.56952 12.1526 10.79456 curveto
+12.37764 11.01959 12.50409 11.32478 12.50409 11.64305 curveto closepath fill
+ 0 0.5 1 0 setcmykcolor 0 0.42001 dtransform truncate idtransform setlinewidth pop
+newpath 12.50409 11.64305 moveto
+12.50409 11.96132 12.37764 12.26651 12.1526 12.49155 curveto
+11.92757 12.71658 11.62238 12.84303 11.30411 12.84303 curveto
+10.98584 12.84303 10.68065 12.71658 10.45561 12.49155 curveto
+10.23058 12.26651 10.10413 11.96132 10.10413 11.64305 curveto
+10.10413 11.32478 10.23058 11.01959 10.45561 10.79456 curveto
+10.68065 10.56952 10.98584 10.44307 11.30411 10.44307 curveto
+11.62238 10.44307 11.92757 10.56952 12.1526 10.79456 curveto
+12.37764 11.01959 12.50409 11.32478 12.50409 11.64305 curveto closepath stroke
+ 0.24 0.87999 0.72 0.20001 setcmykcolor
+16.10403 9.0306 moveto
+(1510) cmss10 7.97014 fshow
+34.70103 9.0306 moveto
+(m) cmss10 7.97014 fshow
+grestore
+ 0 0 0 1 setcmykcolor 0 0.84 dtransform truncate idtransform setlinewidth pop
+ [] 0 setdash 1 setlinejoin 10 setmiterlimit
+newpath 0 0 moveto
+37.68 0 lineto
+37.68 23.28609 lineto
+0 23.28609 lineto
+ closepath stroke
+showpage
+%%EOF

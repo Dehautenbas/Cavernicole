@@ -16,9 +16,9 @@ input config3.th3
 ##########################Selection de la map à exporter #############################
 ######################################################################################
 
-#select plan@cavernicole-map       #uncomment ONLY one
-#select coupe@cavernicole-map      #uncomment ONLY one
-select mp_cav_global@cavernicole_global
+select cavernicole_plan@cavernicole-tot        #uncomment ONLY one
+#select cavernicole_coupe@cavernicole-tot      #uncomment ONLY one
+ 
 
 
 

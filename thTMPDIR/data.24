@@ -1,0 +1,67 @@
+%!PS
+%%BoundingBox: -62 -67 86 71 
+%%HiResBoundingBox: -61.86 -66.27106 85.58089 70.5749 
+%%Creator: MetaPost 2.02
+%%CreationDate: 2023.12.12:1531
+%%Pages: 1
+%*Font: cmss10 13.94763 9.96265 30:f7c00000a8
+%*Font: cmss10 19.9253 9.96265 2d:8c
+%*Font: cmss10 7.97014 9.96265 30:e1c0000000000004
+%%BeginProlog
+%%EndProlog
+%%Page: 1 1
+ 0 0 0 1 setcmykcolor
+16.92754 52.49704 moveto
+(P6) cmss10 13.94763 fshow
+60.93755 1.69704 moveto
+(P7) cmss10 13.94763 fshow
+69.59909 -39.09296 moveto
+(R2) cmss10 13.94763 fshow
+ 0 0.5 1 0 setcmykcolor 0 0.42001 dtransform truncate idtransform setlinewidth pop
+ [] 0 setdash 1 setlinecap 1 setlinejoin 10 setmiterlimit
+newpath -5.17004 -59.74 moveto
+2.03003 -59.74 lineto stroke
+ 0.42001 0 dtransform exch truncate exch idtransform pop setlinewidth
+newpath -1.57 -63.34004 moveto
+-1.57 -56.13997 lineto stroke
+-1 THsetalpha
+ 0 0 0.10417 0.04 setcmykcolor
+newpath -0.37003 -59.74 moveto
+-0.37003 -59.42174 -0.49648 -59.11655 -0.72151 -58.89151 curveto
+-0.94655 -58.66647 -1.25174 -58.54002 -1.57 -58.54002 curveto
+-1.88828 -58.54002 -2.19347 -58.66647 -2.4185 -58.89151 curveto
+-2.64354 -59.11655 -2.76999 -59.42174 -2.76999 -59.74 curveto
+-2.76999 -60.05827 -2.64354 -60.36346 -2.4185 -60.5885 curveto
+-2.19347 -60.81354 -1.88828 -60.93999 -1.57 -60.93999 curveto
+-1.25174 -60.93999 -0.94655 -60.81354 -0.72151 -60.5885 curveto
+-0.49648 -60.36346 -0.37003 -60.05827 -0.37003 -59.74 curveto closepath fill
+ 0 0.5 1 0 setcmykcolor 0 0.42001 dtransform truncate idtransform setlinewidth pop
+newpath -0.37003 -59.74 moveto
+-0.37003 -59.42174 -0.49648 -59.11655 -0.72151 -58.89151 curveto
+-0.94655 -58.66647 -1.25174 -58.54002 -1.57 -58.54002 curveto
+-1.88828 -58.54002 -2.19347 -58.66647 -2.4185 -58.89151 curveto
+-2.64354 -59.11655 -2.76999 -59.42174 -2.76999 -59.74 curveto
+-2.76999 -60.05827 -2.64354 -60.36346 -2.4185 -60.5885 curveto
+-2.19347 -60.81354 -1.88828 -60.93999 -1.57 -60.93999 curveto
+-1.25174 -60.93999 -0.94655 -60.81354 -0.72151 -60.5885 curveto
+-0.49648 -60.36346 -0.37003 -60.05827 -0.37003 -59.74 curveto closepath stroke
+ 0.24 0.87999 0.72 0.20001 setcmykcolor
+-51.88823 -66.27106 moveto
+(-112) cmss10 19.9253 fshow
+-12.70174 -66.27106 moveto
+(m) cmss10 7.97014 fshow
+ 0 0 0 1 setcmykcolor
+-61.86 -50.02 moveto
+(81) cmss10 7.97014 fshow
+-61.53 -60.58 moveto
+(82) cmss10 7.97014 fshow
+39.52 -25.70999 moveto
+(80) cmss10 7.97014 fshow
+26.40001 4.62001 moveto
+(79) cmss10 7.97014 fshow
+2.52 45.61 moveto
+(78) cmss10 7.97014 fshow
+-25.8 65.35 moveto
+(77) cmss10 7.97014 fshow
+showpage
+%%EOF
