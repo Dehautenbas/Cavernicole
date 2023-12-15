@@ -1,7 +1,8 @@
+encoding  utf-8
 survey cavernicole-tot -title "Gouffre du Cavernicole"
 
   ### Import maps
-	input cavernicole-map.th
+  input cavernicole-map.th
 
   ########## Inclusion des .th ##########
   #input datas/vincent/vincent.th
@@ -27,7 +28,7 @@ survey cavernicole-tot -title "Gouffre du Cavernicole"
 
 centerline  
   #equate 0@vincent cavernicole@0-100     # stat 0 topo vincent = O nouvelle topo
-  equate 71@vincent-for-equate 16@100-130      # equate ancienne topo avec terminus nouvelle topo
+  equate 74@vincent-for-equate PTR1@alain-robert     # equate ancienne topo avec terminus nouvelle topo
 
   equate 0@pull-over 82@0-100
   equate 76@0-100 76A@j-innapercue
@@ -57,9 +58,10 @@ endcenterline
   input datas/pull-over/pull-over_p.th2
   input datas/100-130/100-130_p.th2
   input datas/alain-robert/datas/alain-robert/alain-robert_p.th2
+  input datas/alain-robert/datas/alain-robert/alain-robert_2_p.th2
   input datas/alain-robert/datas/salle-mimine-sup/salle-mimine-sup_p.th2
   input datas/alain-robert/datas/amont-marneux/amont-marneux_p.th2
-
+  input datas/vincent/vincent_p.th2
   #input datas/pull-over-aval/pull-over-aval.th2
   #input datas/j-innapercue/j-innapercue.th2
 
@@ -72,10 +74,13 @@ join lh_cav_pullover:end lh_cav_entree:end
 join l2h_cav_entree:0 l1h_cav_100-130:0
 join l2b_cav_entree:end l1h_cav_100-130:end
 
-# join alain-robert_sp1_l1d:0 #mettre ici l'aval 100-130
-# join alain-robert_sp1_l1g:end #mettre ici l'aval 100-130
-# join alain-robert_sp1_l3d:end #mettre ici la suite de la topo sous -130
-# join alain-robert_sp1_l3g:0 #mettre ici la suite de la topo sous -130
+
+ join alain-robert_sp1_l1d:0 l2b_cav_100-130:0
+ join alain-robert_sp1_l1g:end l2h_cav_100-130:end
+ join alain-robert_sp1_l3d:end l1d_cav_vincent:0
+ join alain-robert_sp1_l3g:0 l1g_cav_vincent:0
+ join alain-robert_sp1_l4g:0 l3h_cav_100-130:end 
+ join alain-robert_sp1_l4d:end l3b_cav_100-130:0 
 
 
 
@@ -103,3 +108,4 @@ join l2b_cav_entree:end l1h_cav_100-130:end
 
 
 endsurvey
+
