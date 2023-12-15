@@ -13,7 +13,10 @@ map cavernicole_plan -proj plan
    break
    100-130_mp
    break
-   #vincent_mp
+   alain-robert_mp
+   break
+   vincent_mp
+   break
 
 endmap
 ###
@@ -38,8 +41,8 @@ endmap
 
 #100-130
 map 100-130_mp
-   100-130_sp1
    100-130_sp2
+   100-130_sp1
 endmap
    
 
@@ -74,36 +77,60 @@ endmap
   break 
   endmap  
 
+## alain robert
 
+  map alain-robert_mp 
+      break
+            amont-marneux_sp1
+      break
+      
+      salle-mimine-sup_sp1
+      break
+      
+    alain-robert_2_sp3 #[-10 -10 m] below
+    break
+    alain-robert_2_sp2
+    break
+    alain-robert_2_sp4
+    break
+    alain-robert_2_sp1
+    break
+    alain-robert_sp2
+    break
+    alain-robert_sp1
+    break
+    
+
+endmap
 
  
 
     
 ## vincent 
-#  map vincent_mp
-#  Cavernicol_SP18
-#  Cavernicol_SP19
-#  Cavernicol_SP20
-#  Cavernicol_SP21
-#  Cavernicol_SP22
-#  Cavernicol_SP23
-#  #Cavernicol_SP24
-#  Cavernicol_SP25
-#  Cavernicol_SP26
-#  Cavernicol_SP27
-#  Cavernicol_SP28
-#  Cavernicol_SP28bis
-#  Cavernicol_SP29
-#  Cavernicol_SP30
-#  Cavernicol_SP31
-#  Cavernicol_SP32
-#  Cavernicol_SP33
-#  Cavernicol_SP34
-#  Cavernicol_SP35
-#  Cavernicol_SP36
-#  Cavernicol_SP37
-#  Cavernicol_SP38
-#  endmap
+  map vincent_mp
+ # Cavernicol_SP18
+  Cavernicol_SP19
+  Cavernicol_SP20
+  Cavernicol_SP21
+  Cavernicol_SP22
+  Cavernicol_SP23
+  #Cavernicol_SP24
+  Cavernicol_SP25
+  Cavernicol_SP26
+  Cavernicol_SP27
+  Cavernicol_SP28
+  Cavernicol_SP28bis
+  Cavernicol_SP29
+  Cavernicol_SP30
+  Cavernicol_SP31
+  Cavernicol_SP32
+  Cavernicol_SP33
+  Cavernicol_SP34
+  Cavernicol_SP35
+  Cavernicol_SP36
+  Cavernicol_SP37
+  Cavernicol_SP38
+  endmap
  
  
  
@@ -145,6 +172,4 @@ endmap
    #  break
    
    # endmap
-
-
 
