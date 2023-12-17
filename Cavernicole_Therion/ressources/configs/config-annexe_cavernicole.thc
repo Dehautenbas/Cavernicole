@@ -1,0 +1,239 @@
+encoding  utf-8
+
+################################# Layout général #############################
+layout layout_general
+    copy langue-fr
+    copy drawingconfig
+    #copy layoutmapborder   ### Pour avoir une bordure sur la topo
+    copy headerl
+
+
+ colour map-fg [96 96 86]   ###Couleur Galeries #Gris[80 80 80]#
+ color map-bg 96                         ### couleur du fond (80% blanc / 20% gris => 80)
+# colour map-bg [70 90 70]   ###VERT Background
+
+
+### Couleur du fond en fonction de l'altitude ou des maps à définir dans le layout plan
+
+    layers on           ### pour la génération du PDF en 1.5
+    transparency off     ### vue en transparence des galeries qui se superposent...
+    opacity 80          ### ... avec une opacité de 80%
+    rotate 0            ### rotation du nord géographique (en degré)
+
+    #symbol-colour point station-name [50 30 0]  ### changer la couleur des noms des points stations
+    symbol-colour line water-flow  [22 22 95]  ### changer la couleur des lignes "rivière"
+     ### changer la couleur des points "rivière"
+    symbol-colour point sink [22 22 95]        ### changer la couleur des points "perte"
+    symbol-colour area water [86 100 100]      ### changer la couleur des hachures des zones "eau" quand elles ne sont colorée en bleu
+    symbol-colour area sump [22 22 95]         ### changer la couleur des hachures des zones "siphon" quand elles ne sont colorée en bleu
+    symbol-colour line rock-edge [10 10 10]     # type de ligne utilisée pour le scrap surface
+    symbol-colour line label [10 10 10]         # type de ligne utilisée pour le scrap surface
+
+
+
+
+  ### pour avoir une belle échelle des longueurs et une belle orientation.
+    code metapost
+    def s_scalebar (expr l, units, txt) =
+      begingroup
+        interim warningcheck:=0;
+        tmpl:=l / Scale * cm * units / 2;
+        tmpx:=l / Scale * cm * units / 5;
+        tmph:=5bp; % bar height
+      endgroup;
+      pickup PenC;
+      draw (-tmpl+0.25*u/10,0)--(tmpl-0.25*u/10,0);
+      draw (tmpl-0.25*u/10,-tmph)--(-tmpl+0.25*u/10,-tmph);
+      p:=(0,0)--(tmpx,0)--(tmpx,-tmph)--(0,-tmph)--cycle;
+      for i:=-2.5 step 2 until 2:
+        fill p shifted (i * tmpx,0);
+      endfor;
+      begingroup
+        interim labeloffset:=3.5bp;
+        for i:=0 step (l/5) until (l-1):
+          tmpx:=tmpl * (i * 2 / l - 1);
+          label.bot(thTEX(decimal (i)),(tmpx,-tmph));
+        endfor;
+        label.bot(thTEX(decimal (l) & "\thinspace" & txt),(tmpl,-tmph));
+ #       label.top(thTEX("1 : " & decimal (Scale*100)),(0,0));
+      endgroup;
+    enddef;
+
+    def s_northarrow_SKBB (expr rot) =
+      T:=identity scaled 0.7 rotated -rot;
+        begingroup
+          interim defaultscale:=1;
+          label(btex Nord Géographique etex, (0,-1cm));
+        endgroup;
+      thdraw (-.5cm,-1cm)--(0,1.5cm)--(.5cm,-1cm)--(0,-.5cm)--cycle;
+      thfill (-.5cm,-1cm)--(0,1.5cm)--(0,-.5cm)--cycle;
+    enddef;
+  endcode
+
+  ### pour les cordes, les ancrges et les map connections :
+  code metapost
+    def l_u_rope (expr P) =
+      T:=identity;
+      pickup pensquare scaled (0.15u);
+      #pickup pensquare scaled (0.05u);
+      thdraw P withcolor (0.8,0.0,0.0);
+    enddef;
+
+    def p_anchor_MY (expr P,R,S,A)=
+       T:=identity aligned A rotated R scaled S shifted P;
+       # le rond du !
+       thfill (.15u,0u)..(0,.15u)..(-.15u,0u)..(0,-.15u)..cycle withcolor (0.6,0.0,0.0);
+    enddef;
+    initsymbol("p_anchor_MY");
+    let p_anchor = p_anchor_MY;
+
+    #def p_map-connection (expr P) =
+    #  T:=identity;
+    #  pickup pensquare scaled (0.15u);
+    #  #pickup pensquare scaled (0.05u);
+    #  thdraw P withcolor (0.8,0.0,0.0);
+    #enddef;
+ endcode
+
+  ### Pour les visées topo
+        code metapost
+            def l_survey_cave (expr p) =
+               draw p withpen PenD withcolor (1.0, 0.0, 0.0);
+            enddef;
+          endcode
+
+
+code metapost
+    def PenE =
+      pencircle scaled (0.1);
+    enddef;
+endcode
+
+code metapost
+     def l_border_visible (expr Path) =
+  T:=identity;
+  pickup PenE;
+  thdraw Path;
+enddef;
+endcode
+
+
+endlayout
+
+###################### plan #############################
+layout plan
+   copy layout_general
+  scale 1 250                                ### echelle  ordi: 1 100   //
+   #base-scale 1 50
+   legend-width 30 cm
+  grid bottom                                ### positionnement de la grille
+  grid-size 20 20 20 m                  ### dimension de la grille
+  grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
+  #color map-fg altitude                     ### couleur des galeries selon altitude, map ou scrap -> A définir
+  colour-legend off
+  map-header-bg on
+  map-header 40 0 nw                   ### positionnement du cartouche 5 15
+  debug station-names                  ### Afficher noms stations topo
+  legend-columns 6
+
+
+  map-comment "<br>\
+Localisation : Aulp du Seuil, UTM31 725986N 5029628E 1528m<br>\
+<br>\
+Exploration et topographie : SC Savoie 1972, SC Seine  1981, FJS 2020-2023<br>\
+<br>\
+Synthèse : Vincent FRANZI - Théophile CAILHOL - Martin KERN<br>\
+"
+
+
+code tex-map
+    \legendwidth=30cm
+    \legendtextsize={\size[15]}
+    \legendtextheadersize={\size[25]}
+    #\legendtextcolor={\color[0 0 100]}      # RGB values 0--100
+
+
+
+
+endlayout
+
+ ###################### coupe ######################
+layout coupe
+    copy layout_general
+  scale 1 250                                ### echelle  ordi: 1 100   //
+   #base-scale 1 50
+   legend-width 30 cm
+  #grid bottom                                ### positionnement de la grille
+  #grid-size 20 20 20 m                  ### dimension de la grille
+  grid-coords off                           ### border = sur les bords. off = pas de coordonnées. all = partout (horrible en plan)
+  #color map-fg altitude                     ### couleur des galeries selon altitude, map ou scrap -> A définir
+  colour-legend off
+  map-header-bg on
+  map-header 5 -5 nw                   ### positionnement du cartouche 5 15
+  #debug station-names                  ### Afficher noms stations topo
+  legend-columns 4
+
+
+  map-comment "<br>\
+Localisation : Massif des Lances de Malissard, Forêt de l'Aulp du Seuil<br>\
+UTM31 725986N 5029628E 1528m<br>\
+<br>\
+Exploration et topographie :<br>\
+SC Savoie 1972<br>\
+SC Seine  1981<br>\
+FJS 2020-2021<br>\
+<br>\
+Synthèse : Vincent FRANZI -Théophile CAILHOL - Martin KERN<br>\
+"
+
+
+code tex-map
+    \legendwidth=20cm
+    \legendtextsize={\size[25]}
+    \legendtextheadersize={\size[35]}
+    #\legendtextcolor={\color[0 0 100]}      # RGB values 0--100
+
+
+
+
+endlayout
+
+ ################################# Atlas en format A4  #############################
+   layout LayoutAtlasPortraitA4
+  copy layout_general
+  color map-bg 100                  ### couleur du fond (95% blanc => 95)
+  scale 1 250                       ### echelle
+  #symbol-hide group cave-centerline ### Ne pas afficher les stations topo
+  nav-factor  30
+  nav-size  1  1
+  page-setup  21  29.7  18  27.7  1.5  1  cm
+  #overlap    1  cm
+  size       16  22.6  cm
+endlayout LayoutAtlasPortraitA4
+
+
+
+################################# AUTRES #############################
+layout xvi-export
+ scale 1 250
+ # scale 1 100
+ grid-size 10 10 10 m
+endlayout
+
+### Pour morphing
+layout morphing
+      sketches on
+endlayout
+
+layout debug
+  debug all  #or debug all
+endlayout
+
+layout hide_centreline
+    symbol-hide group centerline
+endlayout
+
+layout centerline
+    symbol-hide group all
+    symbol-show group centerline
+endlayout

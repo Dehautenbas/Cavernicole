@@ -1,0 +1,153 @@
+encoding  utf-8
+
+survey cavernicole_global 
+
+# INPUT TH
+ input datas/th/cavernicole_entree.th
+ input datas/th/cavernicole_amont.th
+# input datas/th/cavernicole.th
+ input datas/th/100-130.th
+ input datas/th/aval-pull-over.th
+# input datas/th/j-innapercue.th
+ 
+ #INPUT TH2
+  input datas/th2/entree_plan.th2
+  input datas/th2/pulloverjaune_plan.th2
+ # input datas/th2/cavernicole.th2
+  input datas/th2/100-130.th2
+  #input datas/th2/aval-pull-over.th2
+  #input datas/th2/j-innapercue.th2
+ 
+ ##MAP
+ 
+ # aval pullover
+ 
+ #jonction innapercue
+ 
+ 
+ #100-130
+   map mp_cav_100-130_1
+  sp_cav_100-130_1
+  endmap
+  
+  map mp_cav_100-130_2
+  sp_cav_100-130_2 
+  endmap
+  
+  map mp_cav_100-130
+  mp_cav_100-130_1
+  break
+  mp_cav_100-130_2 [-10 -10] below
+  endmap
+  
+ 
+ #entree
+   map mp_cav_entree
+   sp_cav_entree_1
+   sp_cav_entree_2
+   sp_cav_entree_3
+   sp_cav_entree_4
+   endmap
+    
+ # cav 
+ #map mp_cav_fond
+ #Cavernicol_SP16
+ #Cavernicol_SP17
+ #Cavernicol_SP18
+ #Cavernicol_SP19
+ #Cavernicol_SP20
+ #Cavernicol_SP21
+ #Cavernicol_SP22
+ #Cavernicol_SP23
+ #Cavernicol_SP24
+ #Cavernicol_SP25
+ #Cavernicol_SP26
+ #Cavernicol_SP27
+ #Cavernicol_SP28
+ #Cavernicol_SP28bis
+ #Cavernicol_SP29
+ #Cavernicol_SP30
+ #Cavernicol_SP31
+ #Cavernicol_SP32
+ #Cavernicol_SP33
+ #Cavernicol_SP34
+ #Cavernicol_SP35
+ #Cavernicol_SP36
+ #Cavernicol_SP37
+ #Cavernicol_SP38
+ #endmap
+ 
+ #amont pullover
+   map m1_cav_pullover
+  sp_cav_pullover_0
+  sp_cav_pullover_1
+  sp_cav_pullover_3
+  endmap
+  
+  map m2_cav_pullover
+  sp_cav_pullover_2
+  sp_cav_pullover_7
+  sp_cav_pullover_8
+  endmap
+  
+  map m3_cav_pullover
+  sp_cav_pullover_5
+  endmap
+  
+  map mp123_cav_pullover
+  m1_cav_pullover 
+  break 
+   m2_cav_pullover [0 55] below
+   break 
+  m3_cav_pullover [0 20] below
+  endmap
+ 
+ #global 
+ map mp_cav_global
+ mp123_cav_pullover
+ mp_cav_entree
+ #mp_cav_fond
+ mp_cav_100-130
+ endmap
+
+##Jonction de topo
+#PTR 1 22
+
+equate 35@100-130 0@100-130
+
+join l10_cav_100-130:end l3_cav_entree:end
+
+join l11_cav_100-130:0 l5_cav_entree:0
+
+equate 82@cavernicole_entree 0@cavernicole_amont equate  0@100-130 #49@cavernicole
+
+join sp_cav_entree_4 sp_cav_pullover_0
+
+#join sp_cav_entree_4 Cavernicol_SP16
+
+join l1_cav_entree:end l1_cav_pullover:end
+
+join l2_cav_entree:0 l2_cav_pullover:end
+
+#join l3_cav_entree:end l1_cav:0
+
+#join l5_cav_entree:0 l2_cav:0
+
+#Depart 76@cavernicole_entree = PTR 5 22 JONCTION fin topo  64@cavernicole_amont=PTR 4 22 #a jonctionner avec topo jonction innapercue
+
+join sp_cav_entree_3 sp_cav_pullover_2
+
+join l4_cav_entree:end l5_cav_pullover:end
+
+join l6_cav_entree:end l7_cav_pullover:end
+
+# PTR 2 22 = 19@cavernicole_amont =0@aval-pull-over
+
+equate 19@cavernicole_amont 0@aval-pull-over
+
+#PTR Jonction actif en bas du P7
+equate 53@aval-pull-over 9@100-130
+ 
+
+endsurvey
+

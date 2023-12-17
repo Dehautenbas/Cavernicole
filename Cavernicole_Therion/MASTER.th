@@ -1,0 +1,49 @@
+encoding  utf-8
+survey Master -title "Cavernicole"
+
+   input cavernicole_amont.th
+    input cavernicole_entree.th
+    
+    equate 0@cavernicole_amont 82@cavernicole_entree
+
+   #input pulloverjaune_plan.th2
+   #input entree_plan.th2
+   input pulloverjaune_coupe.th2
+   input entree_coupe.th2
+   
+   join sc_cav_entree_5 sc_cav_amont_0
+   
+   join sc_1:0 entree_l1:end
+   join sc_2:end entree_2:0
+   
+   map cavernicole_master -proj extended
+   cavernicole_entree
+   cavernicole_amont
+   endmap
+   
+  # map m1
+  #sp_cav_pullover_0
+  #sp_cav_pullover_1
+  #sp_cav_pullover_3
+  #endmap
+  
+ # map m2
+  #sp_cav_pullover_2
+  #sp_cav_pullover_7
+  #sp_cav_pullover_8
+  #endmap
+  
+  # map m3
+  #sp_cav_pullover_5
+  #endmap
+  
+  # map m123
+  #m1
+  #break [40 0] below
+  #m2 
+  #break [40 0] below
+  #m3
+  #endmap
+
+endsurvey
+
