@@ -11,6 +11,8 @@ map cavernicole_plan -proj plan
    break
    0-100_mp
    break
+   reseau-alain-robert_mp@reseau-alain-robert_tot
+   break
    100-130_mp
    break
    #vincent_mp
@@ -38,8 +40,11 @@ endmap
 
 #100-130
 map 100-130_mp
-   100-130_sp1
-   100-130_sp2
+   0-100_sp6
+   break
+   0-100_sp7
+   #100-130-normal_sp1
+   #100-130_sp2
 endmap
    
 
@@ -47,6 +52,8 @@ endmap
   sp_cav_pullover_0
   break
   sp_cav_pullover_3
+  break
+  pull-over-aval_sp1
   endmap
   
   map m4_cav_pullover
@@ -80,30 +87,30 @@ endmap
 
     
 ## vincent 
-#  map vincent_mp
-#  Cavernicol_SP18
-#  Cavernicol_SP19
-#  Cavernicol_SP20
-#  Cavernicol_SP21
-#  Cavernicol_SP22
-#  Cavernicol_SP23
-#  #Cavernicol_SP24
-#  Cavernicol_SP25
-#  Cavernicol_SP26
-#  Cavernicol_SP27
-#  Cavernicol_SP28
-#  Cavernicol_SP28bis
-#  Cavernicol_SP29
-#  Cavernicol_SP30
-#  Cavernicol_SP31
-#  Cavernicol_SP32
-#  Cavernicol_SP33
-#  Cavernicol_SP34
-#  Cavernicol_SP35
-#  Cavernicol_SP36
-#  Cavernicol_SP37
-#  Cavernicol_SP38
-#  endmap
+ map vincent_mp
+ #Cavernicol_SP18
+ Cavernicol_SP19
+ Cavernicol_SP20
+ Cavernicol_SP21
+ Cavernicol_SP22
+ Cavernicol_SP23
+ #Cavernicol_SP24
+ Cavernicol_SP25
+ Cavernicol_SP26
+ Cavernicol_SP27
+ Cavernicol_SP28
+ Cavernicol_SP28bis
+ Cavernicol_SP29
+ Cavernicol_SP30
+ Cavernicol_SP31
+ Cavernicol_SP32
+ Cavernicol_SP33
+ Cavernicol_SP34
+ Cavernicol_SP35
+ Cavernicol_SP36
+ Cavernicol_SP37
+ Cavernicol_SP38
+ endmap
  
  
  

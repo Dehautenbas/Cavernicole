@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -130.0 -130.0 2654.5 912.0
+##XTHERION## xth_me_area_adjust -130.0 -130.0 2656.0 912.0
 ##XTHERION## xth_me_area_zoom_to 200
 
 
@@ -125,7 +125,7 @@ line floor-meander
   smooth off
 endline
 
-point 2246.75 482.75 label -text [Stalagmite mal placée] -scale xs
+point 2287.25 542.25 label -text [Stalagmite mal placée] -scale xs
 
 line rock-border -close off
   2230.5 520.25
@@ -134,9 +134,14 @@ line rock-border -close off
   smooth off
 endline
 
+line label -text "Amonts du pull-over jaune
+  2240.5 501.5
+  2240.5 501.5 2454.5 456.0 2466.5 454.0
+endline
+
 line gradient -reverse on
-  2228.0 507.5
-  2224.0 498.5 2230.0 490.0 2230.0 490.0
+  2227.0 531.0
+  2234.5 534.5 2250.5 539.5 2250.5 539.5
   smooth off
 endline
 
@@ -297,6 +302,7 @@ line wall
   1651.75 669.0 1717.75 661.5 1724.5 653.5
   1731.25 645.5 1752.5 651.0 1742.25 639.5
   1732.0 628.0 1732.5 613.0 1725.75 608.75
+  smooth off
 endline
 
 line wall
@@ -433,6 +439,7 @@ endline
 line label -text " ressauts 27m" -scale xs
   1705.0 648.0
   1705.0 648.0 1750.5 599.0 1856.0 613.5
+  smooth off
 endline
 
 point 1630.5 671.75 map-connection

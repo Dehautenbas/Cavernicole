@@ -1,6 +1,11 @@
 encoding  utf-8
 
 survey reseau-alain-robert_tot -title reseau-alain-robert_tot
+
+# Import des maps
+	input reseau-alain-robert_mp.th
+  
+
    input datas/alain-robert/alain-robert_tot.th
    input datas/amont-marneux/amont-marneux_tot.th
    input datas/salle-mimine-sup/salle-mimine-sup_tot.th

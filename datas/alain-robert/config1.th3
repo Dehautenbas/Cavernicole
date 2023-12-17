@@ -1,14 +1,12 @@
 encoding  utf-8
 
-# 1-SOURCES 
+# SOURCES 
 source reseau-alain-robert_tot.th
 
 # Add config file
 input ../../config2.th3
 input ../../config3.th3
 
-#DEM
-#source ../GIS/DEM.th
 
 
 
@@ -17,7 +15,7 @@ input ../../config3.th3
 ######################################################################################
 
 
-select reseau-alain-robert_mp
+select reseau-alain-robert_mp@reseau-alain-robert_tot
 
 
 

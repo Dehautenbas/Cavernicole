@@ -3,7 +3,9 @@ survey alain-robert -title "alain-robert"
 
   centerline
     date 2023.11.21 
-    # team théo, martin, david 
+     team "Théophile Cailhol" 
+     team "Martin Kern" 
+     team "David Parrot"
     units length meters
     units compass clino degrees
     data normal from to length compass clino

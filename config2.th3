@@ -35,7 +35,7 @@ layout plan
   scale 1  200
   #base-scale 1 50
 
-  map-header 110 0 nw              ### positionnement du cartouche 
+  map-header 0 0 nw              ### positionnement du cartouche 
   scale-bar 25 m
   copy scalebar_horiz
   #copy scalebar_vert
@@ -52,13 +52,13 @@ Synthèse et dessin : Martin Kern, Théophile Caihol <br>\
 
 	statistics copyright all
 
-#   code tex-map
-#       \legendwidth=12cm
-#       \legendtextsize={\size[8]}
-#       \legendtextheadersize={\size[18]} %%% Taille du titre
-#       \legendtextsectionsize={\size[12]} %%% Taille du titre
-#       #\legendtextcolor={\color[0 0 110]}      %# RGB values 0--100
-#    endcode
+  code tex-map
+      \legendwidth=20cm
+      \legendtextsize={\size[12]}
+      \legendtextheadersize={\size[32]} %%% Taille du titre
+      \legendtextsectionsize={\size[16]} %%% Taille du titre
+      #\legendtextcolor={\color[0 0 110]}      %# RGB values 0--100
+   endcode
  
 
 ### To scale NorthArrow, find in Master : "% scale your north arrow here"

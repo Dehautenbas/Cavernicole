@@ -1,0 +1,12 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -144.0 -144.0 9104.0 5392.0
+##XTHERION## xth_me_area_zoom_to 400
+
+
+
+scrap 100-130-normal_sp1 -projection plan -station-names "" "@100-130-normal" -scale [7194.84 4123.97 9025.644 4123.97 0.0 0.0 46.5024216 0.0 m]
+
+
+endscrap
+
+

@@ -10,11 +10,10 @@ survey cavernicole-tot -title "Gouffre du Cavernicole"
   input datas/pull-over/pull-over.th
   input datas/0-100/0-100.th
   input datas/j-innapercue/j-innapercue.th
-  input datas/pull-over-aval/aval-pull-over.th
-  input datas/100-130/100-130.th
-  input datas/alain-robert/datas/alain-robert/alain-robert.th
-  input datas/alain-robert/datas/salle-mimine-sup/salle-mimine-sup.th
-  input datas/alain-robert/datas/amont-marneux/amont-marneux.th
+  input datas/pull-over-aval/pull-over-aval.th
+  input datas/100-130/100-130-normal.th
+  input datas/100-130/100-130-escalade.th
+  input datas/alain-robert/reseau-alain-robert_tot.th
   #input datas/
   #input datas/
   #input datas/
@@ -27,20 +26,18 @@ survey cavernicole-tot -title "Gouffre du Cavernicole"
 
 centerline  
   #equate 0@vincent cavernicole@0-100     # stat 0 topo vincent = O nouvelle topo
-  equate 71@vincent-for-equate 16@100-130      # equate ancienne topo avec terminus nouvelle topo
+  equate 74@vincent-for-equate PTR1@alain-robert.alain-robert_tot.reseau-alain-robert_tot      # equate ancienne topo avec terminus nouvelle topo
 
   equate 0@pull-over 82@0-100
   equate 76@0-100 76A@j-innapercue
   equate 65@pull-over 76Q@j-innapercue
-  equate 19@pull-over 0@aval-pull-over
-  equate 82@0-100 0@100-130
-  equate 34@100-130 82@0-100
-  equate 53@aval-pull-over 9@100-130      #PTR Jonction actif en bas du P7
-  equate 0@alain-robert 16@100-130      #PTR actif bas escalade 100-130
-  equate PTR5@alain-robert PTR5@amont-marneux
-  equate PTR7@alain-robert PTR7@salle-mimine-sup
-  equate PTR7@alain-robert PTR7@salle-mimine-sup
-  #equate 97@alain-robert 97@amont-marneux
+  equate 19@pull-over 0@pull-over-aval
+  equate 82@0-100 0@100-130-normal
+  equate 16@100-130-normal 16@100-130-escalade
+  equate 34@100-130-escalade 82@0-100
+  equate 53@pull-over-aval 9@100-130-normal      #PTR Jonction actif en bas du P7
+  equate 0@alain-robert.alain-robert_tot.reseau-alain-robert_tot 16@100-130-normal     #PTR actif bas escalade 100-130
+
 
 endcenterline
 
@@ -55,13 +52,9 @@ endcenterline
 
   input datas/0-100/0-100_p.th2
   input datas/pull-over/pull-over_p.th2
-  input datas/100-130/100-130_p.th2
-  input datas/alain-robert/datas/alain-robert/alain-robert_p.th2
-  input datas/alain-robert/datas/salle-mimine-sup/salle-mimine-sup_p.th2
-  input datas/alain-robert/datas/amont-marneux/amont-marneux_p.th2
-
-  #input datas/pull-over-aval/pull-over-aval.th2
-  #input datas/j-innapercue/j-innapercue.th2
+  input datas/100-130/100-130-normal_p.th2
+  input datas/pull-over-aval/pull-over-aval_p.th2
+  input datas/vincent/vincent_p.th2
 
 
   ########## Raccordement des .th2 ##########
@@ -69,8 +62,11 @@ join pullover_l1h:0 0-100_sp5_l1h:0
 join pullover_l1b:0 0-100_sp5_l1b:end
 join lb_cav_pullover:end lb_cav_entree:0
 join lh_cav_pullover:end lh_cav_entree:end
-join l2h_cav_entree:0 l1h_cav_100-130:0
-join l2b_cav_entree:end l1h_cav_100-130:end
+join 100-130_sp7_l1h:end pull-over-aval_h:end
+join 100-130_sp7_l1b:0 pull-over-aval_b:end
+join 0-100_sp7 alain-robert_sp1@alain-robert_tot.reseau-alain-robert_tot
+
+
 
 # join alain-robert_sp1_l1d:0 #mettre ici l'aval 100-130
 # join alain-robert_sp1_l1g:end #mettre ici l'aval 100-130
