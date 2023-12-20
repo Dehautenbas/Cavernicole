@@ -1,9 +1,9 @@
 encoding  utf-8
 map reseau-alain-robert_mp -title reseau-alain-robert_mp
-    
-    alain-robert_mp@alain-robert_tot
+    mp1_alain-robert@alain-robert_tot
+    mp2_alain-robert@alain-robert_tot [60 0 m] above
+    mp3_alain-robert@alain-robert_tot
     amont-marneux_mp@amont-marneux_tot
-    salle-mimine-sup_mp@salle-mimine-sup_tot
-  
+    salle-mimine-sup_mp@salle-mimine-sup_tot [60 0 m] above
 endmap
 

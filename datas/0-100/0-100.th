@@ -5,6 +5,7 @@ survey 0-100 -title "0-100"
 
 
   centerline
+    explo-date 1967
     date 2023.07.15 
     #team "Zoé"
     #team "Rémi"
@@ -15,7 +16,7 @@ survey 0-100 -title "0-100"
     
     station cavernicole "Cavernicole" entrance
     cs UTM31
-    fix cavernicole 725986 5029628 0 #1528m
+    fix cavernicole 725986 5029628 0 #1528
     
     extend left
     cavernicole 1 1.88 277.1 -31.7

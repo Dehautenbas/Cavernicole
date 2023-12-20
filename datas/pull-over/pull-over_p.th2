@@ -1,6 +1,6 @@
 encoding  utf-8
 ##XTHERION## xth_me_area_adjust -130.0 -130.0 2656.0 912.0
-##XTHERION## xth_me_area_zoom_to 200
+##XTHERION## xth_me_area_zoom_to 100
 
 
 
@@ -137,6 +137,7 @@ endline
 line label -text "Amonts du pull-over jaune
   2240.5 501.5
   2240.5 501.5 2454.5 456.0 2466.5 454.0
+  smooth off
 endline
 
 line gradient -reverse on
@@ -253,6 +254,8 @@ line chimney -close off
   1924.5 575.5 1924.5 593.5 1909.5 597.0
   smooth off
 endline
+
+point 2052.5 565.5 map-connection
 
 line wall -id pullover_l1b -reverse on
   2048.5 560.5
@@ -469,6 +472,27 @@ endscrap
 
 scrap sp_cav_pullover_3 -projection plan -station-names "" "@pull-over" -scale [-128.0 -128.0 2805.16 -128.0 0.0 0.0 74.502264 0.0 m]
 
+line arrow
+  1109.0 527.5
+  1041.5 564.0
+endline
+
+point 1142.5 526.5 label -text "Niveau inter."
+
+point 1142.75 504.25 label -text "Niveau sup."
+
+point 1141.5 548.0 label -text "Niveau inf."
+
+line arrow
+  1177.5 525.0
+  1330.0 389.0
+endline
+
+line arrow
+  1112.0 503.0
+  1000.5 498.0
+endline
+
 point 1011.5 640.0 blocks -orientation 60.0 -scale s
 
 point 957.0 655.25 blocks -orientation 0.0
@@ -616,6 +640,7 @@ line wall -subtype bedrock
   1056.97 677.64 1040.75 678.25 1032.75 678.5
   1024.75 678.75 824.5 695.5 809.0 676.5
   793.5 657.5 789.0 662.0 806.25 651.0
+  altitude .
   823.5 640.0 884.75 651.25 904.75 639.25
   924.75 627.25 955.25 640.25 958.75 619.5
   962.25 598.75 941.75 589.0 937.5 586.25
@@ -751,6 +776,8 @@ line wall -reverse on -subtype presumed
   314.75 697.75
   272.75 702.25
 endline
+
+point 276.0 706.0 map-connection
 
 line wall -subtype presumed
   317.75 715.25
@@ -947,6 +974,8 @@ line wall
   942.25 675.25 945.5 675.75 945.5 675.75
   smooth off
 endline
+
+point 1469.5 540.5 label -text "Niveau inter." -scale l
 
 line wall
   923.5 660.0
@@ -1199,32 +1228,15 @@ line gradient
   smooth off
 endline
 
+point 711.0 291.0 map-connection
+
 line contour
   860.0 320.25
   860.0 320.25 843.0 266.75 865.0 257.5
   smooth off
 endline
 
-line arrow
-  1109.0 527.5
-  1041.5 564.0
-endline
-
-point 1142.5 526.5 label -text "Niveau inter."
-
-point 1142.75 504.25 label -text "Niveau sup."
-
-point 1141.5 548.0 label -text "Niveau inf."
-
-line arrow
-  1177.5 525.0
-  1330.0 389.0
-endline
-
-line arrow
-  1112.0 503.0
-  1000.5 498.0
-endline
+point 1151.5 465.5 label -text "Niveau sup." -scale l
 
 line wall
   954.25 615.25

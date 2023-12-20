@@ -24,6 +24,7 @@ endline
 
 line wall -id alain-robert_sp1_l3g
   603.5 606.5
+  altitude .
   603.5 606.5 568.0 602.5 557.5 602.0
   smooth off
   subtype unsurveyed
@@ -100,8 +101,6 @@ point 764.5 517.5 label -text "?"
 
 point 846.0 601.0 label -text "?"
 
-point 1084.5 706.0 label -text "imp."
-
 point 1001.5 727.0 label -text "R5"
 
 line pit -reverse on
@@ -143,8 +142,6 @@ line pit -reverse on
 endline
 
 point 895.0 522.5 label -text "P10<br>Puits Alain"
-
-point 615.5 592.0 label -text "Aval Cavernicole"
 
 point 540.0 497.0 label -text "P25"
 

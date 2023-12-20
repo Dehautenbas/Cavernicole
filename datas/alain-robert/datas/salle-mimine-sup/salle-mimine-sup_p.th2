@@ -119,6 +119,8 @@ line pit
   smooth off
 endline
 
+point 1397.5 2053.5 map-connection
+
 line wall -close on -reverse on
   1540.75 1952.75
   1535.0 1953.25 1507.75 1978.0 1502.25 1980.25

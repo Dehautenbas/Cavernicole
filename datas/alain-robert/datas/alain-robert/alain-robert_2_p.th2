@@ -1042,6 +1042,8 @@ line wall -reverse on -subtype presumed
   smooth off
 endline
 
+point 1764.0 2379.0 map-connection
+
 line wall -reverse on
   1719.5 2329.5
   1722.0 2332.5 1745.0 2360.5 1747.5 2366.5

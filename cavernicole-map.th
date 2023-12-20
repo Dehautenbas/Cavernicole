@@ -3,7 +3,7 @@ encoding  utf-8
 ######################## définition des scraps à faire apparaitre sur le PLAN  ################################
 
 
-### PLAN 
+ #################################     MAP générale (map de maps)     ##################################################################
 map cavernicole_plan -proj plan
    m4_cav_pullover [0 -12 m] above
    break
@@ -11,15 +11,18 @@ map cavernicole_plan -proj plan
    break
    0-100_mp
    break
-   reseau-alain-robert_mp@reseau-alain-robert_tot
+   reseau-alain-robert_mp@reseau-alain-robert_tot  #Le décalage est dans la map "reseau-alain-robert_mp"
    break
    100-130_mp
    break
-   #vincent_mp
+   vincent_mp
 
 endmap
-###
 
+
+
+
+ #################################     Découpe des maps     ##################################################################
 
 
 #0-100
@@ -35,85 +38,148 @@ break
 0-100_sp4
 break
 sp_cav_pullover_1
+break
+pull-over-aval_sp1
+break
 endmap
 
 
 #100-130
 map 100-130_mp
+   100-130-escalade_sp1
+   break
+   100-130-escalade_sp2
+   break
    0-100_sp6
    break
    0-100_sp7
-   #100-130-normal_sp1
-   #100-130_sp2
+   break
+   alain-robert_sp1@alain-robert_tot.reseau-alain-robert_tot
+   break
 endmap
    
 
+#Pullover
+map mp123_cav_pullover
+  m2_cav_pullover [0 -40 m] above
+  break
+  m1_cav_pullover 
+  break 
+  m3_cav_pullover [0 -80 m] above
+  break 
+  endmap 
   map m1_cav_pullover
   sp_cav_pullover_0
   break
   sp_cav_pullover_3
   break
-  pull-over-aval_sp1
-  endmap
+endmap
   
-  map m4_cav_pullover
-  sp_cav_pullover_9
-  endmap
+      map m4_cav_pullover
+         sp_cav_pullover_9
+      endmap
 
-  map m2_cav_pullover
-  sp_cav_pullover_2
-  break
-  sp_cav_pullover_7 #sup
-  break
-  sp_cav_pullover_8  #sup suite
-  endmap
+      map m2_cav_pullover #sup
+         sp_cav_pullover_2
+         break
+         sp_cav_pullover_7 
+         break
+         sp_cav_pullover_8  
+      endmap
 
-  map m3_cav_pullover
-  sp_cav_pullover_5
-  endmap
+      map m3_cav_pullover
+         sp_cav_pullover_5
+      endmap
   
-  map mp123_cav_pullover
-  m2_cav_pullover
-  break
-  m1_cav_pullover 
-  break 
-  m3_cav_pullover [0 -40 m] above
-  break 
-  endmap  
 
 
-
+#Vincent 
+map vincent_mp
+   Cavernicol_SP19
+   break
+   Cavernicol_SP20
+   break
+   Cavernicol_SP21
+   break
+   Cavernicol_SP22
+   break
+   Cavernicol_SP23
+   break
+   Cavernicol_SP25
+   break
+   Cavernicol_SP26
+   break
+   Cavernicol_SP27
+   break
+   Cavernicol_SP28
+   break
+   Cavernicol_SP28bis
+   break
+   Cavernicol_SP29
+   break
+   Cavernicol_SP30
+   break
+   Cavernicol_SP31
+   break
+   Cavernicol_SP32
+   break
+   Cavernicol_SP33
+   break
+   Cavernicol_SP34
+   break
+   Cavernicol_SP35
+   break
+   Cavernicol_SP36
+   break
+   Cavernicol_SP37
+   break
+   Cavernicol_SP38
+   break
+endmap
  
 
-    
-## vincent 
- map vincent_mp
- #Cavernicol_SP18
- Cavernicol_SP19
- Cavernicol_SP20
- Cavernicol_SP21
- Cavernicol_SP22
- Cavernicol_SP23
- #Cavernicol_SP24
- Cavernicol_SP25
- Cavernicol_SP26
- Cavernicol_SP27
- Cavernicol_SP28
- Cavernicol_SP28bis
- Cavernicol_SP29
- Cavernicol_SP30
- Cavernicol_SP31
- Cavernicol_SP32
- Cavernicol_SP33
- Cavernicol_SP34
- Cavernicol_SP35
- Cavernicol_SP36
- Cavernicol_SP37
- Cavernicol_SP38
+
+
+ #################################     Pour les couleurs     ##################################################################
+ map mp_newexplo
+   reseau-alain-robert_mp@reseau-alain-robert_tot
+   break
+   mp_0-100_sp5
+   break
+   m4_cav_pullover
+   break
+   mp123_cav_pullover
  endmap
- 
- 
- 
+
+map mp_oldexplo
+   0-100_sp1
+   break
+   0-100_sp2
+   break
+   0-100_sp3
+   break
+   0-100_sp4
+   break
+   0-100_sp6
+   break
+   0-100_sp7
+   break
+   alain-robert_sp1@alain-robert_tot.reseau-alain-robert_tot
+   break
+   sp_cav_pullover_1
+endmap
+
+
+map mp_0-100_sp5  #Pour intégrer dans la map newexplo et éviter un beug
+   0-100_sp5
+   break
+   pull-over-aval_sp1
+   break
+   100-130-escalade_sp1
+   break
+   100-130-escalade_sp2
+endmap 
+
 
 
 

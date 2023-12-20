@@ -4,7 +4,10 @@ survey cavernicole-tot -title "Gouffre du Cavernicole"
 	input cavernicole-map.th
 
   ########## Inclusion des .th ##########
-  #input datas/vincent/vincent.th
+        #Seulement pour les stats :
+            # input datas/vincent/vincent.th
+            # equate 0@vincent cavernicole@0-100     # stat 0 topo vincent = O nouvelle topo
+
   input datas/vincent/vincent-for-equate.th
 
   input datas/pull-over/pull-over.th
@@ -25,8 +28,7 @@ survey cavernicole-tot -title "Gouffre du Cavernicole"
   ########## Raccordement .th ##########
 
 centerline  
-  #equate 0@vincent cavernicole@0-100     # stat 0 topo vincent = O nouvelle topo
-  equate 74@vincent-for-equate PTR1@alain-robert.alain-robert_tot.reseau-alain-robert_tot      # equate ancienne topo avec terminus nouvelle topo
+  equate 72@vincent-for-equate PTR1@alain-robert.alain-robert_tot.reseau-alain-robert_tot      # equate ancienne topo avec terminus nouvelle topo
 
   equate 0@pull-over 82@0-100
   equate 76@0-100 76A@j-innapercue
@@ -52,7 +54,7 @@ endcenterline
 
   input datas/0-100/0-100_p.th2
   input datas/pull-over/pull-over_p.th2
-  input datas/100-130/100-130-normal_p.th2
+  input datas/100-130/100-130-escalade_p.th2
   input datas/pull-over-aval/pull-over-aval_p.th2
   input datas/vincent/vincent_p.th2
 
@@ -65,6 +67,10 @@ join lh_cav_pullover:end lh_cav_entree:end
 join 100-130_sp7_l1h:end pull-over-aval_h:end
 join 100-130_sp7_l1b:0 pull-over-aval_b:end
 join 0-100_sp7 alain-robert_sp1@alain-robert_tot.reseau-alain-robert_tot
+join alain-robert_sp1@alain-robert_tot.reseau-alain-robert_tot Cavernicol_SP19
+join l2b_cav_entree:end l100-130-escalade:0
+join l3h_cav_entree:end l100-130-escalade:end
+
 
 
 

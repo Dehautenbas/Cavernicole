@@ -1,21 +1,21 @@
 encoding  utf-8
-map alain-robert_mp -title alain-robert_mp
-    
-    
-    break
-    alain-robert_2_sp3 #[-10 -10 m] below
-    break
+map mp1_alain-robert
+    alain-robert_2_sp3
+    break 
+endmap
+
+map mp2_alain-robert
     alain-robert_2_sp2
     break
     alain-robert_2_sp4
     break
+endmap
+
+map mp3_alain-robert
     alain-robert_2_sp1
     break
     alain-robert_sp2
     break
-    alain-robert_sp1
-    break
-    
-  
 endmap
+
 

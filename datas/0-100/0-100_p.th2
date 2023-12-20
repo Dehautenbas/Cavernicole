@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -1630.5 -191.25 1195.5 1483.25
+##XTHERION## xth_me_area_adjust -1630.5 -191.25 1196.5 1484.5
 ##XTHERION## xth_me_area_zoom_to 400
 ##XTHERION## xth_me_image_insert {318.23900000000003 1 1.0} {275.275 0} ../100-130/100-130-normal_p.xvi 0 {}
 ##XTHERION## xth_me_image_insert {-1108.8 1 1.0} {507.62100000000004 0} ../pull-over-aval/pull-over-aval_p.xvi 0 {}
@@ -802,7 +802,7 @@ line wall -id l100-888-1014
   smooth off
 endline
 
-point 651.25 804.0 label -text R2 -scale xl
+point 651.25 804.0 label -text R2
 
 point 1047.75 1059.5 label -text "P7<br>Pts du clown" -scale s
 
@@ -1181,12 +1181,16 @@ line wall -id l2h_cav_entree
   smooth off
 endline
 
+line wall -id l3h_cav_entree
+  370.5 261.75
+  370.5 261.75 361.5 264.0 367.5 258.25
+endline
+
 line wall -id l2b_cav_entree
   295.75 274.75
   302.0 278.0
   302.0 278.0 308.5 280.25 315.0 276.5
-  321.5 272.75 370.5 261.75 370.5 261.75
-  smooth off
+  321.5 272.75 355.5 265.25 363.0 257.75
 endline
 
 line wall -id lb_cav_entree
@@ -1353,6 +1357,15 @@ line wall -id 100-130_sp7_l1h
   smooth off
 endline
 
+line chimney -close on
+  711.0 89.75
+  701.0 88.75 699.5 88.25 698.5 82.5
+  697.5 76.75 697.75 69.25 702.75 66.0
+  707.75 62.75 712.0 63.5 715.5 67.5
+  719.0 71.5 724.75 81.5 722.75 83.0
+  720.75 84.5 721.0 90.75 711.0 89.75
+endline
+
 line wall -id 100-130_sp7_l1b
   315.75 167.0
   315.75 167.0 324.25 160.0 324.25 158.25
@@ -1369,6 +1382,7 @@ line wall -id 100-130_sp7_l1b
   619.25 56.75 643.75 52.5 651.75 49.75
   659.75 47.0 690.0 25.0 698.75 34.25
   709.05 45.13 723.26 88.47 742.75 88.0
+  smooth off
 endline
 
 endscrap

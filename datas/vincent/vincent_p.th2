@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -136.0 -168.0 8794.0 7055.120000000001
+##XTHERION## xth_me_area_adjust -136.0 -136.0 8540.0 7055.120000000001
 ##XTHERION## xth_me_area_zoom_to 50
 ##XTHERION## xth_me_image_insert {2334.52 0 1.0} {6927.120000000001 0} X.xvi 0 {}
 
@@ -35,12 +35,9 @@ line wall
   5250.0 913.0
 endline
 
-point 5160.0 857.0 altitude -align bottom
-
 line wall -id l1d_cav_vincent
-  4716.0 952.0
-  4716.0 952.0 4748.0 967.0 4758.0 974.0
-  4768.0 981.0 4799.0 982.0 4804.0 968.0
+  4758.0 974.0
+  4771.52 965.18 4799.0 982.0 4804.0 968.0
   4809.0 954.0 4874.0 948.0 4874.0 948.0
   smooth off
   4960.0 960.0
@@ -60,8 +57,7 @@ line wall -id l1d_cav_vincent
 endline
 
 line wall -id l1g_cav_vincent -reverse on
-  4702.0 996.0
-  4702.0 996.0 4752.0 1022.0 4776.0 1010.0
+  4776.0 1010.0
   4800.0 998.0 4805.0 994.0 4877.0 988.0
   4949.0 982.0 5008.0 977.0 5008.0 977.0
   smooth off
@@ -134,6 +130,7 @@ endline
 line wall
   5869.0 1150.0
   5837.0 1132.0
+  altitude .
   5837.0 1132.0 5815.0 1113.0 5808.0 1112.0
   5801.0 1111.0 5793.0 1118.0 5788.0 1130.0
   5783.0 1142.0 5772.0 1125.0 5772.0 1125.0
@@ -158,13 +155,14 @@ line wall
   5515.0 1200.0 5519.0 1227.0 5521.0 1231.0
   5523.0 1235.0 5532.0 1252.0 5532.0 1252.0
   smooth off
+  altitude .
 endline
 
-point 5353.0 1423.0 label -text Affluent -align top-left
+point 5415.0 1320.0 label -text Affluent -align top-left
 
 line rock-edge -clip off
   5501.0 1278.0
-  5374.0 1399.0
+  5461.0 1309.0
 endline
 
 line wall
@@ -202,11 +200,11 @@ endline
 line rock-edge -clip off
 endline
 
-point 5532.0 710.0 label -align bottom-left -text P26
+point 5830.0 1016.0 label -align bottom-left -text P26
 
 line rock-edge -clip off
   5906.0 1088.0
-  5564.0 739.0
+  5865.0 1039.0
 endline
 
 line wall -reverse on
@@ -234,6 +232,7 @@ line wall -reverse on
   6109.0 990.0
   6109.0 990.0 6102.0 1012.0 6097.0 1017.0
   6092.0 1022.0 6075.0 1007.0 6074.0 1033.0
+  altitude .
   6073.0 1059.0 6075.0 1063.0 6087.0 1066.0
   6099.0 1069.0 6127.0 1068.0 6104.0 1090.0
   smooth off
@@ -242,18 +241,14 @@ endline
 line rock-edge -clip off
 endline
 
-point 6298.0 1406.0 label -text P26 -align top
-
-line rock-edge -clip off
-  6299.0 1220.0
-  6300.0 1377.0
-endline
+point 6297.0 1219.0 label -text P26 -align top
 
 line wall -reverse on
   6140.0 1121.0
   6140.0 1121.0 6167.0 1136.0 6168.0 1150.0
   6169.0 1164.0 6216.0 1183.0 6282.0 1181.0
   6348.0 1179.0 6444.0 1158.0 6452.0 1135.0
+  altitude .
   6460.0 1112.0 6502.0 1109.0 6415.0 1079.0
   6328.0 1049.0 6306.0 1045.0 6279.0 1046.0
   6252.0 1047.0 6207.0 1051.0 6189.0 1049.0
@@ -284,17 +279,7 @@ line wall -reverse on
   smooth off
 endline
 
-point 6376.0 -29.0 label -align bottom -text [Puits de la love machine: P54]
-
-line rock-edge -clip off
-  6368.0 481.0
-  6368.0 17.0
-endline
-
-line rock-edge -clip off
-  6143.0 708.0
-  6368.0 481.0
-endline
+point 6151.0 725.0 label -align bottom -text [Puits de la love machine: P54]
 
 line wall
   6109.0 990.0
@@ -331,6 +316,7 @@ endline
 
 line wall
   7681.0 1348.0
+  altitude .
   7634.0 1332.0
   7540.0 1305.0
   7540.0 1305.0 7505.0 1287.0 7490.0 1285.0
@@ -366,16 +352,12 @@ line wall -reverse on
   smooth off
 endline
 
-point 6922.0 510.0 label -align bottom -text P6
-
-line rock-edge -clip off
-  6579.0 905.0
-  6901.0 570.0
-endline
+point 6606.0 889.0 label -align bottom -text P6
 
 line wall
   6352.0 913.0
   6419.0 923.0
+  altitude .
   6419.0 923.0 6471.0 939.0 6475.0 941.0
   6479.0 943.0 6510.0 950.0 6531.0 943.0
   6552.0 936.0 6601.0 932.0 6624.0 963.0
@@ -405,12 +387,7 @@ point 6921.879999999999 1445.39 station -name 104
 
 point 6866.73 1215.69 station -name 103
 
-point 7290.0 683.0 label -align bottom-right -text P12
-
-line rock-edge -clip off
-  6929.0 1021.0
-  7243.0 713.0
-endline
+point 6928.0 993.0 label -align bottom-right -text P12
 
 line wall
   6840.0 1058.0
@@ -470,8 +447,6 @@ point 6885.19 1677.27 station -name 107
 line rock-edge -clip off
 endline
 
-point 6499.0 1927.0 altitude -align left
-
 line wall
   6853.0 2601.0
   6828.0 2572.0
@@ -493,8 +468,9 @@ line wall
   6518.0 2112.0 6501.0 2097.0 6511.0 2043.0
   6521.0 1989.0 6522.0 1954.0 6522.0 1954.0
   smooth off
-  6522.0 1954.0 6528.0 1911.0 6534.0 1882.0
-  6540.0 1853.0 6546.0 1805.0 6546.0 1805.0
+  6522.0 1954.0 6526.0 1912.0 6532.0 1883.0
+  altitude .
+  6538.0 1854.0 6546.0 1805.0 6546.0 1805.0
   smooth off
   6555.0 1751.0
   6555.0 1751.0 6553.0 1717.0 6592.0 1709.0
@@ -543,12 +519,7 @@ line wall
   smooth off
 endline
 
-point 7308.0 1993.0 label -align top-right -text R4
-
-line rock-edge -clip off
-  6948.0 1636.0
-  7287.0 1970.0
-endline
+point 7013.0 1592.0 label -align top-right -text R4
 
 area water
 endarea
@@ -586,12 +557,11 @@ line wall
   smooth off
 endline
 
-point 7738.0 3243.0 altitude -align right
-
 line wall
   7663.0 3192.0
   7663.0 3192.0 7672.0 3208.0 7678.0 3216.0
   7684.0 3224.0 7692.0 3243.0 7688.0 3259.0
+  altitude .
   7684.0 3275.0 7672.0 3306.0 7670.0 3311.0
   7668.0 3316.0 7660.0 3356.0 7663.0 3365.0
   7666.0 3374.0 7670.0 3423.0 7675.0 3426.0
@@ -641,12 +611,7 @@ scrap Cavernicol_SP28bis -projection plan -station-names "" "@vincent-for-equate
 
 point 7683.299999999999 3522.9900000000002 station -name 125
 
-point 8489.0 3448.0 label -align right -text R3
-
-line rock-edge -clip off
-  7758.0 3447.0
-  8439.0 3446.0
-endline
+point 7788.0 3462.0 label -align right -text R3
 
 line wall
   7675.0 3426.0
@@ -803,6 +768,7 @@ line wall -reverse on
   6993.0 3816.0 6951.0 3830.0 6937.0 3836.0
   6923.0 3842.0 6884.0 3857.0 6875.0 3859.0
   6866.0 3861.0 6829.0 3865.0 6821.0 3892.0
+  altitude .
   6813.0 3919.0 6783.0 3962.0 6776.0 3975.0
   6769.0 3988.0 6761.0 4000.0 6761.0 4000.0
   smooth off
@@ -816,20 +782,10 @@ line wall -reverse on
   7433.0 4309.0
 endline
 
-point 7055.0 4199.0 altitude -align top-left
-
-point 6812.0 3849.0 altitude -align bottom-left
-
 line rock-edge -clip off
 endline
 
-point 6537.0 3385.0 label -align bottom-left -text P26
-
-line rock-edge -clip off
-  7115.0 3621.0
-  6774.0 3621.0
-  6575.0 3424.0
-endline
+point 6935.0 3741.0 label -align bottom-left -text P26
 
 line wall -reverse on
   7252.0 3638.0
@@ -901,20 +857,13 @@ line wall
   smooth off
 endline
 
-point 7902.0 3788.0 altitude -align top-right
-
-point 8656.0 4066.0 label -text P7 -align top-right
-
-line rock-edge -clip off
-  7959.0 3721.0
-  8309.0 3721.0
-  8623.0 4036.0
-endline
+point 7991.0 3731.0 label -text P7 -align top-right
 
 line wall -reverse on
   7787.0 3722.0
   7787.0 3722.0 7815.0 3721.0 7818.0 3730.0
   7834.07 3778.2 7847.0 3788.0 7872.0 3792.0
+  altitude .
   7891.99 3795.2 7927.0 3731.0 7901.0 3690.0
   7893.71 3678.51 7859.0 3671.0 7846.0 3677.0
   7833.0 3683.0 7830.0 3696.0 7830.0 3696.0
@@ -958,15 +907,7 @@ line wall
   smooth off
 endline
 
-point 6966.0 3405.0 altitude -align left
-
-point 6821.0 3009.0 label -align bottom-left -text P10
-
-line rock-edge -clip off
-  7048.0 3308.0
-  7048.0 3227.0
-  6852.0 3031.0
-endline
+point 6992.0 3283.0 label -align bottom-left -text P10
 
 line wall
   7142.0 3441.0
@@ -974,6 +915,7 @@ line wall
   7116.0 3453.0 7096.0 3470.0 7090.0 3470.0
   7084.0 3470.0 7027.0 3473.0 7011.0 3452.0
   6995.0 3431.0 6988.0 3376.0 7001.0 3361.0
+  altitude .
   7014.0 3346.0 7094.0 3328.0 7106.0 3344.0
   7118.0 3360.0 7116.0 3379.0 7122.0 3383.0
   7128.0 3387.0 7148.0 3388.0 7148.0 3388.0
@@ -1014,14 +956,7 @@ line wall -reverse on
   smooth off
 endline
 
-point 7873.0 3563.0 altitude -align bottom-right
-
-point 7398.0 3245.0 label -text P4 -align bottom
-
-line rock-edge -clip off
-  7396.0 3357.0
-  7396.0 3276.0
-endline
+point 7407.0 3327.0 label -text P4 -align bottom
 
 line wall
   7360.0 3400.0
@@ -1037,6 +972,7 @@ line wall
   7680.0 3599.0 7723.0 3601.0 7740.0 3599.0
   7757.0 3597.0 7762.0 3581.0 7785.0 3581.0
   7808.0 3581.0 7829.0 3583.0 7840.0 3598.0
+  altitude .
   7851.0 3613.0 7857.0 3623.0 7851.0 3635.0
   7845.0 3647.0 7828.0 3670.0 7824.0 3681.0
   7820.0 3692.0 7810.0 3715.0 7808.0 3730.0
@@ -1084,14 +1020,13 @@ line wall -reverse on
   smooth off
 endline
 
-point 7320.0 3982.0 altitude -align bottom
-
 line wall
   7530.0 3990.0
   7530.0 3990.0 7489.0 4017.0 7482.0 4019.0
   7475.0 4021.0 7443.0 4020.0 7434.0 4014.0
   7425.0 4008.0 7387.0 4004.0 7360.0 4008.0
   7333.0 4012.0 7301.0 4013.0 7290.0 4018.0
+  altitude .
   7279.0 4023.0 7245.0 4017.0 7201.0 4014.0
   7157.0 4011.0 7152.0 3994.0 7133.0 3994.0
   7114.0 3994.0 7056.0 3965.0 7025.0 3967.0
@@ -1113,12 +1048,12 @@ point 6772.75 4105.39 station -name 166
 
 point 6810.209999999999 4093.29 station -name 165
 
-point 7198.0 4411.0 label -align right -text P3
+point 6936.0 4268.0 label -align right -text P3
 
-line rock-edge -clip off
-  6906.0 4268.0
-  7047.0 4409.0
-  7164.0 4409.0
+line pit
+  6808.0 4185.0
+  6808.0 4185.0 6882.0 4231.0 6913.0 4222.0
+  smooth off
 endline
 
 line wall
@@ -1164,27 +1099,28 @@ point 6906.969999999999 4523.530000000001 station -name 170
 line wall -subtype invisible
 endline
 
-point 7864.0 5141.0 label -align top -text [arrêt sur cascade]
+point 7773.0 4782.0 label -align top -text [arrêt sur cascade]
 
-point 7724.0 5330.0 label -align top -text [Actif 10 lps exploré sur 70 m en 1981, ]
+point 7770.0 4885.0 label -align top -text [Actif 10 lps exploré sur 70 m en 1981, ]
 
-line rock-edge -clip off
-  7718.0 4763.0
-  7719.0 5268.0
+line water-flow
+  7078.0 4668.0
+  7078.0 4668.0 6972.0 4618.0 6952.0 4574.0
 endline
 
-line border -subtype presumed -clip off
-  8216.0 4236.0
-  8216.0 4236.0 8196.0 4364.0 8177.0 4399.0
-  8158.0 4434.0 8149.0 4473.0 7994.0 4482.0
-  7839.0 4491.0 7748.0 4470.0 7678.0 4519.0
-  7608.0 4568.0 7536.0 4602.0 7446.0 4613.0
-  7356.0 4624.0 7252.0 4592.0 7211.0 4581.0
-  7170.0 4570.0 7097.0 4561.0 7060.0 4524.0
+line wall -reverse on -subtype presumed
+  8318.0 4266.0
+  8318.0 4266.0 8279.0 4469.0 8260.0 4504.0
+  8241.0 4539.0 8179.0 4541.0 8024.0 4550.0
+  subtype presumed
+  7869.0 4559.0 7812.0 4575.0 7742.0 4624.0
+  7672.0 4673.0 7538.0 4669.0 7448.0 4680.0
+  7358.0 4691.0 7219.0 4663.0 7178.0 4652.0
+  7137.0 4641.0 7039.0 4599.0 7002.0 4562.0
   smooth off
 endline
 
-line border -reverse on -subtype presumed -clip off
+line wall -reverse on -subtype presumed
   6855.0 4558.0
   6855.0 4558.0 6962.0 4661.0 6972.0 4666.0
   6982.0 4671.0 7126.0 4748.0 7176.0 4755.0
@@ -1206,15 +1142,14 @@ endline
 line wall
   6895.0 4242.0
   6892.0 4245.0 6823.79 4268.27 6899.0 4351.0
-  6919.0 4373.0 7000.0 4445.0 7007.0 4457.0
-  7014.0 4469.0 7060.0 4524.0 7060.0 4524.0
+  6919.0 4373.0 6923.0 4474.0 6930.0 4486.0
+  6937.0 4498.0 7002.0 4562.0 7002.0 4562.0
   smooth off
 endline
 
-point 6822.0 4577.0 altitude -align top-left
-
 line wall -reverse on
   6613.0 4340.0
+  altitude .
   6613.0 4340.0 6675.0 4375.0 6696.0 4394.0
   6717.0 4413.0 6800.0 4488.0 6805.0 4497.0
   6810.0 4506.0 6855.0 4558.0 6855.0 4558.0
@@ -1252,7 +1187,7 @@ line border -id l233-6480-3899 -close on -reverse on -subtype invisible
   6243.0 4195.0
 endline
 
-line wall -subtype invisible
+line wall
   6077.0 4008.0
   5973.0 3916.0 6032.0 3569.0 6217.0 3749.0
   smooth off
@@ -1265,12 +1200,12 @@ line wall
   smooth off
 endline
 
-point 5799.0 4436.0 label -text Siphon -align top-left
-
-line rock-edge -clip off
-  6102.0 4133.0
-  5832.0 4406.0
+line arrow
+  7545.0 4877.0
+  7492.0 4822.0
 endline
+
+point 6138.0 4194.0 label -text Siphon -align top-left
 
 line wall
   6282.0 4164.0
@@ -1361,6 +1296,7 @@ line wall -reverse on
   7827.0 4283.0
   7827.0 4283.0 7840.0 4281.0 7847.0 4285.0
   7854.0 4289.0 7968.0 4269.0 7934.0 4223.0
+  altitude .
   7900.0 4177.0 7898.0 4192.0 7883.0 4194.0
   7868.0 4196.0 7852.0 4191.0 7844.0 4189.0
   7836.0 4187.0 7819.0 4192.0 7815.0 4194.0
@@ -1368,8 +1304,6 @@ line wall -reverse on
   smooth off
   7729.0 4241.0
 endline
-
-point 7962.0 4202.0 altitude -align bottom-right
 
 line wall
   7736.0 4362.0
@@ -1399,3 +1333,5 @@ endline
 point 7852.849999999999 4257.91 station -name 138
 
 endscrap
+
+
