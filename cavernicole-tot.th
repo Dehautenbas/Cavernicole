@@ -1,107 +1,77 @@
-survey cavernicole-tot -title "Gouffre du Cavernicole"
+encoding  utf-8
 
-  ### Import maps
-	input cavernicole-map.th
+survey Cavernicole -title "Gouffre du Cavernicole"
 
-  ########## Inclusion des .th ##########
-        #Seulement pour les stats :
-            # input datas/vincent/vincent.th
-            # equate 0@vincent cavernicole@0-100     # stat 0 topo vincent = O nouvelle topo
+input Cavernicole-tot-maps.th
 
-  input datas/vincent/vincent-for-equate.th
+    
+   input datas/0-100/0-100_tot.th                                                   
+   input datas/jonction-innapercue/jonction-innapercue_tot.th                                        
+   input datas/100-130-normal/100-130-normal_tot.th    
+   input datas/100-130-escalade/100-130-escalade_tot.th      
+   input datas/pull-over-amont/pull-over-amont_tot.th  
+   input datas/pull-over-aval/pull-over-aval_tot.th    
+   input datas/reseau-alain-robert/reseau-alain-robert_tot.th      
+   input datas/siphon-vers-amont/siphon-vers-amont_tot.th
 
-  input datas/pull-over/pull-over.th
-  input datas/0-100/0-100.th
-  input datas/j-innapercue/j-innapercue.th
-  input datas/pull-over-aval/pull-over-aval.th
-  input datas/100-130/100-130-normal.th
-  input datas/100-130/100-130-escalade.th
-  input datas/alain-robert/reseau-alain-robert_tot.th
-  #input datas/
-  #input datas/
-  #input datas/
-
+   input datas/old/old_tot.th  
 
 
     
+   equate 76A@jonction-innapercue.jonction-innapercue_tot 76@0-100.0-100_tot
+   equate 0@alain-robert.pts-alain-robert_tot.reseau-alain-robert_tot 16@100-130-normal.100-130-normal_tot        #PTR actif bas escalade 100-130 
+   equate 4@alain-robert.pts-alain-robert_tot.reseau-alain-robert_tot 4@alain-robert.100-130-normal_tot        
 
-  ########## Raccordement .th ##########
+   equate 0@100-130-normal.100-130-normal_tot 82@0-100.0-100_tot
+   equate 16@100-130-normal.100-130-normal_tot 16@100-130-escalade.100-130-escalade_tot
+   equate 34@100-130-escalade.100-130-escalade_tot 82@0-100.0-100_tot
+   equate 0@pull-over-amont.pull-over-amont_tot 82@0-100.0-100_tot    
+   equate 65@pull-over-amont.pull-over-amont_tot 76Q@jonction-innapercue.jonction-innapercue_tot
+   equate 19@pull-over-amont.pull-over-amont_tot 0@pull-over-aval.pull-over-aval_tot      
+   equate 53@pull-over-aval.pull-over-aval_tot 9@100-130-normal.100-130-normal_tot                          # PTR Jonction actif en bas du P7        
 
-centerline  
-  equate 72@vincent-for-equate PTR1@alain-robert.alain-robert_tot.reseau-alain-robert_tot      # equate ancienne topo avec terminus nouvelle topo
-
-  equate 0@pull-over 82@0-100
-  equate 76@0-100 76A@j-innapercue
-  equate 65@pull-over 76Q@j-innapercue
-  equate 19@pull-over 0@pull-over-aval
-  equate 82@0-100 0@100-130-normal
-  equate 16@100-130-normal 16@100-130-escalade
-  equate 34@100-130-escalade 82@0-100
-  equate 53@pull-over-aval 9@100-130-normal      #PTR Jonction actif en bas du P7
-  equate 0@alain-robert.alain-robert_tot.reseau-alain-robert_tot 16@100-130-normal     #PTR actif bas escalade 100-130
-
-
-endcenterline
+   equate 72@old-for-equate.old_tot PTR1@alain-robert.pts-alain-robert_tot.reseau-alain-robert_tot  # equate ancienne topo avec nouvelle topo AMONT
+   equate 163@old-for-equate.old_tot 65@siphon-vers-amont-2024.siphon-vers-amont_tot                # equate ancienne topo avec nouvelle topo AMONT
 
 
 
 
-
-###########################################################
-####################       PLAN        ####################
-
-  ########## Inclusion des .th2 ##########
-
-  input datas/0-100/0-100_p.th2
-  input datas/pull-over/pull-over_p.th2
-  input datas/100-130/100-130-escalade_p.th2
-  input datas/pull-over-aval/pull-over-aval_p.th2
-  input datas/vincent/vincent_p.th2
-
-
-  ########## Raccordement des .th2 ##########
-join pullover_l1h:0 0-100_sp5_l1h:0
-join pullover_l1b:0 0-100_sp5_l1b:end
-join lb_cav_pullover:end lb_cav_entree:0
-join lh_cav_pullover:end lh_cav_entree:end
-join 100-130_sp7_l1h:end pull-over-aval_h:end
-join 100-130_sp7_l1b:0 pull-over-aval_b:end
-join 0-100_sp7 alain-robert_sp1@alain-robert_tot.reseau-alain-robert_tot
-join alain-robert_sp1@alain-robert_tot.reseau-alain-robert_tot Cavernicol_SP19
-join l2b_cav_entree:end l100-130-escalade:0
-join l3h_cav_entree:end l100-130-escalade:end
-
-
-
-
-# join alain-robert_sp1_l1d:0 #mettre ici l'aval 100-130
-# join alain-robert_sp1_l1g:end #mettre ici l'aval 100-130
-# join alain-robert_sp1_l3d:end #mettre ici la suite de la topo sous -130
-# join alain-robert_sp1_l3g:0 #mettre ici la suite de la topo sous -130
+    #-----------
+    ## Plan
+    #-----------
+      
+       # jonction des dessins 0-100 et 100-130-escalade
+        
+          join l2b_cav_entree@0-100_tot:end l100-130-escalade@100-130-escalade_tot:0
+          join l3h_cav_entree@0-100_tot:end l100-130-escalade@100-130-escalade_tot:end
+        
+       # jonction des dessins 0-100 et pull-over et jonction-innapercue
+       
+          join sp_cav_pullover_0@pull-over-amont_tot 0-100_sp4@0-100_tot
+          join sp_cav_pullover_2@pull-over-amont_tot jonction-innapercue_SP1@jonction-innapercue_tot
+       
+       # jonction des dessins pull-over-aval et 100-130-normal
+       
+          join pull-over-aval_sp1@pull-over-aval_tot 100-130-normal-sp2@100-130-normal_tot
+          
+       # jonction des dessins 100-130-normal et reseau_alain_robert et vincent-for-equate
+       
+          join alain-robert_sp1@pts-alain-robert_tot.reseau-alain-robert_tot 100-130-normal-sp2@100-130-normal_tot
+          join alain-robert_sp1@pts-alain-robert_tot.reseau-alain-robert_tot Cavernicol_SP19@old_tot
+          
+         # jonction dessins fond
+         
+           join fond_Cavernicole_sp7@siphon-vers-amont_tot Cavernicol_SP35@old_tot
+    
 
 
 
-
-###############################################
-#################### COUPE ####################
-  
-  ########## Inclusion des .th2 ##########
-
-   input datas/pull-over/pull-over_c.th2
-   input datas/0-100/0-100_c.th2
-   #input datas/th2/
-   #input datas/th2/
-   #input datas/th2/
-   #input datas/th2/
-   #input datas/th2/
-   #input datas/th2/
-   
-
-  ########## Raccordement des .th2 ##########
-
-   #join sc5_0-100 sc0_amont-pull-over
-  #  join sc_1:0 entree_l1:end
-  #  join sc_2:end entree_2:0
+    #-----------
+    ## Coupe
+    #-----------
+    
+    #   join ........
 
 
 endsurvey
+

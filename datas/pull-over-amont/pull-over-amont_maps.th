@@ -1,0 +1,73 @@
+encoding  utf-8
+
+#----------------------------------------------------------------------
+# utiliser cette map pour une topo de synthèse à l'échelle du massif
+#----------------------------------------------------------------------
+
+map pullover_MP-massif
+  pullover_MP-
+  pullover_MP--
+  pullover_MP-----massif
+endmap
+
+map pullover_MP-----massif
+  pullover_MP---
+  pullover_MP----
+endmap
+
+#---------------------------------------------------
+# utiliser cette map pour une topo simple du trou
+#---------------------------------------------------
+
+map pullover_MP
+  pullover_MP-
+  pullover_MP--
+  pullover_MP----- [1.30 -35 m] below
+endmap
+
+map pullover_MP-----
+  pullover_MP---
+  pullover_MP---- [0.80 -20 m] below
+endmap
+
+
+#---------------------------------------------------
+# Map de construction et d'assemblage générale
+#---------------------------------------------------
+
+
+# extrême supérieur
+
+map pullover_MP-
+  sp_cav_pullover_9                     
+endmap
+
+# supérieur
+
+map pullover_MP--
+  sp_cav_pullover_2
+  break
+  sp_cav_pullover_7
+  break
+  sp_cav_pullover_8
+  break
+endmap
+
+# intermediaire
+
+map pullover_MP---
+  sp_cav_pullover_5
+  break
+endmap
+
+# inferieur
+
+map pullover_MP----
+  sp_cav_pullover_0
+  break
+  sp_cav_pullover_1
+  break
+  sp_cav_pullover_3
+  break
+endmap
+

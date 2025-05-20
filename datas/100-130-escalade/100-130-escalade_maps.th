@@ -1,0 +1,9 @@
+encoding  utf-8
+
+map 100-130-escalade_MP
+  100-130-escalade_sp1
+  break
+  100-130-escalade_sp2
+  break
+endmap
+

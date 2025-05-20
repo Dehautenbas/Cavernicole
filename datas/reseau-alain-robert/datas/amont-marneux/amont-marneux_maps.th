@@ -1,0 +1,7 @@
+encoding  utf-8
+map amont-marneux_MP -title "amont-marneux_mp"
+
+  amont-marneux_sp1
+  break
+  
+endmap

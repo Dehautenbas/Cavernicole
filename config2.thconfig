@@ -1,0 +1,131 @@
+encoding  utf-8
+
+
+################################# Layout général #############################
+layout plan_uniforme-color
+    copy plan
+    colour map-fg [96 96 86]   ### Couleur ocre ds galeries
+    color map-bg 96   
+endlayout
+
+layout plan_explo-dates-color
+    copy plan
+	colour map-fg map ##Pour la couleur en fonction de la map
+    color map-bg 96   
+endlayout
+
+layout plan_altitude-color
+    copy plan
+	color map-fg altitude
+    color map-bg 96   
+endlayout
+	
+
+
+layout plan
+
+	copy drawingconfig
+	copy langue-fr
+	copy legend
+    copy comment
+	  
+	doc-title "Gouffre du Cavernicole - Plan - 2025"
+	doc-author "Martin Kern, Théophile Cailhol"
+	#cs UTM31
+	cs EPSG:2154
+
+	#base-scale 1 200
+	scale 1 300
+	
+	scale-bar 50 m
+
+    color map-bg 96            ### Arrière plan gris
+	
+
+	transparency on
+	opacity 75
+	
+	legend on
+	map-header 0 130 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+
+	    #min-symbol-scale <scale>    ### define minimal <scale>, from which points and lines are displayed on the map. 
+                                 ### Ex: for min-symbol-scale M, no points or lines scaled S and XS will be shown on the map. <scale> has the same format, as scale option for points and lines.
+        
+    
+  symbol-hide point station        
+  symbol-hide line survey
+  
+
+
+	# add general view
+	#map-image 45 20 nw xxxxxxxxxxxxx.pdf
+ 
+endlayout
+
+
+layout comment
+  code tex-map
+      \legendwidth=20cm
+      \legendtextsize={\size[15]}
+      \legendtextheadersize={\size[36]} 
+      \legendtextsectionsize={\size[22]}  %Taille mot "Légende"
+      %\legendtextcolor={\color[0 0 110]}      %# RGB values 0--100
+   endcode
+
+ map-comment "<br>\
+ Localisation : Forêt de l'Aulp du Seuil, Plateau-des-Petites-Roches, 38, France <br>\
+ Coordonnées : 725986 5029628 (UTM 31T)<br>\
+                   Alt : 1528m<br>\
+                    <br>\
+ Synthèse et dessin : Martin Kern, Théophile Cailhol - 2021-2025 <br>\ 
+"
+
+endlayout
+
+
+
+
+layout yearperyear ##Pour l'export année par année ; A besoin du lookup explo date
+    #copy general
+    color map-bg 96
+    map-header 5 -5 nw                   ### positionnement du cartouche 5 15
+    statistics topo off
+    statistics carto off
+    scale 1 400                      ### echelle
+    symbol-hide group all
+    symbol-show line wall
+    legend off
+    colour map-fg explo-date
+endlayout
+
+
+layout centerline
+    symbol-show point station        
+    #debug scrap-names
+    debug station-names
+    symbol-show line survey
+endlayout
+
+lookup explo-date -title "Couleurs année par année"      #A besoin dans un layout de :   colour map-fg explo-date 
+ 20981.12.31 [] "1981 et avant"
+ 2022.12.31 [] 2022
+ 2023.12.31 [] 2023
+ 2024.12.31 [] 2024
+ 2025.12.31 [] 2025
+ - [] "2023 et après"  #my experimentation suggests that '-' colours undated surveys if last in the list, and all surveys if first in list.  Bruce
+endlookup
+
+lookup map -title "Légende des couleurs"
+# vincent_mp@cavernicole-tot [48 66 87] "Non re-topographié"
+mp_oldexplo@Cavernicole [96 96 86] "Anciennes explos - 1981 et avant - retopographié après 2021"
+mp_oldexplo-unsurveyed@Cavernicole [24 65 66] "Anciennes explos - 1981 et avant - non topographié à ce jour"
+mp_newexplo@Cavernicole [92 79 69] "Nouvelles explos - 2021 et après"
+#[80 80 80] #gris
+endlookup

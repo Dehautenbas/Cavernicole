@@ -1,0 +1,19 @@
+encoding  utf-8
+
+survey 0-100_tot -title "Cavernicole > 0-100"
+
+    input datas/0-100.th
+
+    ## Plan
+    input datas/0-100_p.th2
+    #    join .......
+    
+    ## Coupe
+    #input datas/0-100_c.th2
+    #   join ........
+
+    ## Maps
+    input 0-100_maps.th
+
+endsurvey
+

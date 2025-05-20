@@ -1,0 +1,44 @@
+encoding  utf-8
+map old_MP
+   Cavernicol_SP19
+   break
+   Cavernicol_SP20
+   break
+   Cavernicol_SP21
+   break
+   Cavernicol_SP22
+   break
+   Cavernicol_SP23
+   break
+   Cavernicol_SP25
+   break
+   Cavernicol_SP26
+   break
+   Cavernicol_SP27
+   break
+   Cavernicol_SP28
+   break
+   Cavernicol_SP28bis
+   break
+   Cavernicol_SP29
+   break
+   Cavernicol_SP30
+   break
+   Cavernicol_SP31
+   break
+   Cavernicol_SP32
+   break
+   Cavernicol_SP33
+   break
+   Cavernicol_SP34
+   break
+   Cavernicol_SP35
+   break
+   #Cavernicol_SP36
+   break
+  # Cavernicol_SP37
+   break
+  # Cavernicol_SP38
+   break
+endmap
+

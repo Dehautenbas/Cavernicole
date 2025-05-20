@@ -1,0 +1,165 @@
+encoding  utf-8
+select Cavernicole-tot-MP@Cavernicole
+#select Cavernicole-tot-massif-MP@Cavernicole
+
+source Cavernicole-tot.th
+
+#input "../../_config/config.thc"
+
+layout xviexport
+	scale 1 1000
+	grid-size 10 10 10 m
+	grid bottom
+endlayout
+
+layout my_layout
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl
+	copy langue-fr
+	  
+	doc-title "Plan - Gouffre du Cavernicole - 2023"
+	doc-author "Martin Kern, Théophile Cailhol"
+	#cs UTM31
+	cs EPSG:2154
+	#base-scale 1 200
+	scale 1 500
+	scale-bar 50 m
+	#color map-bg 85
+	#color map-fg [100 100 80]
+	color map-fg altitude
+	transparency on
+	opacity 75
+	map-comment "<it>Plan<ss> - Gouffre du Cavernicole, Plateau-des-Petites-Roches, 38, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 16 cm
+	#map-header 70 60 nw
+	map-header 0 -1 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+  
+	# To change the Title          
+	code tex-map
+  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre du Cavernicole} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		%\newtoks\club \club={Collek'tif}
+		\newtoks\synth \synth={Bernard Loiseleur (1992), Martin Kern, Théophile Cailhol (2023)}
+		\newtoks\ECoordinates \ECoordinates={UTM 31T : 725986 5029628 - alti. : 1528 m}
+	endcode  
+
+	# add general view
+	#map-image 45 20 nw xxxxxxxxxxxxx.pdf
+ 
+ endlayout
+ 
+ layout my_layout-coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe
+	copy langue-fr 
+  
+	doc-title "Coupe - Gouffre du Cavernicole - 2023"
+	doc-author "Martin Kern, Théophile Cailhol"
+	cs UTM31
+	
+        # La ligne base-scale specifie l'echelle auquel nous avons
+        # dessine nos croquis. Par defaut, therion pense que c'est
+        # une echelle 1:200. Si on a utilise une autre echelle, 
+        # il faudrait enlever le "#" et especifier l'echelle vraiment 
+        # employee, comme c'est le cas apres avoir dessine la topo
+        # sur un cheminement exporte avec le layout "xviexport"
+        # (voir en bas)
+	
+	base-scale 1 200 #1000
+	
+	# Maitenant on va mettre une ligne "scale" pour specifier l'echelle
+        # pour imprimer la topo. La combination entre scale et base-scale
+        # controlle le gros des lignes, rotation, etc, convenable
+        # pour faire l'ampliation-reduction entre dessin et
+        # le resultat de l'imprimante
+
+        # C'est tres important s'assurer que la configuration de
+        # l'imprimante ne specifie pas l'option "Fit in page"
+        # ou similaire, sinon, l'echelle sera change pendant
+        # l'impression!
+	
+	scale 1 500 #1000
+	
+	# echelle graphique 100 m ampleur
+	
+	scale-bar 100 m
+	
+	
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	language fr
+	map-comment "<it>Coupe<ss> - Gouffre du Cavernicole, Plateau-des-Petites-Roches, 38, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 16 cm
+	map-header 0 45 sw
+	map-header-bg off
+	layers on
+	#symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off  
+  
+	# To change the Title          
+	code tex-map
+  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre du Cavernicole} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		%\newtoks\club \club={FJS}
+	endcode  
+
+	# add general view
+	#map-image 45 20 nw xxxxxxxxxxxxx.pdf
+
+ endlayout
+
+ 
+  
+ #export map -projection plan -fmt xvi -layout xviexport -o Data/cavernicole-tot-th_p.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o Data/cavernicole-tot-th_e.xvi
+  
+ export map -projection plan -o exports/cavernicole-tot-plan.pdf -layout my_layout
+ 
+ #export map -projection plan -o C:\Users\David\Desktop\cavernicole-tot-plan-color.pdf -layout my_layout
+ 
+ #export map -projection extended -layout my_layout-coupe -o Outputs/cavernicole-tot-coupe.pdf
+ 
+ 
+ #export model -o Outputs/cavernicole-tot.lox
+ #export model -fmt kml -o Outputs/cavernicole-tot.kml
+ 
+ #export model -fmt esri -o Outputs/model/cavernicole
+ #export map -fmt esri -o Outputs/map/cavernicole
+ 
+ #export survey-list -location on -o Outputs/Topographies.html
+ #export cave-list -location on -o Outputs/Cavites.html
+ #export continuation-list -o Outputs/Commentaire.html

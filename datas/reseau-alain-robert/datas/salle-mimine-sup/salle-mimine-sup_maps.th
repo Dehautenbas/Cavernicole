@@ -1,0 +1,8 @@
+encoding  utf-8
+map salle-mimine-sup_MP -title "salle-mimine-sup_mp"
+
+  salle-mimine-sup_sp1
+  break
+  
+endmap
+

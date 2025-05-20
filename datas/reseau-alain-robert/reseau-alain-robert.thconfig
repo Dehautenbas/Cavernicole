@@ -1,0 +1,122 @@
+encoding  utf-8
+select reseau_alain_robert-tot-MP@reseau_alain_robert
+
+source reseau_alain_robert-tot.th
+
+input "../../../../../_config/config.thc"
+
+layout xviexport
+	scale 1 100
+	grid-size 10 10 10 m
+	grid bottom
+endlayout
+
+layout my_layout
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy headerl
+	copy langue-fr 
+	  
+	doc-title "Réseau Alain-Robert"
+	doc-author "Martin Kern, Théophile Cailhol"
+	cs UTM31
+	#base-scale 1 1000
+	scale 1 200
+	scale-bar 100 m
+	#color map-bg 85
+	color map-fg [100 100 80]
+	#color map-fg altitude
+	transparency on
+	opacity 75
+	map-comment "<it>Plan<ss> - Gouffre du Cavernicole : réseau Alain-Robert, Plateau des Petites Roches, 38, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 16 cm
+	#map-header 70 60 nw
+	map-header 0 0 nw
+	map-header-bg off
+	layers on
+	symbol-hide line survey
+	#debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off
+  
+	# To change the Title          
+	code tex-map
+  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre du Cavernicole : réseau Alain-Robert} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		%\newtoks\club \club={FJS}
+	endcode  
+
+	# add general view
+	#map-image 45 20 nw xxxxxxxxxxxxx.pdf
+ 
+ endlayout
+ 
+ layout my_layout-coupe
+	# Call the config settings (Layout config inside the config.thc file)
+	copy drawingconfig
+	copy header_coupe
+	copy langue-fr 
+  
+	doc-title "Réseau Alain-Robert"
+	doc-author "Martin Kern, Théophile Cailhol"
+	cs UTM31
+	base-scale 1 1000
+	scale 1 1000
+	scale-bar 100 m
+	#color map-bg 85
+	color map-fg [100 100 80]
+	transparency on
+	opacity 75
+	language fr
+	map-comment "<it>Coupe<ss> - Gouffre du Cavernicole : réseau Alain-Robert, Plateau des Petites Roches, 38, France"
+	statistics explo-length off
+	statistics topo-length off
+	statistics copyright all
+	legend off
+	legend-width 16 cm
+	map-header 0 45 sw
+	map-header-bg off
+	layers on
+	#symbol-hide line survey
+	debug station-names
+	#grid bottom
+	#grid-size 100 100 100 m
+	grid off  
+  
+	# To change the Title          
+	code tex-map
+  
+		\edef\temp{\the\cavename}   % cavename from Therion
+		\edef\nostring{}            % empty string
+		\ifx\temp\nostring          % test if cavename is empty
+			% if empty reassign cavename to describe selected maps as a group
+			\cavename={Gouffre du Cavernicole : réseau Alain-Robert} 		
+		\else % if not empty keep the value set by therion, or assign an override cavename here
+		\fi
+		%\newtoks\club \club={FJS}
+	endcode  
+
+	# add general view
+	#map-image 45 20 nw xxxxxxxxxxxxx.pdf
+
+ endlayout
+
+ 
+  
+ #export map -projection plan -fmt xvi -layout xviexport -o datas/cavernicole_reseau_alain_robert-tot-th_p.xvi
+ #export map -projection extended -fmt xvi -layout xviexport -o datas/cavernicole_reseau_alain_robert-th_e.xvi
+  
+ export map -projection plan -o exports/cavernicole_reseau_alain_robert-plan.pdf -layout my_layout
+ export map -projection extended -layout my_layout-coupe -o exports/cavernicole_reseau_alain_robert-coupe.pdf
+ export model -o exports/cavernicole_reseau_alain_robert.lox

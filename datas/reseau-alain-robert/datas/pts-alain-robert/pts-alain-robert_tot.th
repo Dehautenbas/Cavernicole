@@ -1,0 +1,21 @@
+encoding  utf-8
+
+survey pts-alain-robert_tot -title "Cavernicole > Alain Robert > Pts Alain-robert"
+
+    input datas/alain-robert.th
+
+    ## Plan
+    input datas/alain-robert_2_p.th2
+    input datas/alain-robert_p.th2
+    
+    join alain-robert_sp2 alain-robert_2_sp1
+    
+    ## Coupe
+    #input datas/
+    #   join ........
+
+    ## Maps
+    input pts-alain-robert_maps.th
+
+endsurvey
+

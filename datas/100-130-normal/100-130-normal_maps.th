@@ -1,0 +1,10 @@
+encoding  utf-8
+
+map 100-130-normal_MP
+  100-130-normal-sp1
+  break
+  100-130-normal-sp2
+  break
+  alain-robert_sp1 #est dessiné dans le th2 de pts-alain-robert
+endmap
+

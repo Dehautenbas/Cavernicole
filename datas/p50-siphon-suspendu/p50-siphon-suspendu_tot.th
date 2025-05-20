@@ -1,0 +1,19 @@
+encoding  utf-8
+
+survey p50-siphon-suspendu_tot -title "Cavernicole > p50-siphon-suspendu"
+
+    input datass/p50-siphon-suspendu.th
+
+    ## Plan
+    #input datas/p50_depart.th2
+    #    join .......
+    
+    ## Coupe
+    #input datas/
+    #   join ........
+
+    ## Maps
+    input p50-siphon-suspendu_maps.th
+
+endsurvey
+

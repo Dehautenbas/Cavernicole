@@ -1,0 +1,19 @@
+encoding  utf-8
+
+survey jonction-innapercue_tot -title "Cavernicole > Jonction innapercue"
+
+    input datas/jonction-innapercue.th
+
+    ## Plan
+    input datas/jonction-innapercue.th2
+    #    join .......
+    
+    ## Coupe
+    #input datas/
+    #   join ........
+
+    ## Maps
+    input jonction-innapercue_maps.th
+
+endsurvey
+

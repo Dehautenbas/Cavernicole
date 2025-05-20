@@ -1,0 +1,166 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -132.0 -132.0 836.66 1128.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {452.751 1 1.0} {531.5 PTR5} amont-marneux_p.xvi 0 {}
+
+
+
+scrap amont-marneux_sp1 -projection plan -station-names "" "@amont-marneux" -scale [0 0 78.7402 0 0 0 1 0 m]
+
+line wall -subtype presumed
+  520.5 970.5
+  520.5 970.5 542.0 880.5 543.0 872.5
+  smooth off
+endline
+
+line pit
+  287.5 430.0
+  287.5 430.0 332.0 409.5 357.0 423.5
+  smooth off
+endline
+
+line wall -id amont-marneux_sp1_l1g
+  543.0 872.5
+  544.0 864.5 559.0 821.5 562.5 815.5
+  566.0 809.5 596.0 767.5 593.0 757.5
+  590.0 747.5 576.5 723.0 574.0 710.0
+  571.5 697.0 561.5 623.5 548.5 615.0
+  535.5 606.5 509.5 610.5 505.5 596.0
+  501.5 581.5 501.0 567.5 489.5 559.0
+  478.0 550.5 466.0 544.0 459.0 528.5
+  452.0 513.0 438.0 493.5 437.0 482.5
+  436.0 471.5 420.0 388.5 398.0 364.5
+  376.0 340.5 370.0 304.5 366.5 297.0
+  363.0 289.5 302.5 168.0 292.5 165.0
+  282.5 162.0 255.5 149.5 255.0 154.0
+  254.5 158.5 310.0 195.0 309.0 207.0
+  308.0 219.0 321.0 340.5 321.0 352.0
+  321.0 363.5 343.5 396.5 343.5 409.0
+  343.5 421.5 344.94 435.69 347.0 447.0
+  smooth off
+endline
+
+line wall -subtype presumed
+  52.5 124.0
+  52.5 124.0 99.0 130.5 109.0 129.5
+  smooth off
+endline
+
+line wall
+  109.0 129.5
+  119.0 128.5 203.0 120.5 203.0 120.5
+  smooth off
+  203.0 120.5 258.0 106.0 275.0 108.5
+  288.93 110.55 330.0 118.5 337.5 127.0
+  345.0 135.5 394.0 314.0 399.0 322.0
+  404.0 330.0 455.0 426.0 455.0 435.5
+  455.0 445.0 454.5 473.0 456.5 483.0
+  458.5 493.0 481.0 526.0 495.5 538.0
+  510.0 550.0 521.5 563.0 526.0 571.5
+  530.5 580.0 541.5 588.0 549.5 594.0
+  557.5 600.0 566.0 605.0 572.5 621.5
+  altitude .
+  579.0 638.0 630.5 694.5 622.5 728.0
+  614.5 761.5 613.0 780.0 600.5 794.5
+  588.0 809.0 572.5 825.0 570.0 834.5
+  567.5 844.0 557.0 873.5 555.5 880.0
+  smooth off
+endline
+
+line label -reverse on -text "Plafond de calcite"
+  260.0 412.0
+  260.0 412.0 264.0 243.0 255.0 233.5
+  smooth off
+endline
+
+line water-flow
+  111.5 146.5
+  160.5 152.0
+endline
+
+point 25.0 140.5 continuation
+
+point 163.0 99.5 label -text "R3"
+
+point 252.5 91.0 label -text "R3"
+
+line pit
+  173.0 187.0
+  173.0 187.0 130.0 157.5 135.5 149.0
+  141.0 140.5 150.0 121.5 168.0 117.5
+  smooth off
+endline
+
+line pit -reverse on
+  262.0 158.5
+  262.0 158.5 277.5 114.0 223.0 107.0
+  smooth off
+endline
+
+point 517.5 995.0 label -text "imp."
+
+line wall -subtype presumed
+  555.5 880.0
+  altitude .
+  554.0 886.5 531.5 968.0 531.5 974.0
+  smooth off
+endline
+
+line wall -id amont-marneux_sp1_l1d
+  292.5 449.5
+  292.5 449.5 295.5 417.0 295.0 408.0
+  294.5 399.0 305.5 360.5 304.5 350.5
+  303.5 340.5 292.5 239.5 283.0 220.0
+  273.5 200.5 235.5 189.5 214.5 187.5
+  193.5 185.5 117.0 164.0 111.0 163.5
+  smooth off
+  altitude .
+endline
+
+line wall -subtype presumed
+  111.0 163.5
+  105.0 163.0 53.0 158.5 47.5 159.0
+  smooth off
+endline
+
+point 344.101 517.96 station -name 99
+
+point 301.321 478.35 station -name 98
+
+point 309.211 434.95000000000005 station -name 99
+
+point 311.121 350.8 station -name 100
+
+point 304.001 205.24 station -name 101
+
+point 204.281 124.49000000000001 station -name PTR10
+
+point 267.011 156.45 station -name 103
+
+point 302.171 135.91000000000003 station -name 104
+
+point 389.871 319.77 station -name 105
+
+point 441.761 438.53000000000003 station -name 106
+
+point 447.201 485.59000000000003 station -name 107
+
+point 469.43100000000004 537.2 station -name 108
+
+point 505.491 555.97 station -name 109
+
+point 522.011 588.39 station -name 110
+
+point 563.2909999999999 609.0600000000001 station -name 111
+
+point 597.6410000000001 716.07 station -name 112
+
+point 596.801 769.99 station -name 113
+
+point 565.071 820.96 station -name 114
+
+point 549.131 870.6 station -name 115
+
+endscrap
+
+

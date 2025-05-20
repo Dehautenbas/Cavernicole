@@ -1,0 +1,31 @@
+encoding  utf-8
+
+#---------------------------------------------------
+# utiliser cette map pour une topo simple du trou
+#---------------------------------------------------
+
+map reseau-alain-robert_tot_MP -title "reseau_alain_robert-tot-MP" 
+    amont-marneux_MP@amont-marneux_tot
+    
+    salle-mimine-sup_MP@salle-mimine-sup_tot 
+    
+    mp1_alain-robert@pts-alain-robert_tot
+    mp2_alain-robert@pts-alain-robert_tot 
+    mp3_alain-robert@pts-alain-robert_tot
+endmap
+
+#----------------------------------------------------------------------
+# utiliser cette map pour une topo de synthèse à l'échelle du massif
+#----------------------------------------------------------------------
+
+map reseau-alain-robert_tot_massif_MP -title "reseau_alain_robert-tot-MP"
+    amont-marneux_MP@amont-marneux_tot
+    
+    salle-mimine-sup_MP@salle-mimine-sup_tot
+    
+    mp1_alain-robert@pts-alain-robert_tot
+    mp2_alain-robert@pts-alain-robert_tot 
+    mp3_alain-robert@pts-alain-robert_tot
+    
+    
+endmap

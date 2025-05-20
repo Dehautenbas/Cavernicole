@@ -1,0 +1,71 @@
+encoding  utf-8
+
+map Cavernicole-tot-MP
+  jonction-innapercue_MP@jonction-innapercue_tot
+  break
+  0-100_MP@0-100_tot
+  break
+  100-130-escalade_MP@100-130-escalade_tot
+  break
+  100-130-normal_MP@100-130-normal_tot
+  break
+  pullover_MP@pull-over-amont_tot
+  break
+  pull-over-aval_MP@pull-over-aval_tot
+  break
+  reseau-alain-robert_tot_MP@reseau-alain-robert_tot [0 -100 m] below
+  break
+  old_MP@old_tot
+  break
+  siphon-vers-amont_tot_MP@siphon-vers-amont_tot
+  break
+endmap
+
+map Cavernicole-tot-massif-MP
+  jonction-innapercue_MP@jonction-innapercue_tot
+  break
+  0-100_MP@0-100_tot
+  break
+  100-130-escalade_MP@100-130-escalade_tot
+  break
+  100-130-normal_MP@100-130-normal_tot
+  break
+  pullover_MP@pull-over-amont_tot
+  break
+  pull-over-aval_MP@pull-over-aval_tot
+  break
+  reseau-alain-robert_tot_massif_MP@reseau-alain-robert_tot
+  break
+  old_MP@old_tot
+  break
+  siphon-vers-amont_tot_MP@siphon-vers-amont_tot
+  break
+endmap
+
+
+ ### MAP Explo date    ##################################################################
+ map MP_explodate
+  mp_newexplo
+  mp_oldexplo
+  mp_oldexplo-unsurveyed
+ endmap
+
+    map mp_newexplo
+      reseau-alain-robert_tot_MP@reseau-alain-robert_tot [0 -100 m] below
+      jonction-innapercue_MP@jonction-innapercue_tot
+      100-130-escalade_MP@100-130-escalade_tot
+      pullover_MP@pull-over-amont_tot
+      pull-over-aval_MP@pull-over-aval_tot
+      reseau-alain-robert_tot_MP@reseau-alain-robert_tot
+      siphon-vers-amont_tot_MP@siphon-vers-amont_tot
+    endmap
+
+    map mp_oldexplo 
+      0-100_MP@0-100_tot
+      100-130-normal_MP@100-130-normal_tot
+    endmap
+
+    map mp_oldexplo-unsurveyed
+      old_MP@old_tot
+    endmap
+

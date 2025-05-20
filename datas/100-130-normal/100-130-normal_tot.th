@@ -1,0 +1,21 @@
+encoding  utf-8
+
+survey 100-130-normal_tot -title "Cavernicole > 100-130-normal"
+
+    input datas/100-130-normal.th
+    input ../reseau-alain-robert/datas/pts-alain-robert/datas/alain-robert.th # Car une partie du dessin est dans ce th
+
+    ## Plan
+    input datas/100-130-normal.th2
+    input ../reseau-alain-robert/datas/pts-alain-robert/datas/alain-robert_p.th2 # Car une partie du dessin est dans ce th2
+    #    join .......
+    
+    ## Coupe
+    #input datas/
+    #   join ........
+
+    ## Maps
+    input 100-130-normal_maps.th
+
+endsurvey
+

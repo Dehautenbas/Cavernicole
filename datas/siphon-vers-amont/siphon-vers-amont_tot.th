@@ -1,0 +1,20 @@
+encoding  utf-8
+
+survey siphon-vers-amont_tot -title "Cavernicole > Du siphon vers l'amont"
+
+    input datas/2024/siphon-vers-amont-2024.th
+
+    ## Plan
+    input datas/2024/siphon-vers-amont-2024_p.th2
+
+    #    join .......
+    
+    ## Coupe
+    #input datas/
+    #   join ........
+
+    ## Maps
+    input siphon-vers-amont_maps.th
+
+endsurvey
+

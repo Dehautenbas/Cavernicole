@@ -1,0 +1,24 @@
+encoding  utf-8
+map mp1_alain-robert
+    alain-robert_2_sp3
+    break 
+endmap
+
+map mp2_alain-robert
+    alain-robert_2_sp2
+    break
+    alain-robert_2_sp4
+    break
+endmap
+
+map mp3_alain-robert
+    alain-robert_2_sp1
+    break
+    alain-robert_sp2
+    break
+endmap
+
+# map alain-robert_sp1_MP
+#     alain-robert_sp1
+# endmap
+

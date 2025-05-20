@@ -1,0 +1,29 @@
+encoding  utf-8
+
+survey reseau-alain-robert_tot -title "Cavernicole > Réseau Alain-Robert"
+
+    input datas/pts-alain-robert/pts-alain-robert_tot.th
+    input datas/amont-marneux/amont-marneux_tot.th
+    input datas/salle-mimine-sup/salle-mimine-sup_tot.th
+    
+    equate PTR7@alain-robert.pts-alain-robert_tot PTR7@salle-mimine-sup.salle-mimine-sup_tot
+    equate 97@alain-robert.pts-alain-robert_tot 97@amont-marneux.amont-marneux_tot
+    
+    ## Plan
+
+    join alain-robert_2_sp3@pts-alain-robert_tot amont-marneux_sp1@amont-marneux_tot
+
+              #NON#join amont-marneux_sp1@amont-marneux_tot alain-robert_2_sp2@alain-robert_tot
+
+              #join amont-marneux_sp1_l1g:end.amont-marneux_tot alain-robert_2_sp2_l1g:0.alain-robert_tot
+              #join amont-marneux_sp1_l1d:0@amont-marneux alain-robert_2_sp2_l1d:end
+    
+    ## Coupe
+    #input datas/
+    #   join ........
+
+    ## Maps
+    input reseau-alain-robert_maps.th
+
+endsurvey
+

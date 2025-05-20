@@ -1,0 +1,92 @@
+encoding  utf-8
+
+source Cavernicole-tot.th
+
+input config2.thconfig
+input layouts/config3.thcfg
+
+
+##########################LES exports #############################
+#####################################################################
+select Cavernicole-tot-MP@Cavernicole
+
+
+
+###### PLAN ######
+
+     ### colors-uniformes
+export map \ 
+     -projection plan \
+     -layout plan_uniforme-color  \
+     -output exports/Cavernicole_P_colors-uniformes.pdf \
+
+     ### colors-altis
+#export map \ 
+     -projection plan \
+     -layout plan_altitude-color   \
+     -output exports/Cavernicole_P_colors-altis.pdf \
+
+     ### colors-dates
+export map \ 
+     -projection plan \
+     -layout plan_explo-dates-color   \
+     -output exports/Cavernicole_P_colors-dates.pdf \
+
+     ### Stations
+#export map \
+     -projection plan \
+     -layout plan_uniforme-color  \ 
+     -layout centerline  \ 
+     -output exports/Cavernicole_P_stations.pdf \
+
+     ### Debug
+#export map -projection plan \
+      -layout plan_uniforme-color   \
+      -layout-debug all\
+      -output exports/Cavernicole_P_debug.pdf
+
+
+
+
+
+### KML
+#export map -projection plan -output exports/Cavernicole_24.kml  ###-> Pour murs
+#export model -output exports/Cavernicole_splays.kml  ###-> pour fil de fer
+
+
+### LISTES
+# export survey-list -o exports/Cavernicole_stats24.html
+# export continuation-list -o exports/Cavernicole_continuations24.html
+
+### SQL
+# export database -o exports/Cavernicole_database24.sql
+# export database -o exports/Cavernicole_database24.csv
+
+      
+### Pour morphing
+#export map \
+     #  -format xvi \
+     #  -layout xvi-export \
+     #  -layout morphing \
+     #  -o exports/coupetravail-morphing.xvi
+      
+#export map -projection [elevation 0]  -fmt xvi -layout xvi-export -o ../coupetravailVueNord.xvi
+
+### MODELE 3D :
+export model \
+     -o exports/Cavernicole_3d.lox 
+    # -wall-source maps
+
+
+
+# export map -projection plan \
+#      -layout yearperyear \
+#      -output exports/Cavernicole_année-par-année.pdf
+
+
+### COUPE TRAVAIL
+# export map \
+#      -projection extended \
+#      -layout coupe-work  \ 
+#      -layout centerline  \ 
+#      -output exports/Cavernicole_coupe_W.pdf \

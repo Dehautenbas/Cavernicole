@@ -1,0 +1,12 @@
+encoding  utf-8
+map 0-100_MP
+  0-100_sp1
+  break
+  0-100_sp2
+  break
+  0-100_sp3
+  break
+  0-100_sp4
+  break
+endmap
+

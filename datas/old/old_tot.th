@@ -1,0 +1,19 @@
+encoding  utf-8
+
+survey old_tot -title "Cavernicole > old"
+
+    input datas/old-for-equate.th
+
+    ## Plan
+    input datas/old_p.th2
+    #    join .......
+    
+    ## Coupe
+    #input datas/
+    #   join ........
+
+    ## Maps
+    input old_maps.th
+
+endsurvey
+
