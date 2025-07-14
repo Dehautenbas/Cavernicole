@@ -1,0 +1,14 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -128.0 -128.0 3146.0 1368.0
+##XTHERION## xth_me_area_zoom_to 100
+##XTHERION## xth_me_image_insert {393.71000000000004 1 1.0} {393.70400000000006 0} fond-riviere_e.xvi 0 {}
+
+
+
+scrap SC-fond-riv_1 -projection extended -station-names "" "@Cavernicole_fond_suite_riviere" -scale [-128.0 -128.0 2883.907 -128.0 0.0 0.0 76.5024378 0.0 m]
+
+
+
+endscrap
+
+

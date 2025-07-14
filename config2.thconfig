@@ -125,7 +125,7 @@ endlookup
 lookup map -title "Légende des couleurs"
 # vincent_mp@cavernicole-tot [48 66 87] "Non re-topographié"
 mp_oldexplo@Cavernicole [96 96 86] "Anciennes explos - 1981 et avant - retopographié après 2021"
-mp_oldexplo-unsurveyed@Cavernicole [24 65 66] "Anciennes explos - 1981 et avant - non topographié à ce jour"
+mp_oldexplo-unsurveyed@Cavernicole [24 65 66] "Anciennes explos - 1981 et avant - non re-topographié à ce jour"
 mp_newexplo@Cavernicole [92 79 69] "Nouvelles explos - 2021 et après"
 #[80 80 80] #gris
 endlookup

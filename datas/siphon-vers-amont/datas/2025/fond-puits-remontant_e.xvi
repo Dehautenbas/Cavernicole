@@ -1,4 +1,4 @@
-set XVIgrids {10.0 m}
+set XVIgrids {1.0 m}
 set XVIstations {
   {      976.01     -1280.07 0}
   {      695.73     -1100.13 1}

@@ -5,6 +5,9 @@ survey 100-130-escalade -title "100-130-escalade"
 
   centerline
     date 2023.10.22 
+    team "Lorig Tamian"
+    team "Martin Kern"
+    team "Lara Dananaï" 
     units length meters
     units compass clino degrees
     data normal from to length compass clino

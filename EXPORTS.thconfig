@@ -55,7 +55,7 @@ export map \
 
 
 ### LISTES
-# export survey-list -o exports/Cavernicole_stats24.html
+ #export survey-list -o exports/Cavernicole_stats24.html
 # export continuation-list -o exports/Cavernicole_continuations24.html
 
 ### SQL
@@ -73,8 +73,8 @@ export map \
 #export map -projection [elevation 0]  -fmt xvi -layout xvi-export -o ../coupetravailVueNord.xvi
 
 ### MODELE 3D :
-export model \
-     -o exports/Cavernicole_3d.lox 
+#export model \
+    # -o exports/Cavernicole_3d.lox 
     # -wall-source maps
 
 

@@ -5,7 +5,9 @@ survey Cavernicole_fond_suite_riviere -title "Cavernicole fond suite rivière"
 
   centerline
     date 2025.07.12 
-    # team mk pr tc 
+    team "Martin Kern"
+    team "Prune Roche"
+    team "Théophile Cailhol" 
     units length meters
     units compass clino degrees
     data normal from to length compass clino

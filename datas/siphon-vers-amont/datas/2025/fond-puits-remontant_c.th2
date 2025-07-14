@@ -1,0 +1,12 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -584.4300000000001 265.7099999999998 2427.477 4852.421
+##XTHERION## xth_me_area_zoom_to 50
+##XTHERION## xth_me_image_insert {1968.5 1 1.0} {1574.81 0} fond-puits-remontant_e.xvi 0 {}
+
+
+
+scrap SC-fond-puits_1 -projection extended -station-names "" "@Cavernicole_depart_lucarne_fond" -scale [-128.0 -128.0 2883.907 -128.0 0.0 0.0 76.5024378 0.0 m]
+
+endscrap
+
+

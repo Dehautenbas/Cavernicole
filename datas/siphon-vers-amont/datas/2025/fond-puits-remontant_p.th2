@@ -7,26 +7,41 @@ encoding  utf-8
 
 scrap SP-fond-puits_1 -projection plan -station-names "" "@Cavernicole_depart_lucarne_fond" -scale [-128.0 -128.0 2883.907 -128.0 0.0 0.0 76.5024378 0.0 m]
 
+line arrow
+  1939.5 1433.5
+  1855.0 1472.0
+endline
+
+point 1998.0 1403.5 label -text "donne sur le niv. inf." -scale xs
+
+point 1834.5 1482.5 label -text "P15"
+
+point 1738.0 1319.5 label -text "P15"
+
 line wall -subtype presumed
-  1776.0 1519.0
+  1789.0 1513.5
   1922.5 1605.5
+endline
+
+line label -text "vire"
+  1790.5 1352.0
+  1790.5 1352.0 1876.0 1411.0 1879.5 1416.0
 endline
 
 line wall -reverse on -subtype presumed
   1760.0 1529.0
   1760.0 1529.0 1782.0 1547.0 1826.5 1571.5
   1871.0 1596.0 1886.0 1604.0 1910.5 1616.5
+  smooth off
 endline
 
-point 258.5 463.0 label -text [impénétrable, cheminée coulée de calcite]
+point 407.0 413.0 label -text [imp, cheminée, coulée de calcite]
 
-point 1230.0 1351.0 label -text [Cheminée +80m (visée disto)]
+point 1468.0 1304.5 label -text [CH +80m] -scale s
 
-point 1550.5 1230.5 altitude
+point 749.5 612.5 label -text E25
 
-point 926.0 822.0 altitude
-
-point 490.0 509.5 altitude
+point 1174.0 971.5 label -text E21
 
 line pit
   1208.0 1100.0
@@ -117,6 +132,7 @@ line pit -reverse on
   1715.0 1404.0 1732.5 1408.0 1738.5 1397.5
   1744.5 1387.0 1749.5 1381.0 1748.5 1372.0
   1747.5 1363.0 1735.0 1356.5 1730.0 1353.0
+  smooth off
 endline
 
 line pit -close on
@@ -162,6 +178,7 @@ line wall
   374.0 587.0 379.0 550.0 365.0 541.0
   351.0 532.0 299.0 493.0 302.0 485.0
   305.0 477.0 292.0 468.0 313.0 468.0
+  altitude .
   334.0 468.0 339.0 487.0 361.0 490.0
   383.0 493.0 393.0 488.0 402.0 485.0
   411.0 482.0 436.0 482.0 450.0 486.0
@@ -177,6 +194,7 @@ line wall
   1249.0 1070.0 1400.0 1189.0 1413.0 1205.0
   1426.0 1221.0 1450.0 1223.0 1469.0 1236.0
   1488.0 1249.0 1516.0 1238.0 1536.0 1255.0
+  altitude .
   1556.0 1272.0 1548.0 1281.0 1572.0 1293.0
   1596.0 1305.0 1715.0 1350.0 1730.0 1353.0
   1745.0 1356.0 1775.0 1354.0 1792.0 1375.0
@@ -194,7 +212,7 @@ line wall
   1745.0 1424.0 1738.0 1411.0 1733.0 1409.0
   1728.0 1407.0 1689.0 1395.0 1681.0 1406.0
   1673.0 1417.0 1668.0 1423.0 1678.0 1433.0
-  1688.0 1443.0 1766.0 1508.0 1776.0 1519.0
+  1688.0 1443.0 1779.0 1502.5 1789.0 1513.5
   smooth off
 endline
 

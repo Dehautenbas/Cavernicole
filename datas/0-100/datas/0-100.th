@@ -5,8 +5,8 @@ survey 0-100 -title "0-100"
   centerline
     explo-date 1967
     date 2023.07.15 
-    #team "Zoé"
-    #team "Rémi"
+    team "Zoé"
+    team "Rémy Boiston"
     team "Théophile Cailhol" 
     units length meters
     units compass clino degrees
