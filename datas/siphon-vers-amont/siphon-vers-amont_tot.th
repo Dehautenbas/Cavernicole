@@ -2,21 +2,27 @@ encoding  utf-8
 
 survey siphon-vers-amont_tot -title "Cavernicole > Du siphon vers l'amont"
 
-  # input datas/2024/siphon-vers-amont-2024.th
-   # input datas/2025/Cavernicole_depart_lucarne_fond.th
+   input datas/2024/siphon-vers-amont-2024.th
+   input datas/2025/Cavernicole_depart_lucarne_fond.th
    input datas/2025/Cavernicole_fond_suite_riviere.th
+   
+   equate 0@Cavernicole_fond_suite_riviere 11@siphon-vers-amont-2024
+   equate 0@Cavernicole_depart_lucarne_fond 0@siphon-vers-amont-2024
 
     ## Plan
-   # input datas/2024/siphon-vers-amont-2024_p.th2
+    input datas/2024/siphon-vers-amont-2024_p.th2
+    input datas/2025/fond-riviere_p.th2
+    input datas/2025/fond-puits-remontant_p.th2
 
-    #    join .......
+       join fond_Cavernicole_sp1 SP-fond-puits_1      
+       join fond_Cavernicole_sp2 SP-fond-riv_1
     
     ## Coupe
     #input datas/
     #   join ........
 
     ## Maps
- #   input siphon-vers-amont_maps.th
+    input siphon-vers-amont_maps.th
 
 endsurvey
 

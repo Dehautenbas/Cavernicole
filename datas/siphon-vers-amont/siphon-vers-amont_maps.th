@@ -18,3 +18,11 @@ encoding  utf-8
   break
   endmap
 
+
+  map fond-riviere_MP
+  SP-fond-riv_1
+  endmap
+  
+  map fond-puits_MP
+  SP-fond-puits_1
+  endmap

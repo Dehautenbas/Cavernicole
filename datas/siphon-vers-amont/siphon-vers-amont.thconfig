@@ -27,7 +27,7 @@ layout my_layout
 	#color map-fg altitude
 	transparency on
 	opacity 75
-	map-comment "<it>Plan<ss> - 2023_07_15, Cavernicole, Plateau des Petites Roches, 38, France"
+	map-comment "<it>Plan<ss> - 2025_07_13, Cavernicole, massif de l'Aulp du Seuil, Chartreuse"
 	statistics explo-length off
 	statistics topo-length off
 	statistics copyright all
@@ -68,7 +68,7 @@ layout my_layout
 	copy header_coupe
 	copy langue-fr 
   
-	doc-title "2023_07_15"
+	doc-title "2025_07_13"
 	doc-author "Martin Kern, Théophile Cailhol"
 	cs UTM31
 	base-scale 1 1000
@@ -114,9 +114,9 @@ layout my_layout
 
  
   
- export map -projection plan -fmt xvi -layout xviexport -o datas/fond-riviere_p.xvi
- export map -projection extended -fmt xvi -layout xviexport -o datas/fond-riviere_e.xvi
+# export map -projection plan -fmt xvi -layout xviexport -o datas/fond-riviere_p.xvi
+# export map -projection extended -fmt xvi -layout xviexport -o datas/fond-riviere_e.xvi
   
- #export map -projection plan -o exports/2024_07_14-plan.pdf -layout my_layout
+ export map -projection plan -o exports/fond-2025-plan.pdf -layout my_layout
  #export map -projection extended -layout my_layout-coupe -o exports/2024_07_14-coupe.pdf
  #export model -o exports/2024_07_14.lox
