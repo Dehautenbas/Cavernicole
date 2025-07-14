@@ -1,8 +1,8 @@
 encoding  utf-8
 
-source 2024_07_14.th
+source siphon-vers-amont_tot.th
 
-input "../../../config.thc"
+#input "../../../config.thc"
 
 layout xviexport
 	scale 1 100
@@ -114,9 +114,9 @@ layout my_layout
 
  
   
- export map -projection plan -fmt xvi -layout xviexport -o datas/2024_07_14-th_p.xvi
- export map -projection extended -fmt xvi -layout xviexport -o datas/2024_07_14-th_e.xvi
+ export map -projection plan -fmt xvi -layout xviexport -o datas/fond-riviere_p.xvi
+ export map -projection extended -fmt xvi -layout xviexport -o datas/fond-riviere_e.xvi
   
- export map -projection plan -o exports/2024_07_14-plan.pdf -layout my_layout
+ #export map -projection plan -o exports/2024_07_14-plan.pdf -layout my_layout
  #export map -projection extended -layout my_layout-coupe -o exports/2024_07_14-coupe.pdf
- export model -o exports/2024_07_14.lox
+ #export model -o exports/2024_07_14.lox

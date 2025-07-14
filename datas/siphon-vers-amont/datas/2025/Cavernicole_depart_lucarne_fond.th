@@ -1,0 +1,106 @@
+encoding  utf-8
+# 2025.07.14 created by TopoDroid v 6.3.17
+
+survey Cavernicole_depart_lucarne_fond -title "Cavernicole départ lucarne fond"
+
+  centerline
+    date 2025.07.13 
+    # team mk pr tc 
+    units length meters
+    units compass clino degrees
+    data normal from to length compass clino
+    extend left
+    0 1 8.46 226.8 32.7
+    # extend auto
+    1 . 0.43 138.6 6.0
+    1 . 1.05 325.7 -6.7
+    1 . 2.20 335.6 61.3
+    1 . 1.16 139.7 -77.8
+    extend left
+    1 2 17.34 252.3 -58.3
+    # extend auto
+    2 . 1.32 138.1 14.8
+    2 . 3.10 93.1 4.7
+    2 . 7.60 65.6 -1.2
+    2 . 12.46 53.8 -3.1
+    2 . 5.93 46.5 -1.2
+    2 . 4.62 30.9 2.6
+    2 . 1.14 349.5 7.0
+    2 . 2.02 276.6 24.0
+    2 . 7.09 222.6 18.6
+    2 . 1.85 192.4 24.4
+    2 . 73.05 52.3 86.9
+    extend left
+    2 3 8.24 222.3 29.2
+    # extend auto
+    3 . 1.08 321.2 2.9
+    3 . 0.16 115.1 -0.1
+    3 . 4.23 244.8 8.2
+    3 . 2.45 304.2 -87.0
+    extend right
+    3 4 7.28 283.7 80.4
+    # extend auto
+    4 . 0.92 151.4 2.6
+    4 . 0.32 334.6 11.0
+    extend left
+    4 5 9.20 229.8 60.8
+    # extend auto
+    5 . 0.19 149.9 4.6
+    5 . 0.62 322.0 4.9
+    5 . 0.61 267.6 -77.5
+    extend left
+    5 6 5.09 236.5 24.5
+    # extend auto
+    6 . 3.96 236.0 6.9
+    6 . 0.53 148.5 5.5
+    6 . 2.80 72.3 1.0
+    6 . 24.63 59.0 0.7
+    6 . 5.22 51.9 1.0
+    6 . 1.97 29.5 3.1
+    6 . 1.68 329.9 1.1
+    6 . 33.26 195.2 82.3
+    extend left
+    6 7 14.76 236.6 77.4
+    # extend auto
+    7 . 1.29 144.7 4.0
+    7 . 0.33 313.0 -5.6
+    extend left
+    7 8 7.19 213.4 61.5
+    # extend auto
+    8 . 1.08 129.0 1.2
+    8 . 0.70 357.9 -10.3
+    8 . 2.22 337.3 -83.2
+    8 . 34.45 52.5 83.1
+    extend left
+    8 9 4.78 241.7 40.9
+    # extend auto
+    9 . 0.27 143.9 9.3
+    9 . 1.36 325.4 6.4
+    9 . 0.79 317.0 -75.5
+    9 . 40.89 91.0 88.4
+    extend left
+    9 10 4.34 253.2 -10.4
+    # extend auto
+    10 . 2.14 151.6 5.9
+    10 . 2.18 195.4 8.0
+    10 . 2.43 222.9 9.2
+    10 . 3.90 235.8 1.9
+    10 . 1.60 253.4 12.6
+    10 . 1.39 313.3 16.0
+    10 . 2.15 32.9 19.0
+    10 . 17.93 56.9 4.3
+    10 . 13.40 107.2 84.7
+  endcenterline
+
+  # input "Cavernicole_départ_lucarne_fond-1p.th2"
+  # input "Cavernicole_départ_lucarne_fond-1s.th2"
+
+  # map m1p -projection plan
+  #   Cavernicole_départ_lucarne_fond-1p
+  # endmap
+  # map m1s -projection extended
+  #   Cavernicole_départ_lucarne_fond-1s
+  # endmap
+
+endsurvey
+
